@@ -1,0 +1,13 @@
+{
+  "comment": "Step 2 验收：这三个写法必须落在同一所学校，国家为中国香港。港科广不得混入。",
+  "must_unify": {
+    "aliases": ["港科大", "HKUST", "香港科技大学"],
+    "school_id": "hkust",
+    "name_zh": "香港科技大学",
+    "country": "中国香港"
+  },
+  "must_not_unify_with": {
+    "aliases": ["港科广", "HKUST-GZ"],
+    "school_id": "hkust-gz"
+  }
+}

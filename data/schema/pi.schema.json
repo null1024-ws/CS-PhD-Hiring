@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-phd-hiring.local/schema/pi.json",
+  "title": "pi detail (data/pis/<pi_id>.json)",
+  "type": "object",
+  "required": [
+    "pi_id",
+    "name",
+    "school_claimed",
+    "school_canonical",
+    "school_country",
+    "school_status",
+    "school_evidence",
+    "research_areas",
+    "updated_at",
+    "opportunities"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "pi_id": { "type": "string" },
+    "name": { "type": "string" },
+    "name_en": { "type": ["string", "null"] },
+    "school_claimed": { "type": "string" },
+    "school_canonical": { "type": "string" },
+    "school_country": { "type": "string" },
+    "school_status": { "type": "string", "enum": ["verified", "unverified", "conflict"] },
+    "school_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "url", "snippet", "fetched_at"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "type": "string" },
+          "url": { "type": "string" },
+          "snippet": { "type": "string" },
+          "fetched_at": { "type": "string" }
+        }
+      }
+    },
+    "homepage_url": { "type": ["string", "null"] },
+    "research_areas": { "type": "array", "items": { "type": "string" } },
+    "updated_at": { "type": "string" },
+    "opportunities": {
+      "type": "array",
+      "items": { "$ref": "opportunity.schema.json" }
+    }
+  }
+}

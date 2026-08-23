@@ -1,0 +1,24 @@
+"""Repository paths shared by pipeline scripts."""
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data"
+SCHOOLS_PATH = DATA_DIR / "schools.json"
+LISTINGS_PATH = DATA_DIR / "listings.json"
+RAW_DIR = DATA_DIR / "raw"
+RAW_XHS = RAW_DIR / "xhs"
+RAW_IMAGES = RAW_DIR / "images"
+RAW_OCR = RAW_DIR / "ocr"
+RAW_INDEX = RAW_DIR / "index.json"
+BUNDLES_DIR = DATA_DIR / "bundles"
+PIS_DIR = DATA_DIR / "pis"
+SITE_DIR = ROOT / "site"
+SITE_DIST = SITE_DIR / "dist"
+TESTS_DIR = ROOT / "tests"
+FIXTURES_DIR = TESTS_DIR / "fixtures"
+
+
+def ensure_dirs() -> None:
+    for path in (RAW_XHS, RAW_IMAGES, RAW_OCR, BUNDLES_DIR, PIS_DIR, SITE_DIST):
+        path.mkdir(parents=True, exist_ok=True)

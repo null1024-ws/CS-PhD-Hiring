@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-23",
+  "listings": [
+    {
+      "pi_id": "example-hkust-li",
+      "name": "李老师",
+      "name_en": "Li",
+      "school_canonical": "香港科技大学",
+      "school_country": "中国香港",
+      "school_status": "verified",
+      "research_areas": ["systems"],
+      "opportunity_types": ["phd", "intern"],
+      "start_term": "2026 Fall",
+      "source_count": 1,
+      "updated_at": "2026-08-01",
+      "detail_path": "pis/example-hkust-li.html"
+    }
+  ]
+}

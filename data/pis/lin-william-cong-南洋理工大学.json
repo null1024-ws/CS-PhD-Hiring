@@ -1,0 +1,39 @@
+{
+  "pi_id": "lin-william-cong-南洋理工大学",
+  "name": "Lin William Cong",
+  "name_en": null,
+  "school_claimed": "南洋理工大学",
+  "school_canonical": "南洋理工大学",
+  "school_country": "新加坡",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "computer vision",
+    "ml"
+  ],
+  "updated_at": "2026-08-14",
+  "opportunities": [
+    {
+      "opportunity_id": "lin-william-cong-南洋理工大学-0",
+      "pi_id": "lin-william-cong-南洋理工大学",
+      "types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "excerpt": "NTU丛林教授团队招聘RA 南洋理工大学（NTU）丛林教授（Prof. Lin William Cong）研究团队现招募若干名科研助理（RA），参与人工智能、机器学习与金融科技交叉方向的研究工作。 丛林教授现任南洋理工大学金融、计算机与数据科学校长讲席教授，南洋商学院副院长兼全球金融科技与社会研究所（GIFTS）所长，",
+      "contact": "2024213165@stu.sufe.edu.cn",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a7ef8890000000022030402",
+      "source_note_id": "6a7ef8890000000022030402",
+      "posted_at": "2026-08-14",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

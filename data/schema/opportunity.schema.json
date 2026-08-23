@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-phd-hiring.local/schema/opportunity.json",
+  "title": "opportunity",
+  "type": "object",
+  "required": [
+    "opportunity_id",
+    "pi_id",
+    "types",
+    "contact_class",
+    "source",
+    "source_kind",
+    "source_url",
+    "collected_at",
+    "relevance",
+    "extract_confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "opportunity_id": { "type": "string" },
+    "pi_id": { "type": "string" },
+    "types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["phd", "ra", "intern", "postdoc", "mres", "visiting", "other"]
+      }
+    },
+    "start_term": { "type": ["string", "null"] },
+    "excerpt": { "type": "string" },
+    "contact": { "type": ["string", "null"] },
+    "contact_class": {
+      "type": "string",
+      "enum": ["academic", "consumer_email", "social_only", "none"]
+    },
+    "source": { "type": "string", "enum": ["xhs", "github"] },
+    "source_kind": { "type": "string", "enum": ["pi", "repost", "agency", "unknown"] },
+    "source_url": { "type": "string" },
+    "source_note_id": { "type": ["string", "null"] },
+    "posted_at": { "type": ["string", "null"] },
+    "collected_at": { "type": "string" },
+    "relevance": { "type": "string", "enum": ["cs", "review", "notcs"] },
+    "extract_confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+  }
+}

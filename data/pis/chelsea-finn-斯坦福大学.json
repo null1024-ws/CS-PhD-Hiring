@@ -1,0 +1,39 @@
+{
+  "pi_id": "chelsea-finn-斯坦福大学",
+  "name": "Chelsea Finn",
+  "name_en": null,
+  "school_claimed": "Stanford",
+  "school_canonical": "斯坦福大学",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://lema-nus.github.io",
+  "research_areas": [
+    "robotics"
+  ],
+  "updated_at": "2026-06-06",
+  "opportunities": [
+    {
+      "opportunity_id": "chelsea-finn-斯坦福大学-0",
+      "pi_id": "chelsea-finn-斯坦福大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "excerpt": "[本人招生] NUS CS｜博士 / 实习｜具身智能 大家好！我是 Yuejiang Liu，即将加入新加坡国立大学 (NUS) 计算机学院 (SoC），成立 Learning for Embodied Minds and Agents (LEMA) 实验室：https://lema-nus.github.io 我目前",
+      "contact": "https://lema-nus.github.io",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a23ca78000000000803ca18",
+      "source_note_id": "6a23ca78000000000803ca18",
+      "posted_at": "2026-06-06",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}

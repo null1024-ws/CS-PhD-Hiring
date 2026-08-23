@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Maintainer login / local tools — never commit
+.xhs-cli/
+cookies.json
+**/cookies.json
+xiaohongshu-cli/
+.camoufox/
+
+# Xiaohongshu raw capture (notes, images, OCR) stays on the maintainer machine
+data/raw/*
+!data/raw/.gitignore
+
+# Built site
+site/dist/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db

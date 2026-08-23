@@ -1,0 +1,38 @@
+{
+  "pi_id": "junjie-chen-香港大学",
+  "name": "Junjie Chen",
+  "name_en": null,
+  "school_claimed": "香港大学",
+  "school_canonical": "香港大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "robotics"
+  ],
+  "updated_at": "2026-08-19",
+  "opportunities": [
+    {
+      "opportunity_id": "junjie-chen-香港大学-0",
+      "pi_id": "junjie-chen-香港大学",
+      "types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "excerpt": "数字建造+AI+机器人 PhD/RA 机会 香港大学iLab诚邀英才加入由房地产及建设系系主任，讲席教授吕伟生（Prof. Wilson Lu）和陈俊杰教授（Prof. Junjie Chen）领衔的科研团队。欢迎想读博士（hkpfs/hkups/pgs）和全职研究助理的同学加入。 我们可帮你预评估下背景。 #研究生[",
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a853e780000000012029ddf",
+      "source_note_id": "6a853e780000000012029ddf",
+      "posted_at": "2026-08-19",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

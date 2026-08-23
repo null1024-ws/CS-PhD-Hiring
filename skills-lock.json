@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "vibe-coding-standard-workflow": {
+      "source": "WoodyXu/vibe-coding-standard-workflow",
+      "sourceType": "github",
+      "skillPath": "skills/vibe-coding-standard-workflow/SKILL.md",
+      "computedHash": "4a5a24d07c482fdddecaefceecfc1cd367bab7f558f94527fd01d5ffeaa29c0d"
+    }
+  }
+}

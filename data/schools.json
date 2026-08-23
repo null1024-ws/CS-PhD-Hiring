@@ -1,0 +1,255 @@
+{
+  "schools": [
+    {
+      "id": "hku",
+      "name_zh": "香港大学",
+      "name_en": "The University of Hong Kong",
+      "country": "中国香港",
+      "aliases": ["香港大学", "港大", "HKU", "The University of Hong Kong", "University of Hong Kong"]
+    },
+    {
+      "id": "cuhk",
+      "name_zh": "香港中文大学",
+      "name_en": "The Chinese University of Hong Kong",
+      "country": "中国香港",
+      "aliases": ["香港中文大学", "港中文", "中文大学", "CUHK", "The Chinese University of Hong Kong"]
+    },
+    {
+      "id": "hkust",
+      "name_zh": "香港科技大学",
+      "name_en": "The Hong Kong University of Science and Technology",
+      "country": "中国香港",
+      "aliases": [
+        "香港科技大学",
+        "港科大",
+        "HKUST",
+        "The Hong Kong University of Science and Technology",
+        "Hong Kong University of Science and Technology"
+      ]
+    },
+    {
+      "id": "cityu",
+      "name_zh": "香港城市大学",
+      "name_en": "City University of Hong Kong",
+      "country": "中国香港",
+      "aliases": ["香港城市大学", "城大", "CityU", "CityUHK", "City University of Hong Kong"]
+    },
+    {
+      "id": "polyu",
+      "name_zh": "香港理工大学",
+      "name_en": "The Hong Kong Polytechnic University",
+      "country": "中国香港",
+      "aliases": ["香港理工大学", "理大", "PolyU", "HK PolyU", "The Hong Kong Polytechnic University"]
+    },
+    {
+      "id": "hkbu",
+      "name_zh": "香港浸会大学",
+      "name_en": "Hong Kong Baptist University",
+      "country": "中国香港",
+      "aliases": ["香港浸会大学", "浸会", "浸大", "HKBU", "Hong Kong Baptist University"]
+    },
+    {
+      "id": "hkust-gz",
+      "name_zh": "香港科技大学（广州）",
+      "name_en": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "country": "中国",
+      "aliases": ["香港科技大学（广州）", "港科广", "HKUST-GZ", "HKUST GZ", "HKUST Guangzhou"]
+    },
+    {
+      "id": "cuhk-sz",
+      "name_zh": "香港中文大学（深圳）",
+      "name_en": "The Chinese University of Hong Kong, Shenzhen",
+      "country": "中国",
+      "aliases": ["香港中文大学（深圳）", "港中深", "CUHK-SZ", "CUHK Shenzhen"]
+    },
+    {
+      "id": "umac",
+      "name_zh": "澳门大学",
+      "name_en": "University of Macau",
+      "country": "中国澳门",
+      "aliases": ["澳门大学", "澳大", "UM", "UMAC", "University of Macau", "University of Macao"]
+    },
+    {
+      "id": "tsinghua",
+      "name_zh": "清华大学",
+      "name_en": "Tsinghua University",
+      "country": "中国",
+      "aliases": ["清华大学", "清华", "THU", "Tsinghua", "Tsinghua University"]
+    },
+    {
+      "id": "pku",
+      "name_zh": "北京大学",
+      "name_en": "Peking University",
+      "country": "中国",
+      "aliases": ["北京大学", "北大", "PKU", "Peking University", "Beijing University"]
+    },
+    {
+      "id": "zju",
+      "name_zh": "浙江大学",
+      "name_en": "Zhejiang University",
+      "country": "中国",
+      "aliases": ["浙江大学", "浙大", "ZJU", "Zhejiang University"]
+    },
+    {
+      "id": "fudan",
+      "name_zh": "复旦大学",
+      "name_en": "Fudan University",
+      "country": "中国",
+      "aliases": ["复旦大学", "复旦", "Fudan", "Fudan University"]
+    },
+    {
+      "id": "sjtu",
+      "name_zh": "上海交通大学",
+      "name_en": "Shanghai Jiao Tong University",
+      "country": "中国",
+      "aliases": ["上海交通大学", "上交", "上海交大", "SJTU", "Shanghai Jiao Tong University"]
+    },
+    {
+      "id": "nju",
+      "name_zh": "南京大学",
+      "name_en": "Nanjing University",
+      "country": "中国",
+      "aliases": ["南京大学", "南大", "NJU", "Nanjing University"]
+    },
+    {
+      "id": "ustc",
+      "name_zh": "中国科学技术大学",
+      "name_en": "University of Science and Technology of China",
+      "country": "中国",
+      "aliases": ["中国科学技术大学", "中科大", "USTC", "University of Science and Technology of China"]
+    },
+    {
+      "id": "hit",
+      "name_zh": "哈尔滨工业大学",
+      "name_en": "Harbin Institute of Technology",
+      "country": "中国",
+      "aliases": ["哈尔滨工业大学", "哈工大", "HIT", "Harbin Institute of Technology"]
+    },
+    {
+      "id": "xjtu",
+      "name_zh": "西安交通大学",
+      "name_en": "Xi'an Jiaotong University",
+      "country": "中国",
+      "aliases": ["西安交通大学", "西交", "XJTU", "Xi'an Jiaotong University", "Xian Jiaotong University"]
+    },
+    {
+      "id": "mit",
+      "name_zh": "麻省理工学院",
+      "name_en": "Massachusetts Institute of Technology",
+      "country": "美国",
+      "aliases": ["麻省理工学院", "麻省理工", "MIT", "Massachusetts Institute of Technology"]
+    },
+    {
+      "id": "stanford",
+      "name_zh": "斯坦福大学",
+      "name_en": "Stanford University",
+      "country": "美国",
+      "aliases": ["斯坦福大学", "斯坦福", "Stanford", "Stanford University"]
+    },
+    {
+      "id": "cmu",
+      "name_zh": "卡内基梅隆大学",
+      "name_en": "Carnegie Mellon University",
+      "country": "美国",
+      "aliases": ["卡内基梅隆大学", "卡内基梅隆", "CMU", "Carnegie Mellon", "Carnegie Mellon University"]
+    },
+    {
+      "id": "berkeley",
+      "name_zh": "加州大学伯克利分校",
+      "name_en": "University of California, Berkeley",
+      "country": "美国",
+      "aliases": ["加州大学伯克利分校", "伯克利", "Berkeley", "UC Berkeley", "UCB", "University of California, Berkeley"]
+    },
+    {
+      "id": "uiuc",
+      "name_zh": "伊利诺伊大学香槟分校",
+      "name_en": "University of Illinois Urbana-Champaign",
+      "country": "美国",
+      "aliases": ["伊利诺伊大学香槟分校", "UIUC", "Illinois", "University of Illinois Urbana-Champaign", "University of Illinois at Urbana-Champaign"]
+    },
+    {
+      "id": "gatech",
+      "name_zh": "佐治亚理工学院",
+      "name_en": "Georgia Institute of Technology",
+      "country": "美国",
+      "aliases": ["佐治亚理工学院", "佐治亚理工", "Georgia Tech", "Gatech", "Georgia Institute of Technology"]
+    },
+    {
+      "id": "nus",
+      "name_zh": "新加坡国立大学",
+      "name_en": "National University of Singapore",
+      "country": "新加坡",
+      "aliases": ["新加坡国立大学", "国大", "NUS", "National University of Singapore"]
+    },
+    {
+      "id": "ntu",
+      "name_zh": "南洋理工大学",
+      "name_en": "Nanyang Technological University",
+      "country": "新加坡",
+      "aliases": ["南洋理工大学", "南洋理工", "NTU", "Nanyang Technological University"]
+    },
+    {
+      "id": "oxford",
+      "name_zh": "牛津大学",
+      "name_en": "University of Oxford",
+      "country": "英国",
+      "aliases": ["牛津大学", "牛津", "Oxford", "University of Oxford"]
+    },
+    {
+      "id": "cambridge",
+      "name_zh": "剑桥大学",
+      "name_en": "University of Cambridge",
+      "country": "英国",
+      "aliases": ["剑桥大学", "剑桥", "Cambridge", "University of Cambridge"]
+    },
+    {
+      "id": "imperial",
+      "name_zh": "帝国理工学院",
+      "name_en": "Imperial College London",
+      "country": "英国",
+      "aliases": ["帝国理工学院", "帝国理工", "Imperial", "Imperial College", "Imperial College London"]
+    },
+    {
+      "id": "toronto",
+      "name_zh": "多伦多大学",
+      "name_en": "University of Toronto",
+      "country": "加拿大",
+      "aliases": ["多伦多大学", "多伦多", "UofT", "U of T", "University of Toronto"]
+    },
+    {
+      "id": "ubc",
+      "name_zh": "不列颠哥伦比亚大学",
+      "name_en": "University of British Columbia",
+      "country": "加拿大",
+      "aliases": ["不列颠哥伦比亚大学", "英属哥伦比亚大学", "UBC", "University of British Columbia"]
+    },
+    {
+      "id": "anu",
+      "name_zh": "澳大利亚国立大学",
+      "name_en": "The Australian National University",
+      "country": "澳大利亚",
+      "aliases": ["澳大利亚国立大学", "澳国立", "ANU", "The Australian National University", "Australian National University"]
+    },
+    {
+      "id": "unimelb",
+      "name_zh": "墨尔本大学",
+      "name_en": "The University of Melbourne",
+      "country": "澳大利亚",
+      "aliases": ["墨尔本大学", "墨大", "UniMelb", "University of Melbourne", "The University of Melbourne"]
+    },
+    {
+      "id": "eth",
+      "name_zh": "苏黎世联邦理工学院",
+      "name_en": "ETH Zurich",
+      "country": "瑞士",
+      "aliases": ["苏黎世联邦理工学院", "苏黎世联邦理工", "ETH", "ETH Zurich", "ETH Zürich"]
+    },
+    {
+      "id": "kaust",
+      "name_zh": "阿卜杜拉国王科技大学",
+      "name_en": "King Abdullah University of Science and Technology",
+      "country": "沙特阿拉伯",
+      "aliases": ["阿卜杜拉国王科技大学", "KAUST", "King Abdullah University of Science and Technology"]
+    }
+  ]
+}

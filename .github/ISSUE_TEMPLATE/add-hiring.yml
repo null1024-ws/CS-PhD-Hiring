@@ -1,0 +1,44 @@
+name: 补充一条招募信息
+description: 补一条小红书上漏掉的老师招募帖。学校仍会自动核对，不会因为你填写就标成已核对。
+title: "[招生] "
+labels: ["hiring"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 导师
+      placeholder: 陈思远
+    validations:
+      required: true
+  - type: input
+    id: school
+    attributes:
+      label: 学校
+      placeholder: 港科大
+    validations:
+      required: true
+  - type: input
+    id: areas
+    attributes:
+      label: 方向
+      placeholder: 机器学习系统
+  - type: input
+    id: types
+    attributes:
+      label: 机会类型
+      placeholder: PhD / intern / RA
+  - type: input
+    id: url
+    attributes:
+      label: 原帖链接
+      placeholder: https://www.xiaohongshu.com/explore/...
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: 主页
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充

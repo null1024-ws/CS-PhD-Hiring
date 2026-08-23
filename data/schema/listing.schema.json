@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-phd-hiring.local/schema/listing.json",
+  "title": "listings.json",
+  "type": "object",
+  "required": ["generated_at", "listings"],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": { "type": "string" },
+    "listings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pi_id",
+          "name",
+          "school_canonical",
+          "school_country",
+          "school_status",
+          "research_areas",
+          "opportunity_types",
+          "source_count",
+          "updated_at",
+          "detail_path"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "pi_id": { "type": "string" },
+          "name": { "type": "string" },
+          "name_en": { "type": ["string", "null"] },
+          "school_canonical": { "type": "string" },
+          "school_country": { "type": "string" },
+          "school_status": { "type": "string", "enum": ["verified", "unverified", "conflict"] },
+          "research_areas": { "type": "array", "items": { "type": "string" } },
+          "opportunity_types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["phd", "ra", "intern", "postdoc", "mres", "visiting", "other"]
+            }
+          },
+          "start_term": { "type": ["string", "null"] },
+          "source_count": { "type": "integer", "minimum": 0 },
+          "updated_at": { "type": "string" },
+          "detail_path": { "type": "string" }
+        }
+      }
+    }
+  }
+}

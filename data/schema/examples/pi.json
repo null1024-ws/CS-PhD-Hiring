@@ -1,0 +1,39 @@
+{
+  "pi_id": "example-hkust-li",
+  "name": "李老师",
+  "name_en": "Li",
+  "school_claimed": "港科大",
+  "school_canonical": "香港科技大学",
+  "school_country": "中国香港",
+  "school_status": "verified",
+  "school_evidence": [
+    {
+      "source": "homepage",
+      "url": "https://example.edu/~li",
+      "snippet": "Hong Kong University of Science and Technology",
+      "fetched_at": "2026-08-23"
+    }
+  ],
+  "homepage_url": "https://example.edu/~li",
+  "research_areas": ["systems"],
+  "updated_at": "2026-08-01",
+  "opportunities": [
+    {
+      "opportunity_id": "example-opp-1",
+      "pi_id": "example-hkust-li",
+      "types": ["phd"],
+      "start_term": "2026 Fall",
+      "excerpt": "HKUST 课题组招收 2026 Fall PhD。",
+      "contact": "li@ust.hk",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/example",
+      "source_note_id": "example",
+      "posted_at": "2026-08-01",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}

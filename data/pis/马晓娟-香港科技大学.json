@@ -1,0 +1,39 @@
+{
+  "pi_id": "马晓娟-香港科技大学",
+  "name": "马晓娟",
+  "name_en": null,
+  "school_claimed": "香港科技大学",
+  "school_canonical": "香港科技大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "computer vision",
+    "hci",
+    "robotics"
+  ],
+  "updated_at": "2026-04-18",
+  "opportunities": [
+    {
+      "opportunity_id": "马晓娟-香港科技大学-0",
+      "pi_id": "马晓娟-香港科技大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "27F欢迎来港科大读我的人机交互全奖博士 香港科技大学人机交互HCI博士全奖申请开始啦！ 如果你对人机交互HCI很喜欢，想在27fall➕入实验室，来看看麻晓娟导师组 正式开启 27fall 人机交互HCI方向全奖博士的招募 - 说实话申请季蕞怕的就是信息差，很多背景很好的大佬因为选错赛道或者套磁信写的太干而没有机会，",
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/69e3c02f0000000023011ad6",
+      "source_note_id": "69e3c02f0000000023011ad6",
+      "posted_at": "2026-04-18",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

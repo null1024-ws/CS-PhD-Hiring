@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-08-23",
+  "listings": [
+    {
+      "pi_id": "马晓娟-香港科技大学",
+      "name": "马晓娟",
+      "name_en": null,
+      "school_canonical": "香港科技大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "computer vision",
+        "hci",
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd"
+      ],
+      "start_term": "2027 Fall",
+      "source_count": 1,
+      "updated_at": "2026-04-18",
+      "detail_path": "pis/马晓娟-香港科技大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "chelsea-finn-斯坦福大学",
+      "name": "Chelsea Finn",
+      "name_en": null,
+      "school_canonical": "斯坦福大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/chelsea-finn-斯坦福大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "yilun-du-斯坦福大学",
+      "name": "Yilun Du",
+      "name_en": null,
+      "school_canonical": "斯坦福大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/yilun-du-斯坦福大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "alexandre-alahi-斯坦福大学",
+      "name": "Alexandre Alahi",
+      "name_en": null,
+      "school_canonical": "斯坦福大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/alexandre-alahi-斯坦福大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "bernhard-sch-斯坦福大学",
+      "name": "Bernhard Sch",
+      "name_en": null,
+      "school_canonical": "斯坦福大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/bernhard-sch-斯坦福大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "chris-russell-斯坦福大学",
+      "name": "Chris Russell",
+      "name_en": null,
+      "school_canonical": "斯坦福大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/chris-russell-斯坦福大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "dianbo-liu-新加坡国立大学",
+      "name": "Dianbo Liu",
+      "name_en": null,
+      "school_canonical": "新加坡国立大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "systems",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-07",
+      "detail_path": "pis/dianbo-liu-新加坡国立大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "丛林-南洋理工大学",
+      "name": "丛林",
+      "name_en": null,
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "computer vision",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-14",
+      "detail_path": "pis/丛林-南洋理工大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "lin-william-cong-南洋理工大学",
+      "name": "Lin William Cong",
+      "name_en": null,
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "computer vision",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-14",
+      "detail_path": "pis/lin-william-cong-南洋理工大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "陈俊杰-香港大学",
+      "name": "陈俊杰",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-19",
+      "detail_path": "pis/陈俊杰-香港大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "wilson-lu-香港大学",
+      "name": "Wilson Lu",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-19",
+      "detail_path": "pis/wilson-lu-香港大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "junjie-chen-香港大学",
+      "name": "Junjie Chen",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-19",
+      "detail_path": "pis/junjie-chen-香港大学.html",
+      "suggested_school": null
+    }
+  ]
+}

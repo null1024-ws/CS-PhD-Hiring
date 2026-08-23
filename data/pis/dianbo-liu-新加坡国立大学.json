@@ -1,0 +1,41 @@
+{
+  "pi_id": "dianbo-liu-新加坡国立大学",
+  "name": "Dianbo Liu",
+  "name_en": null,
+  "school_claimed": "新加坡国立大学",
+  "school_canonical": "新加坡国立大学",
+  "school_country": "新加坡",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "systems",
+    "ml"
+  ],
+  "updated_at": "2026-08-07",
+  "opportunities": [
+    {
+      "opportunity_id": "dianbo-liu-新加坡国立大学-0",
+      "pi_id": "dianbo-liu-新加坡国立大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": null,
+      "excerpt": "【导师本人招生】 新国立 ASI Lab 新加坡国立大学人工科学智能实验室（Artificial Scientific Intelligence Lab，ASI Lab）现招聘： 1. 博士研究生若干名（2027年1月或8月入学，全奖） 研究方向：机器学习基础研究 或 人工智能在医疗上的应用 2. 博士后研究员1名 研",
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a7663d00000000033010c95",
+      "source_note_id": "6a7663d00000000033010c95",
+      "posted_at": "2026-08-07",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

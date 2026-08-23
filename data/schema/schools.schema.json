@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-phd-hiring.local/schema/schools.json",
+  "title": "schools.json",
+  "type": "object",
+  "required": ["schools"],
+  "additionalProperties": false,
+  "properties": {
+    "schools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name_zh", "name_en", "country", "aliases"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name_zh": { "type": "string", "minLength": 1 },
+          "name_en": { "type": "string", "minLength": 1 },
+          "country": { "type": "string", "minLength": 1 },
+          "aliases": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}
