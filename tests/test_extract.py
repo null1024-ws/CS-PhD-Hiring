@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from extract import extract_opportunities, is_main_table_name
+from extract import extract_opportunities, is_main_table_name, research_excerpt
 
 from conftest import FIXTURES
 
@@ -103,6 +103,20 @@ def test_cn_en_pair_is_one_person() -> None:
         "和陈俊杰教授（Prof. Junjie Chen）领衔。"
     )
     assert {row.pi_name for row in hku} == {"吕伟生", "陈俊杰"}
+
+
+def test_research_excerpt_keeps_fine_topics() -> None:
+    text = (
+        "NYUAD 新ap招Phd和Postdoc 大家好，我是 Jiahao Yu。"
+        "我的研究主要在 AI + Security 交叉方向，过去做过 LLM security、fuzzing、"
+        "program repair、AI-assisted vulnerability discovery。"
+        "欢迎感兴趣的同学邮件联系：jy5951@nyu.edu"
+    )
+    excerpt = research_excerpt(text)
+    assert "fuzzing" in excerpt
+    assert "program repair" in excerpt
+    assert "jy5951" not in excerpt
+    assert not excerpt.startswith("NYUAD")
 
 
 def test_does_not_invent_email_or_term() -> None:

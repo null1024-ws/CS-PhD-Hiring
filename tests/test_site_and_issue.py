@@ -29,7 +29,9 @@ def test_homepage_has_no_verification_ui(tmp_path) -> None:
     assert "本站用来发现老师" in html
     assert "CS PhD Hiring" in html
     assert "非官方招募索引" not in html
-    assert "busuanzi_value_site_pv" in html
+    assert "busuanzi_site_pv" in html
+    assert "cdn.busuanzi.cc" in html
+    assert "学期" not in html
     assert "<select" not in html
     assert "filter-chip" in html
     assert "#f5f4ed" in html
@@ -50,7 +52,11 @@ def test_detail_is_one_reading_not_two_posts(tmp_path) -> None:
     assert "学校核对" not in text
     assert "校验" not in text
     assert DISCLAIMER in text
-    assert "busuanzi_value_site_pv" in text
+    assert "busuanzi_site_pv" in text
+    assert "cdn.busuanzi.cc" in text
+    assert "学期" not in text
+    assert "邮箱" in text
+    assert "主页" in text
     assert "max-width: 720px" in text
 
 
@@ -81,7 +87,8 @@ def test_compose_merges_duplicate_excerpts() -> None:
         }
     )
     assert view["types"] == ["phd", "intern"]
-    assert view["terms"] == ["2026 Fall", "2026 Summer"]
+    assert view["emails"] == ["chen.siyuan@ust.hk"]
+    assert view["homepages"] == ["https://www.cs.ust.hk/~siyuan"]
     assert len(view["sources"]) == 2
     assert view["excerpt"].count("邮箱") == 0
     assert "http" not in view["excerpt"]

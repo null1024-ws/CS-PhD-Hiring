@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 from datetime import datetime, timezone
 from typing import Any
+from urllib.parse import urlencode
 
 USEFUL_COMMENT_RE = re.compile(
     r"@|邮箱|email|主页|http|截止|ddl|更正|学校|教授",
@@ -42,6 +43,34 @@ def bundle_visible_text(note: dict) -> str:
         note.get("ocr_text") or "",
     ]
     return "\n".join(p for p in parts if p).strip()
+
+
+def note_xsec_token(raw: dict) -> str:
+    """Note-level token for a public explore URL. Ignore user profile tokens."""
+    search = raw.get("search_item") if isinstance(raw.get("search_item"), dict) else {}
+    if search.get("xsec_token"):
+        return str(search["xsec_token"])
+    card = search.get("note_card") or search.get("noteCard") or {}
+    if isinstance(card, dict) and card.get("xsec_token"):
+        return str(card["xsec_token"])
+    read = raw.get("read") if isinstance(raw.get("read"), dict) else {}
+    data = read.get("data") if isinstance(read.get("data"), dict) else {}
+    items = data.get("items") if isinstance(data.get("items"), list) else []
+    if items and isinstance(items[0], dict):
+        if items[0].get("xsec_token"):
+            return str(items[0]["xsec_token"])
+        note_card = items[0].get("note_card") or items[0].get("noteCard") or {}
+        if isinstance(note_card, dict) and note_card.get("xsec_token"):
+            return str(note_card["xsec_token"])
+    return ""
+
+
+def public_xhs_url(note_id: str, xsec_token: str = "") -> str:
+    base = f"https://www.xiaohongshu.com/explore/{note_id}"
+    if not xsec_token:
+        return base
+    query = urlencode({"xsec_token": xsec_token, "xsec_source": "pc_search"})
+    return f"{base}?{query}"
 
 
 def flatten_collected_note(raw: dict) -> dict:
@@ -84,8 +113,9 @@ def flatten_collected_note(raw: dict) -> dict:
         except (TypeError, ValueError, OSError):
             updated = ""
     url = raw.get("url") or raw.get("source_url") or ""
-    if not url and note_id:
-        url = f"https://www.xiaohongshu.com/explore/{note_id}"
+    token = note_xsec_token(raw)
+    if note_id and (not url or "xsec_token=" not in url):
+        url = public_xhs_url(note_id, token)
     return {
         "note_id": note_id,
         "source": "xhs",

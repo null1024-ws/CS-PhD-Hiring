@@ -69,10 +69,12 @@ def test_flatten_keeps_fixture_and_unwraps_raw() -> None:
         },
         "note": {"items": [{"note_card": {"title": "招 PhD", "desc": "陈思远 港科大", "time": 1754006400}}]},
         "comments": {"data": {"comments": [{"content": "邮箱 a@ust.hk"}]}},
-        "search_item": {"id": "abc"},
+        "search_item": {"id": "abc", "xsec_token": "TOKEN123"},
     }
     note = flatten_collected_note(raw)
     assert note["title"] == "招 PhD"
     assert "港科大" in note["desc"]
-    assert note["source_url"].endswith("/abc")
+    assert note["source_url"].startswith("https://www.xiaohongshu.com/explore/abc")
+    assert "xsec_token=TOKEN123" in note["source_url"]
+    assert "xsec_source=pc_search" in note["source_url"]
     assert note["comments"][0]["content"] == "邮箱 a@ust.hk"

@@ -68,6 +68,12 @@ NAME_NOISE_RE = re.compile(
     r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室"
 )
 
+RESEARCH_START_RE = re.compile(
+    r"(?:我的研究|研究方向|主要方向|主要招|目前主要研究|重点关注|过去做过|实验室关注|研究主要)"
+)
+RESEARCH_STOP_RE = re.compile(r"(欢迎感兴趣|邮件联系|加微信|私信我|评论区)")
+HASHTAG_RE = re.compile(r"#\S+")
+
 TERM_PATTERNS: list[re.Pattern[str]] = [
     re.compile(r"(20\d{2})\s*(Fall|Spring|Summer|Autumn)", re.I),
     re.compile(r"(20\d{2})\s*(秋|春|夏)(?:季|天)?", re.I),
@@ -168,6 +174,24 @@ def _areas(text: str) -> list[str]:
         if pattern.search(text) and key not in found:
             found.append(key)
     return found
+
+
+def research_excerpt(text: str) -> str:
+    """Keep the research-direction passage instead of a 160-char bio cut."""
+    cleaned = re.sub(r"\s+", " ", text or "").strip()
+    cleaned = EMAIL_RE.sub("", cleaned)
+    cleaned = URL_RE.sub("", cleaned)
+    cleaned = HASHTAG_RE.sub("", cleaned)
+    cleaned = re.sub(r"(邮箱|主页)\s*", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" 。.;；,，")
+    match = RESEARCH_START_RE.search(cleaned)
+    if match:
+        chunk = cleaned[match.start() :]
+        stop = RESEARCH_STOP_RE.search(chunk)
+        if stop and stop.start() > 20:
+            chunk = chunk[: stop.start()]
+        cleaned = chunk.strip(" 。.;；,，")
+    return cleaned[:2000]
 
 
 def _start_term(text: str) -> str | None:
@@ -295,7 +319,7 @@ def extract_opportunities(
     types = _types(text)
     areas = _areas(text)
     term = _start_term(text)
-    excerpt = re.sub(r"\s+", " ", text).strip()[:160]
+    excerpt = research_excerpt(text)
 
     rows: list[ExtractedOpportunity] = []
     for name in names:

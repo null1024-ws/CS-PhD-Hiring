@@ -78,6 +78,7 @@ def process_note(note: dict) -> list[dict]:
             "types": row.opportunity_types or ["other"],
             "start_term": row.start_term,
             "excerpt": row.excerpt,
+            "email": row.email,
             "contact": row.email or row.homepage_url,
             "contact_class": contact,
             "source": {
@@ -130,6 +131,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
                     "types": r.get("opportunity_types") or ["other"],
                     "start_term": r.get("start_term"),
                     "excerpt": r.get("excerpt") or "",
+                    "email": r.get("email"),
                     "contact": r.get("contact"),
                     "contact_class": r.get("contact_class"),
                     "source": (r.get("source") or {}).get("source") or "xhs",

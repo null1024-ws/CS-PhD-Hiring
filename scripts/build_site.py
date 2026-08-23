@@ -25,7 +25,7 @@ STAR_SVG = (
     "</svg>"
 )
 BUSUANZI_SCRIPT = (
-    '<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>'
+    '<script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>'
 )
 
 TYPE_LABEL = {
@@ -91,26 +91,43 @@ def _best_excerpt(excerpts: list[str]) -> str:
     return max(excerpts, key=score)
 
 
+def _split_contacts(pi: dict, opps: list[dict]) -> tuple[list[str], list[str]]:
+    emails: list[str] = []
+    homepages: list[str] = []
+    if pi.get("homepage_url"):
+        homepages.append(pi["homepage_url"])
+    for opp in opps:
+        if opp.get("email"):
+            emails.append(opp["email"])
+        if opp.get("homepage_url"):
+            homepages.append(opp["homepage_url"])
+        contact = (opp.get("contact") or "").strip()
+        if not contact:
+            continue
+        if "@" in contact and "://" not in contact:
+            emails.append(contact)
+        elif contact.startswith("http"):
+            homepages.append(contact)
+    return _uniq(emails), _uniq(homepages)
+
+
 def compose_pi_view(pi: dict) -> dict:
     """Collapse many near-duplicate posts into one reading view."""
     opps = pi.get("opportunities") or []
     types = _uniq([t for opp in opps for t in (opp.get("types") or [])])
-    terms = _uniq([opp.get("start_term") or "" for opp in opps])
-    contacts = _uniq([opp.get("contact") or "" for opp in opps])
     sources = _uniq([opp.get("source_url") or "" for opp in opps])
     excerpts = [clean_excerpt(opp.get("excerpt") or "") for opp in opps]
     excerpts = [e for e in excerpts if e]
     excerpt = _best_excerpt(excerpts)
-    if pi.get("homepage_url") and pi["homepage_url"] not in contacts:
-        contacts.append(pi["homepage_url"])
+    emails, homepages = _split_contacts(pi, opps)
     return {
         "name": pi.get("name") or "",
         "school": pi.get("school_canonical") or pi.get("school_claimed") or "",
         "country": pi.get("school_country") or "",
         "areas": _uniq(pi.get("research_areas") or []),
         "types": types,
-        "terms": terms,
-        "contacts": contacts,
+        "emails": emails,
+        "homepages": homepages,
         "excerpt": excerpt,
         "sources": sources,
         "updated": pi.get("updated_at") or "",
@@ -445,7 +462,7 @@ def _site_top() -> str:
 def _site_footer(note: str) -> str:
     return (
         '<footer class="site">'
-        '<p class="visit-count">Total visits: <span id="busuanzi_value_site_pv">Loading…</span></p>'
+        '<p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p>'
         f"<p>{note}</p>"
         "</footer>"
         f"{BUSUANZI_SCRIPT}"
@@ -497,7 +514,6 @@ def render_index(payload: dict) -> str:
             f'<td data-label="地区">{escape(row.get("school_country") or "")}</td>'
             f'<td data-label="方向">{escape(" · ".join(row.get("research_areas") or []))}</td>'
             f'<td data-label="机会">{_type_chips(row.get("opportunity_types") or [])}</td>'
-            f'<td data-label="学期">{escape(row.get("start_term") or "")}</td>'
             "</tr>"
         )
 
@@ -533,7 +549,7 @@ def render_index(payload: dict) -> str:
         <thead>
           <tr>
             <th>更新</th><th>导师</th><th>学校</th><th>地区</th>
-            <th>方向</th><th>机会</th><th>学期</th>
+            <th>方向</th><th>机会</th>
           </tr>
         </thead>
         <tbody>
@@ -552,14 +568,16 @@ def render_index(payload: dict) -> str:
 def render_detail(pi: dict) -> str:
     view = compose_pi_view(pi)
     chips = _type_chips(view["types"])
-    contacts = " · ".join(
-        f'<a href="mailto:{escape(c)}">{escape(c)}</a>'
-        if "@" in c and "://" not in c
-        else f'<a href="{escape(c)}">{escape(c)}</a>'
-        for c in view["contacts"]
+    emails = " · ".join(
+        f'<a href="mailto:{escape(addr)}">{escape(addr)}</a>' for addr in view["emails"]
+    ) or "—"
+    homepages = " · ".join(
+        f'<a href="{escape(url)}" target="_blank" rel="noopener">{escape(url)}</a>'
+        for url in view["homepages"]
     ) or "—"
     sources = "".join(
-        f'<li><a href="{escape(url)}">{escape(url)}</a></li>' for url in view["sources"]
+        f'<li><a href="{escape(url)}" target="_blank" rel="noopener">打开原帖</a></li>'
+        for url in view["sources"]
     ) or "<li>暂无原帖链接</li>"
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -579,10 +597,11 @@ def render_detail(pi: dict) -> str:
     <div class="meta-grid">
       <div class="k">方向</div><div>{" · ".join(escape(a) for a in view["areas"]) or "—"}</div>
       <div class="k">机会</div><div>{chips or "—"}</div>
-      <div class="k">学期</div><div>{escape(" · ".join(view["terms"]) or "—")}</div>
-      <div class="k">联系</div><div>{contacts}</div>
+      <div class="k">邮箱</div><div>{emails}</div>
+      <div class="k">主页</div><div>{homepages}</div>
     </div>
-    <p class="excerpt">{escape(view["excerpt"])}</p>
+    <p class="eyebrow">研究方向</p>
+    <p class="excerpt">{escape(view["excerpt"]) or "—"}</p>
     <p class="eyebrow">原帖</p>
     <ul class="source-list">{sources}</ul>
     {_site_footer(escape(DISCLAIMER))}
@@ -595,11 +614,15 @@ def render_detail(pi: dict) -> str:
 def build(listings_path: Path, pis_dir: Path, out_dir: Path) -> None:
     ensure_dirs()
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "pis").mkdir(exist_ok=True)
+    pis_out = out_dir / "pis"
+    pis_out.mkdir(exist_ok=True)
+    for stale in pis_out.glob("*.html"):
+        stale.unlink()
     payload = _load_listings(listings_path)
     (out_dir / "index.html").write_text(render_index(payload), encoding="utf-8")
+    (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     for pi_id, pi in _load_pis(pis_dir).items():
-        (out_dir / "pis" / f"{pi_id}.html").write_text(render_detail(pi), encoding="utf-8")
+        (pis_out / f"{pi_id}.html").write_text(render_detail(pi), encoding="utf-8")
     print(f"Built site into {out_dir} ({date.today().isoformat()})")
 
 
