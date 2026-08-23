@@ -52,14 +52,14 @@
       "id": "hkust-gz",
       "name_zh": "香港科技大学（广州）",
       "name_en": "The Hong Kong University of Science and Technology (Guangzhou)",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["香港科技大学（广州）", "港科广", "HKUST-GZ", "HKUST GZ", "HKUST Guangzhou"]
     },
     {
       "id": "cuhk-sz",
       "name_zh": "香港中文大学（深圳）",
       "name_en": "The Chinese University of Hong Kong, Shenzhen",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["香港中文大学（深圳）", "港中深", "CUHK-SZ", "CUHK Shenzhen"]
     },
     {
@@ -73,64 +73,78 @@
       "id": "tsinghua",
       "name_zh": "清华大学",
       "name_en": "Tsinghua University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["清华大学", "清华", "THU", "Tsinghua", "Tsinghua University"]
     },
     {
       "id": "pku",
       "name_zh": "北京大学",
       "name_en": "Peking University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["北京大学", "北大", "PKU", "Peking University", "Beijing University"]
     },
     {
       "id": "zju",
       "name_zh": "浙江大学",
       "name_en": "Zhejiang University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["浙江大学", "浙大", "ZJU", "Zhejiang University"]
     },
     {
       "id": "fudan",
       "name_zh": "复旦大学",
       "name_en": "Fudan University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["复旦大学", "复旦", "Fudan", "Fudan University"]
     },
     {
       "id": "sjtu",
       "name_zh": "上海交通大学",
       "name_en": "Shanghai Jiao Tong University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["上海交通大学", "上交", "上海交大", "SJTU", "Shanghai Jiao Tong University"]
     },
     {
       "id": "nju",
       "name_zh": "南京大学",
       "name_en": "Nanjing University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["南京大学", "南大", "NJU", "Nanjing University"]
     },
     {
       "id": "ustc",
       "name_zh": "中国科学技术大学",
       "name_en": "University of Science and Technology of China",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["中国科学技术大学", "中科大", "USTC", "University of Science and Technology of China"]
     },
     {
       "id": "hit",
       "name_zh": "哈尔滨工业大学",
       "name_en": "Harbin Institute of Technology",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["哈尔滨工业大学", "哈工大", "HIT", "Harbin Institute of Technology"]
     },
     {
       "id": "xjtu",
       "name_zh": "西安交通大学",
       "name_en": "Xi'an Jiaotong University",
-      "country": "中国",
+      "country": "中国大陆",
       "aliases": ["西安交通大学", "西交", "XJTU", "Xi'an Jiaotong University", "Xian Jiaotong University"]
+    },
+    {
+      "id": "sii",
+      "name_zh": "上海创智学院",
+      "name_en": "Shanghai Innovation Institute",
+      "country": "中国大陆",
+      "aliases": ["上海创智学院", "创智学院", "SII", "Shanghai Innovation Institute"]
+    },
+    {
+      "id": "suat",
+      "name_zh": "深圳理工大学",
+      "name_en": "Shenzhen University of Advanced Technology",
+      "country": "中国大陆",
+      "aliases": ["深圳理工大学", "SUAT", "Shenzhen University of Advanced Technology"]
     },
     {
       "id": "mit",
@@ -257,6 +271,17 @@
       "name_en": "New York University Abu Dhabi",
       "country": "阿联酋",
       "aliases": ["纽约大学阿布扎比分校", "NYUAD", "NYU Abu Dhabi", "New York University Abu Dhabi"]
+    },
+    {
+      "id": "mbzuai",
+      "name_zh": "穆罕默德本扎耶德人工智能大学",
+      "name_en": "Mohamed bin Zayed University of Artificial Intelligence",
+      "country": "阿联酋",
+      "aliases": [
+        "穆罕默德本扎耶德人工智能大学",
+        "MBZUAI",
+        "Mohamed bin Zayed University of Artificial Intelligence"
+      ]
     }
   ]
 }

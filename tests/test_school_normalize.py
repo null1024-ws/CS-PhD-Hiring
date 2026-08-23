@@ -52,8 +52,8 @@ def test_hkust_gz_is_not_hkust() -> None:
     [
         ("MIT", "mit", "美国"),
         ("Massachusetts Institute of Technology", "mit", "美国"),
-        ("清华", "tsinghua", "中国"),
-        ("清华大学", "tsinghua", "中国"),
+        ("清华", "tsinghua", "中国大陆"),
+        ("清华大学", "tsinghua", "中国大陆"),
         ("NUS", "nus", "新加坡"),
         ("National University of Singapore", "nus", "新加坡"),
     ],

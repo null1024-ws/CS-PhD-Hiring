@@ -34,7 +34,7 @@
   --border-soft: #e5e3d8;
   --serif: "TsangerJinKai02", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", Georgia, serif;
   --latin-ui: "PingFang SC", system-ui, -apple-system, sans-serif;
-  --measure: 760px;
+  --measure: 980px;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -166,7 +166,11 @@ h1 {
 }
 .filter-chip:hover { border-color: var(--brand-light); color: var(--brand); }
 .filter-chip.active { background: var(--brand); color: var(--ivory); border-color: var(--brand); }
-table { width: 100%; border-collapse: collapse; margin: 18px 0 40px; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 40px; table-layout: auto; }
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4) { white-space: nowrap; }
+th:nth-child(1), td:nth-child(1) { width: 8em; }
+th:nth-child(4), td:nth-child(4) { min-width: 6em; }
 th {
   font-family: var(--latin-ui);
   font-size: 11px;

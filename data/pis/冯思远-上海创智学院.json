@@ -1,10 +1,10 @@
 {
-  "pi_id": "俞勇-上海交通大学",
-  "name": "俞勇",
+  "pi_id": "冯思远-上海创智学院",
+  "name": "冯思远",
   "name_en": null,
-  "school_claimed": "上海交通大学",
-  "school_canonical": "上海交通大学",
-  "school_country": "中国",
+  "school_claimed": "上海创智学院",
+  "school_canonical": "上海创智学院",
+  "school_country": "中国大陆",
   "school_status": "unverified",
   "school_evidence": [],
   "suggested_school": null,
@@ -21,8 +21,8 @@
   "updated_at": "2026-06-07",
   "opportunities": [
     {
-      "opportunity_id": "俞勇-上海交通大学-0",
-      "pi_id": "俞勇-上海交通大学",
+      "opportunity_id": "冯思远-上海创智学院-0",
+      "pi_id": "冯思远-上海创智学院",
       "types": [
         "phd",
         "intern"
@@ -47,8 +47,8 @@
       "extract_confidence": "medium"
     },
     {
-      "opportunity_id": "俞勇-上海交通大学-1",
-      "pi_id": "俞勇-上海交通大学",
+      "opportunity_id": "冯思远-上海创智学院-1",
+      "pi_id": "冯思远-上海创智学院",
       "types": [
         "phd",
         "intern"

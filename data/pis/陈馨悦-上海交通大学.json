@@ -1,0 +1,43 @@
+{
+  "pi_id": "陈馨悦-上海交通大学",
+  "name": "陈馨悦",
+  "name_en": null,
+  "school_claimed": "上海交通大学",
+  "school_canonical": "上海交通大学",
+  "school_country": "中国大陆",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://xinyuechen-flora.github.io/",
+  "research_areas": [
+    "systems",
+    "hci"
+  ],
+  "research_topics": [],
+  "updated_at": "2026-07-04",
+  "opportunities": [
+    {
+      "opportunity_id": "陈馨悦-上海交通大学-0",
+      "pi_id": "陈馨悦-上海交通大学",
+      "types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "systems · hci",
+      "research_topics": [],
+      "email": "xinyuechenhci@gmail.com",
+      "contact": "xinyuechenhci@gmail.com",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a489df8000000000d00bc00?xsec_token=ABNg99bTiSzOBtsAQU_kX1fCrjfjmxHJ3j0JRAQ_1slLc%3D&xsec_source=pc_search",
+      "source_title": "本人招生贴| 上交人工智能学院Incoming AP",
+      "source_note_id": "6a489df8000000000d00bc00",
+      "posted_at": "2026-07-04",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}

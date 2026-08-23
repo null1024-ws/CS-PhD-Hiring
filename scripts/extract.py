@@ -45,7 +45,7 @@ SELF_EN_RE = re.compile(
     r"(?:我是|我叫)\s*([A-Z][A-Za-z]+(?:[\s\-]+[A-Z][A-Za-z]+){1,3})"
 )
 SELF_CN_RE = re.compile(
-    r"(?:我是|我叫)\s*([\u4e00-\u9fff]{2,4})(?=[，。！!,\s]|目前|即将|老师|教授|$)"
+    r"(?:我是|我叫)\s*([\u4e00-\u9fff]{2,4})(?=[，。！!,\s（(]|目前|即将|老师|教授|$)"
 )
 I_AM_RE = re.compile(
     r"\bI(?:'m| am)\s+([A-Z][A-Za-z]+(?:[\s\-]+[A-Z][A-Za-z]+){1,3})"
@@ -57,11 +57,16 @@ CN_EN_PAIR_RE = re.compile(
     r"\s*[（(]\s*(?:Prof\.?|Dr\.?|Professor)?\s*"
     r"([A-Z][A-Za-z.\-]+(?:\s+[A-Z][A-Za-z.\-]+)+)\s*[)）]"
 )
-ADVISOR_BEFORE_RE = re.compile(r"(师从|指导下|毕业于|此前|曾在)")
-HIRE_SCHOOL_RE = re.compile(
-    r"(?:即将加入|将加入|会加入|现已加入|入职|现任)\s*([^。\n]{2,80})"
+ADVISOR_BEFORE_RE = re.compile(
+    r"(师从|指导下|毕业于|此前|曾在|合作|导师为|导师是|主要与|和\s+Prof)"
 )
-PAST_AFFILIATION_RE = re.compile(r"(?:目前在|师从|毕业于|此前|曾在)[^。\n]*")
+HIRE_SCHOOL_RE = re.compile(
+    r"(?:即将加入|将加入|会加入|现已加入|入职|现任|将于[^。\n]{0,24}加入)\s*([^。\n]{2,80})"
+)
+PAST_AFFILIATION_RE = re.compile(
+    r"(?:目前在|目前就读|师从|毕业于|获得[^。]{0,20}学位|此前|曾在|导师为|导师是)[^。\n]*"
+)
+URL_STRIP_RE = re.compile(r"https?://[^\s)）,\"']+", re.I)
 SELF_SKIP = {"学生", "楼主", "本人", "老师", "作者", "招生"}
 WEAK_NAME_RE = re.compile(r"^(?:未知|老师|教授|[\u4e00-\u9fff]老师)$")
 NAME_NOISE_RE = re.compile(
@@ -205,8 +210,13 @@ def _alias_list(path: str) -> list[str]:
     return sorted(set(aliases), key=len, reverse=True)
 
 
+def _text_without_urls(text: str) -> str:
+    return URL_STRIP_RE.sub(" ", text or "")
+
+
 def find_claimed_school(text: str, *, schools_path: Path | None = None) -> str | None:
-    """Longest alias that appears in the text. Short ASCII aliases need word boundaries."""
+    """Longest alias that appears in the text. Ignore URLs; short ASCII aliases need word boundaries."""
+    text = _text_without_urls(text)
     aliases = _alias_list(str(schools_path or SCHOOLS_PATH))
     for alias in aliases:
         if re.search(r"[A-Za-z]", alias) and len(alias) <= 5:
@@ -218,8 +228,9 @@ def find_claimed_school(text: str, *, schools_path: Path | None = None) -> str |
 
 
 def find_hiring_school(text: str, *, schools_path: Path | None = None) -> str | None:
-    """Prefer the school the PI is joining or now at, not a past advisor's lab."""
+    """Prefer the school the PI is joining or now at, not a collaborator or alma mater."""
     path = schools_path
+    text = _text_without_urls(text)
     for match in HIRE_SCHOOL_RE.finditer(text):
         school = find_claimed_school(match.group(1), schools_path=path)
         if school:
@@ -229,9 +240,7 @@ def find_hiring_school(text: str, *, schools_path: Path | None = None) -> str | 
     if school:
         return school
     stripped = PAST_AFFILIATION_RE.sub(" ", text)
-    return find_claimed_school(stripped, schools_path=path) or find_claimed_school(
-        text, schools_path=path
-    )
+    return find_claimed_school(stripped, schools_path=path)
 
 
 def _emails(text: str) -> list[str]:

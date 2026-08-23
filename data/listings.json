@@ -104,11 +104,11 @@
       "suggested_school": null
     },
     {
-      "pi_id": "dawn-song-加州大学伯克利分校",
-      "name": "Dawn Song",
+      "pi_id": "顾尚定-上海交通大学",
+      "name": "顾尚定",
       "name_en": null,
-      "school_canonical": "加州大学伯克利分校",
-      "school_country": "美国",
+      "school_canonical": "上海交通大学",
+      "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
         "computer vision",
@@ -124,31 +124,7 @@
       "start_term": null,
       "source_count": 1,
       "updated_at": "2026-08-07",
-      "detail_path": "pis/dawn-song-加州大学伯克利分校.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "costas-spanos-加州大学伯克利分校",
-      "name": "Costas Spanos",
-      "name_en": null,
-      "school_canonical": "加州大学伯克利分校",
-      "school_country": "美国",
-      "school_status": "unverified",
-      "research_areas": [
-        "computer vision",
-        "systems",
-        "security",
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern",
-        "postdoc"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2026-08-07",
-      "detail_path": "pis/costas-spanos-加州大学伯克利分校.html",
+      "detail_path": "pis/顾尚定-上海交通大学.html",
       "suggested_school": null
     },
     {
@@ -199,7 +175,7 @@
       "name": "潘歆乐",
       "name_en": null,
       "school_canonical": "香港中文大学（深圳）",
-      "school_country": "中国",
+      "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
         "ml"
@@ -219,7 +195,7 @@
       "name": "周尚辰",
       "name_en": null,
       "school_canonical": "上海交通大学",
-      "school_country": "中国",
+      "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
         "computer vision"
@@ -233,6 +209,49 @@
       "source_count": 1,
       "updated_at": "2026-08-01",
       "detail_path": "pis/周尚辰-上海交通大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "石拓-深圳理工大学",
+      "name": "石拓",
+      "name_en": null,
+      "school_canonical": "深圳理工大学",
+      "school_country": "中国大陆",
+      "school_status": "unverified",
+      "research_areas": [
+        "nlp",
+        "systems"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-07-18",
+      "detail_path": "pis/石拓-深圳理工大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "陈馨悦-上海交通大学",
+      "name": "陈馨悦",
+      "name_en": null,
+      "school_canonical": "上海交通大学",
+      "school_country": "中国大陆",
+      "school_status": "unverified",
+      "research_areas": [
+        "systems",
+        "hci"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": "2027 Fall",
+      "source_count": 1,
+      "updated_at": "2026-07-04",
+      "detail_path": "pis/陈馨悦-上海交通大学.html",
       "suggested_school": null
     },
     {
@@ -259,11 +278,35 @@
       "suggested_school": null
     },
     {
-      "pi_id": "冯思远-上海交通大学",
+      "pi_id": "吴冬夏-穆罕默德本扎耶德人工智能大学",
+      "name": "吴冬夏",
+      "name_en": null,
+      "school_canonical": "穆罕默德本扎耶德人工智能大学",
+      "school_country": "阿联酋",
+      "school_status": "unverified",
+      "research_areas": [
+        "computer vision",
+        "security",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-06-19",
+      "detail_path": "pis/吴冬夏-穆罕默德本扎耶德人工智能大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "冯思远-上海创智学院",
       "name": "冯思远",
       "name_en": null,
-      "school_canonical": "上海交通大学",
-      "school_country": "中国",
+      "school_canonical": "上海创智学院",
+      "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
         "nlp",
@@ -277,51 +320,7 @@
       "start_term": null,
       "source_count": 2,
       "updated_at": "2026-06-07",
-      "detail_path": "pis/冯思远-上海交通大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "张伟楠-上海交通大学",
-      "name": "张伟楠",
-      "name_en": null,
-      "school_canonical": "上海交通大学",
-      "school_country": "中国",
-      "school_status": "unverified",
-      "research_areas": [
-        "nlp",
-        "systems",
-        "ml"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern"
-      ],
-      "start_term": null,
-      "source_count": 2,
-      "updated_at": "2026-06-07",
-      "detail_path": "pis/张伟楠-上海交通大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "俞勇-上海交通大学",
-      "name": "俞勇",
-      "name_en": null,
-      "school_canonical": "上海交通大学",
-      "school_country": "中国",
-      "school_status": "unverified",
-      "research_areas": [
-        "nlp",
-        "systems",
-        "ml"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern"
-      ],
-      "start_term": null,
-      "source_count": 2,
-      "updated_at": "2026-06-07",
-      "detail_path": "pis/俞勇-上海交通大学.html",
+      "detail_path": "pis/冯思远-上海创智学院.html",
       "suggested_school": null
     },
     {
@@ -390,11 +389,11 @@
       "suggested_school": null
     },
     {
-      "pi_id": "anna-fang-卡内基梅隆大学",
+      "pi_id": "anna-fang-墨尔本大学",
       "name": "Anna Fang",
       "name_en": null,
-      "school_canonical": "卡内基梅隆大学",
-      "school_country": "美国",
+      "school_canonical": "墨尔本大学",
+      "school_country": "澳大利亚",
       "school_status": "unverified",
       "research_areas": [
         "hci",
@@ -406,7 +405,7 @@
       "start_term": null,
       "source_count": 1,
       "updated_at": "2025-10-17",
-      "detail_path": "pis/anna-fang-卡内基梅隆大学.html",
+      "detail_path": "pis/anna-fang-墨尔本大学.html",
       "suggested_school": null
     },
     {

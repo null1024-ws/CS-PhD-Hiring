@@ -62,9 +62,45 @@ Issue 模板 + `import_issue.py`。`source=github`，自称学校不会直接 ve
 
 ## Step 15 — 发布与免责
 
-`.github/workflows/pages.yml` 用 fixture 建站后发 Pages。首页/详情/README 均有非官方声明。
+`.github/workflows/pages.yml` 用仓库数据建 `site/dist`。首页/详情有非官方声明。
 
-当前 `pytest`：49 passed。
+仓库 Pages 目前是 **分支根目录**，不是 Actions。线上曾回退成 README；根目录已放入构建后的 `index.html`、`pis/` 和 `.nojekyll`。
+
+当前 `pytest`：61+ passed。
+
+## Step 16 — 一亩三分地招生帖离线解析（已确认）
+
+`scripts/onepoint_parse.py` 从脱敏帖表/楼主 HTML 抽出 tid、标题、正文和原帖 URL，转成 `source=1p3a` 的 note。版规、帮助、`javascript` 链接不进帖。无网络。
+
+## Step 17 — 一亩三分地本机采集（已确认）
+
+`scripts/onepoint_collect.py`：`--from-dir` 读 fixture HTML 写出 note，不访问网络。线上被 Cloudflare / 未配置客户端时退出且不写坏 `index.json`。原始 HTML 只落 `data/raw/1p3a/`。
+
+2026-08-23 本机实采多次被 Cloudflare 拦住。**暂时放弃线上抓取一亩三分地**；解析与流水线代码保留，不再实采。
+
+## Step 18 — 一亩三分地进入同一流水线（已确认）
+
+`run_pipeline` 可读 `source=1p3a` note（可重复 `--input-dir`）。fixture 里 Ada Ng 进主表，一亩三分地中介帖不进。详情原帖标签含「一亩三分地」。当前 `pytest`：67 passed。
+
+## 研究方向 / 中介 audit
+
+详情研究方向改为短 bullet。原帖用标题或日期。主表按更新时间倒序。留学咨询帖（踢我 / 避坑 / 推荐老师组）打成 agency。`run_pipeline` 写 `data/audit.json`。
+
+## 详情页与访问量
+
+访问量改为只显示本页 `page_pv`，未返回前隐藏。不蒜子 `site_pv` 按域名合计，会和 CityU-CS-Guide 混在一起并常卡住 Loading。原帖 URL 带 `xsec_token`。详情保留细分研究方向，邮箱/主页分行，取消学期。
+
+## 抽取hotfix（自报姓名 / 中英对照）
+
+本人招生帖里的「我是 X，即将加入 Y」只保留 X 和 Y。师从、指导、毕业单位里的教授不再进主表。`中文名（Prof. English）` 合并为一个人。
+
+## 错挂修复（合作者 ≠ 招生老师）
+
+「我是顾尚定，与 Dawn Song 合作，加入上交」只保留顾尚定 + 上海交通大学。导师为/合作者、URL 里的 berkeley.edu、目前就读的学校不再覆盖即将加入的单位。大陆学校地区为「中国大陆」。主表日期和地区列不再换行。
+
+## 人名收紧
+
+「X老师/教授」不再吞掉前面整段。只保留末尾 2–3 字且首字在常见姓氏里；「发邮件给 / 祝陈 / 和俞勇 / 创智学院」进 `weak_name` 不进主表。`audit.json` 增加 `weak_name` 与 `by_reason`。当前全量测试 68 passed。对 `data/raw/xhs` 重跑后主表约 20 行。
 
 ## 站点改版（Kami + 去重 + 取消校验 UI）
 

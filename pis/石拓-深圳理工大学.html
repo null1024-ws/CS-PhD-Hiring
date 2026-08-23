@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>张伟楠 · CS-PhD-Hiring</title>
+  <title>石拓 · CS-PhD-Hiring</title>
   <style>
 @font-face {
   font-family: "TsangerJinKai02";
@@ -34,7 +34,7 @@
   --border-soft: #e5e3d8;
   --serif: "TsangerJinKai02", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", Georgia, serif;
   --latin-ui: "PingFang SC", system-ui, -apple-system, sans-serif;
-  --measure: 760px;
+  --measure: 980px;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -166,7 +166,11 @@ h1 {
 }
 .filter-chip:hover { border-color: var(--brand-light); color: var(--brand); }
 .filter-chip.active { background: var(--brand); color: var(--ivory); border-color: var(--brand); }
-table { width: 100%; border-collapse: collapse; margin: 18px 0 40px; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 40px; table-layout: auto; }
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4) { white-space: nowrap; }
+th:nth-child(1), td:nth-child(1) { width: 8em; }
+th:nth-child(4), td:nth-child(4) { min-width: 6em; }
 th {
   font-family: var(--latin-ui);
   font-size: 11px;
@@ -270,19 +274,19 @@ footer.site .visit-count[hidden] { display: none; }
   <div class="page narrow">
     <div class="site-top"><p class="eyebrow">CS-PhD-Hiring · 招募索引</p><nav class="site-nav"><a class="github-star" href="https://github.com/null1024-ws/CS-PhD-Hiring"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25l1.86 3.77 4.16.6-3.01 2.93.71 4.14L8 9.74l-3.72 1.95.71-4.14L1.98 4.62l4.16-.6z"/></svg>Star</a></nav></div>
     <a class="back-link" href="../index.html">← 返回老师列表</a>
-    <p class="eyebrow">中国</p>
-    <h1>张伟楠</h1>
-    <p class="lede">上海交通大学</p>
+    <p class="eyebrow">中国大陆</p>
+    <h1>石拓</h1>
+    <p class="lede">深圳理工大学</p>
     <div class="meta-grid">
-      <div class="k">方向</div><div>nlp · systems · ml</div>
-      <div class="k">机会</div><div><span class="chip">PhD</span><span class="chip">实习</span></div>
-      <div class="k">邮箱</div><div><a href="mailto:syfeng@sii.edu.cn">syfeng@sii.edu.cn</a></div>
-      <div class="k">主页</div><div><a href="https://syfeng.net/" target="_blank" rel="noopener">https://syfeng.net/</a></div>
+      <div class="k">方向</div><div>nlp · systems</div>
+      <div class="k">机会</div><div><span class="chip">PhD</span><span class="chip">实习</span><span class="chip">博后</span></div>
+      <div class="k">邮箱</div><div>—</div>
+      <div class="k">主页</div><div><a href="https://tshi92.github.io/" target="_blank" rel="noopener">https://tshi92.github.io/</a></div>
     </div>
     <p class="eyebrow">研究方向</p>
-    <ul class="topic-list"><li>研究方向为大规模分布式 MLsys</li><li>AI编译器以及国产算力的原生系统</li></ul>
+    <ul class="topic-list"><li>Edge Computing</li><li>MLSys和LLM Infra等</li><li>主要探索如何构建资源高效的智能计算系统</li><li>使人工智能应用能够在不同硬件平台和系统规模下</li><li>以更低的计算</li><li>存储和通信开销实现高效</li><li>可靠且可持续的运转</li></ul>
     <p class="eyebrow">原帖</p>
-    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · 【帮导师招生】创智学院MLSys AP招RA/PhD · 2026-06-07</a></li><li><a href="https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · 导师推荐 （超级 nice 的导师） · 2026-06-08</a></li></ul>
+    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · 【本人招生】深圳理工大学计算机学院AP · 2026-07-18</a></li></ul>
     <footer class="site"><p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p><p>信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script>
 (function () {
   var line = document.getElementById("visit-line");

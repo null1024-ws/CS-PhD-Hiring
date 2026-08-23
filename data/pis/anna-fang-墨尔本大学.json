@@ -1,10 +1,10 @@
 {
-  "pi_id": "anna-fang-卡内基梅隆大学",
+  "pi_id": "anna-fang-墨尔本大学",
   "name": "Anna Fang",
   "name_en": null,
-  "school_claimed": "Carnegie Mellon University",
-  "school_canonical": "卡内基梅隆大学",
-  "school_country": "美国",
+  "school_claimed": "University of Melbourne",
+  "school_canonical": "墨尔本大学",
+  "school_country": "澳大利亚",
   "school_status": "unverified",
   "school_evidence": [],
   "suggested_school": null,
@@ -17,8 +17,8 @@
   "updated_at": "2025-10-17",
   "opportunities": [
     {
-      "opportunity_id": "anna-fang-卡内基梅隆大学-0",
-      "pi_id": "anna-fang-卡内基梅隆大学",
+      "opportunity_id": "anna-fang-墨尔本大学-0",
+      "pi_id": "anna-fang-墨尔本大学",
       "types": [
         "phd"
       ],

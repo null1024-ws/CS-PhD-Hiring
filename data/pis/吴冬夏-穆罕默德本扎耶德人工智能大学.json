@@ -1,0 +1,54 @@
+{
+  "pi_id": "吴冬夏-穆罕默德本扎耶德人工智能大学",
+  "name": "吴冬夏",
+  "name_en": null,
+  "school_claimed": "MBZUAI",
+  "school_canonical": "穆罕默德本扎耶德人工智能大学",
+  "school_country": "阿联酋",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "computer vision",
+    "security",
+    "ml"
+  ],
+  "research_topics": [
+    "CV",
+    "成绩单",
+    "代表性论文及简短研究兴趣介绍"
+  ],
+  "updated_at": "2026-06-19",
+  "opportunities": [
+    {
+      "opportunity_id": "吴冬夏-穆罕默德本扎耶德人工智能大学-0",
+      "pi_id": "吴冬夏-穆罕默德本扎耶德人工智能大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": null,
+      "excerpt": "CV · 成绩单 · 代表性论文及简短研究兴趣介绍",
+      "research_topics": [
+        "CV",
+        "成绩单",
+        "代表性论文及简短研究兴趣介绍"
+      ],
+      "email": "Dongxia.Wu@mbzuai.ac.ae",
+      "contact": "Dongxia.Wu@mbzuai.ac.ae",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a34dd180000000006022c0a?xsec_token=ABeSKTkEscjfsJZFQt5FvZyg7k23J6xpGPQulQvBd2D5w%3D&xsec_source=pc_search",
+      "source_title": "[本人招生] ATLAS Lab @ MBZUAI 新博导招生",
+      "source_note_id": "6a34dd180000000006022c0a",
+      "posted_at": "2026-06-19",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

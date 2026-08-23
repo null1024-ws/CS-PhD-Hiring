@@ -1,0 +1,60 @@
+{
+  "pi_id": "石拓-深圳理工大学",
+  "name": "石拓",
+  "name_en": null,
+  "school_claimed": "深圳理工大学",
+  "school_canonical": "深圳理工大学",
+  "school_country": "中国大陆",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://tshi92.github.io/",
+  "research_areas": [
+    "nlp",
+    "systems"
+  ],
+  "research_topics": [
+    "Edge Computing",
+    "MLSys和LLM Infra等",
+    "主要探索如何构建资源高效的智能计算系统",
+    "使人工智能应用能够在不同硬件平台和系统规模下",
+    "以更低的计算",
+    "存储和通信开销实现高效",
+    "可靠且可持续的运转"
+  ],
+  "updated_at": "2026-07-18",
+  "opportunities": [
+    {
+      "opportunity_id": "石拓-深圳理工大学-0",
+      "pi_id": "石拓-深圳理工大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "Edge Computing · MLSys和LLM Infra等 · 主要探索如何构建资源高效的智能计算系统 · 使人工智能应用能够在不同硬件平台和系统规模下 · 以更低的计算 · 存储和通信开销实现高效 · 可靠且可持续的运转",
+      "research_topics": [
+        "Edge Computing",
+        "MLSys和LLM Infra等",
+        "主要探索如何构建资源高效的智能计算系统",
+        "使人工智能应用能够在不同硬件平台和系统规模下",
+        "以更低的计算",
+        "存储和通信开销实现高效",
+        "可靠且可持续的运转"
+      ],
+      "email": null,
+      "contact": "https://tshi92.github.io/",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&xsec_source=pc_search",
+      "source_title": "【本人招生】深圳理工大学计算机学院AP",
+      "source_note_id": "6a5b6872000000000401c377",
+      "posted_at": "2026-07-18",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

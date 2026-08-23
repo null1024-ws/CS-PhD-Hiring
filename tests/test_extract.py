@@ -151,6 +151,56 @@ def test_research_topics_are_short_bullets() -> None:
     assert all("欢迎来港科大" not in topic for topic in topics)
 
 
+def test_self_intro_not_collaborators_or_url_school() -> None:
+    text = (
+        "本人招生：招收博士生。大家好！我是顾尚定（Shangding Gu，"
+        "主页：https://people.eecs.berkeley.edu/~shangding.gu/index.html）。"
+        "之后在 UC Berkeley EECS 从事博士后研究，主要与 Prof. Dawn Song "
+        "和 Prof. Costas Spanos 合作。我将于 2026 年秋季学期加入上海交通大学计算机学院，"
+        "担任 Tenure-Track Associate Professor。"
+    )
+    rows = extract_opportunities(text)
+    names = {row.pi_name for row in rows}
+    assert names == {"顾尚定"}
+    assert rows[0].school_claimed in {"上海交通大学", "上海交大", "SJTU"}
+    assert "Dawn Song" not in names
+    assert "Costas Spanos" not in names
+    assert "Berkeley" not in (rows[0].school_claimed or "")
+
+
+def test_advisor_names_are_not_hiring_pis() -> None:
+    text = (
+        "【帮导师招生】创智学院MLSys AP招RA/PhD。"
+        "冯思远老师现任上海创智学院助理教授。"
+        "冯老师在上海交通大学获得计算机科学博士学位，导师为张伟楠教授和俞勇教授。"
+    )
+    rows = extract_opportunities(text)
+    names = {row.pi_name for row in rows}
+    assert "冯思远" in names
+    assert "张伟楠" not in names
+    assert "俞勇" not in names
+    assert rows[0].school_claimed in {"上海创智学院", "创智学院"}
+
+
+def test_joining_school_beats_current_student_school() -> None:
+    rows = extract_opportunities(
+        "招 CS / HCI 博士生。我叫 Anna Fang，目前就读于卡内基梅隆大学。"
+        "我将于 2026 年加入墨尔本大学，担任助理教授。"
+    )
+    assert [row.pi_name for row in rows] == ["Anna Fang"]
+    assert rows[0].school_claimed in {"墨尔本大学", "University of Melbourne"}
+
+
+def test_joining_mbzuai_not_stanford_postdoc() -> None:
+    rows = extract_opportunities(
+        "[本人招生] ATLAS Lab @ MBZUAI。大家好，我是吴冬夏。"
+        "我即将加入 MBZUAI 担任 Tenure-track Assistant Professor。"
+        "我目前在斯坦福大学从事博士后研究。"
+    )
+    assert [row.pi_name for row in rows] == ["吴冬夏"]
+    assert rows[0].school_claimed == "MBZUAI"
+
+
 def test_does_not_invent_email_or_term() -> None:
     rows = extract_opportunities(_load("no_contact.txt"))
     assert len(rows) == 1
