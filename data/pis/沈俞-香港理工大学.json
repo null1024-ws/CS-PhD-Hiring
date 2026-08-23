@@ -1,0 +1,53 @@
+{
+  "pi_id": "沈俞-香港理工大学",
+  "name": "沈俞",
+  "name_en": null,
+  "school_claimed": "香港理工大学",
+  "school_canonical": "香港理工大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://shenyu-official.icu。今年准备招收几名",
+  "research_areas": [
+    "security"
+  ],
+  "research_topics": [
+    "Blockchain security and privacy",
+    "Distributed computing and consensus",
+    "Secure multi-party computation",
+    "Cryptographic protocols and game theory",
+    "Quantum cryptography"
+  ],
+  "updated_at": "2026-08-10",
+  "opportunities": [
+    {
+      "opportunity_id": "沈俞-香港理工大学-0",
+      "pi_id": "沈俞-香港理工大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "Blockchain security and privacy · Distributed computing and consensus · Secure multi-party computation · Cryptographic protocols and game theory · Quantum cryptography",
+      "research_topics": [
+        "Blockchain security and privacy",
+        "Distributed computing and consensus",
+        "Secure multi-party computation",
+        "Cryptographic protocols and game theory",
+        "Quantum cryptography"
+      ],
+      "email": "shenyu.tcv@gmail.com",
+      "contact": "shenyu.tcv@gmail.com",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a797b9700000000330340e7?xsec_token=AB8PwVgBK0BgwLMuZaBZSWJX0ycTHcol09B1xBXP2R9QA%3D&xsec_source=pc_search",
+      "source_title": "🇭🇰 港理工PhD招生 | 密码学网络安全",
+      "source_note_id": "6a797b9700000000330340e7",
+      "posted_at": "2026-08-10",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

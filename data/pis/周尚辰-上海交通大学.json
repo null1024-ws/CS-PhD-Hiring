@@ -1,0 +1,61 @@
+{
+  "pi_id": "周尚辰-上海交通大学",
+  "name": "周尚辰",
+  "name_en": null,
+  "school_claimed": "上海交通大学",
+  "school_canonical": "上海交通大学",
+  "school_country": "中国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://shangchenzhou.com/",
+  "research_areas": [
+    "computer vision"
+  ],
+  "research_topics": [
+    "多模态生成与编辑",
+    "世界模型",
+    "空间智能",
+    "具身智能",
+    "模型加速",
+    "有效的科研指导",
+    "丰富的合作机会",
+    "充足的科研资源"
+  ],
+  "updated_at": "2026-08-01",
+  "opportunities": [
+    {
+      "opportunity_id": "周尚辰-上海交通大学-0",
+      "pi_id": "周尚辰-上海交通大学",
+      "types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "多模态生成与编辑 · 世界模型 · 空间智能 · 具身智能 · 模型加速 · 有效的科研指导 · 丰富的合作机会 · 充足的科研资源",
+      "research_topics": [
+        "多模态生成与编辑",
+        "世界模型",
+        "空间智能",
+        "具身智能",
+        "模型加速",
+        "有效的科研指导",
+        "丰富的合作机会",
+        "充足的科研资源"
+      ],
+      "email": "shangchenzhou@gmail.com",
+      "contact": "shangchenzhou@gmail.com",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a6de0df0000000029031779?xsec_token=AB2jwRO25DOHvmj0RD-jKBOyAzTpJ8sa76A4rQrYsP9_8%3D&xsec_source=pc_search",
+      "source_title": "【帮师兄招生啦】上交世界模型方向招生",
+      "source_note_id": "6a6de0df0000000029031779",
+      "posted_at": "2026-08-01",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

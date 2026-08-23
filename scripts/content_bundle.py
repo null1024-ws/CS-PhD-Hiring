@@ -75,7 +75,7 @@ def public_xhs_url(note_id: str, xsec_token: str = "") -> str:
 
 def flatten_collected_note(raw: dict) -> dict:
     """Accept fixture notes or xhs-cli raw bundles."""
-    if raw.get("title") or raw.get("desc") or raw.get("source") == "github":
+    if raw.get("source") in {"github", "1p3a"} or raw.get("title") or raw.get("desc"):
         return raw
     note = raw.get("note") if isinstance(raw.get("note"), dict) else {}
     if "title" not in note and "desc" not in note and isinstance(note.get("note"), dict):

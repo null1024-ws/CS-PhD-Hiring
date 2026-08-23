@@ -1,0 +1,76 @@
+{
+  "pi_id": "俞勇-上海交通大学",
+  "name": "俞勇",
+  "name_en": null,
+  "school_claimed": "上海交通大学",
+  "school_canonical": "上海交通大学",
+  "school_country": "中国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://syfeng.net/",
+  "research_areas": [
+    "nlp",
+    "systems",
+    "ml"
+  ],
+  "research_topics": [
+    "研究方向为大规模分布式 MLsys",
+    "AI编译器以及国产算力的原生系统"
+  ],
+  "updated_at": "2026-06-07",
+  "opportunities": [
+    {
+      "opportunity_id": "俞勇-上海交通大学-0",
+      "pi_id": "俞勇-上海交通大学",
+      "types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": null,
+      "excerpt": "研究方向为大规模分布式 MLsys · AI编译器以及国产算力的原生系统",
+      "research_topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "email": "syfeng@sii.edu.cn",
+      "contact": "syfeng@sii.edu.cn",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "source_title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "source_note_id": "6a259cfd0000000021022f0c",
+      "posted_at": "2026-06-07",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    },
+    {
+      "opportunity_id": "俞勇-上海交通大学-1",
+      "pi_id": "俞勇-上海交通大学",
+      "types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": null,
+      "excerpt": "研究方向为大规模分布式 MLsys · AI编译器以及国产算力的原生系统",
+      "research_topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "email": "syfeng@sii.edu.cn",
+      "contact": "syfeng@sii.edu.cn",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "source_title": "导师推荐 （超级 nice 的导师）",
+      "source_note_id": "6a2633cb000000001702b315",
+      "posted_at": "2026-06-08",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

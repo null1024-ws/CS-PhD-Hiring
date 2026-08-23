@@ -33,11 +33,11 @@ AREA_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 
 EMAIL_RE = re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.I)
 URL_RE = re.compile(r"https?://[^\s)）,\"']+", re.I)
-SKIP_URL_HOST = re.compile(r"xiaohongshu\.com|xhslink\.com|weixin\.qq\.com", re.I)
-
-CN_NAMED_RE = re.compile(
-    r"([\u4e00-\u9fff]{1,4})(?:助理教授|副教授|教授|老师)"
+SKIP_URL_HOST = re.compile(
+    r"xiaohongshu\.com|xhslink\.com|weixin\.qq\.com|1point3acres\.com", re.I
 )
+
+CN_TITLE_RE = re.compile(r"(助理教授|副教授|教授|老师)")
 EN_TITLED_RE = re.compile(
     r"(?:Prof\.?|Dr\.?|Professor)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){1,2})"
 )
@@ -65,8 +65,44 @@ PAST_AFFILIATION_RE = re.compile(r"(?:目前在|师从|毕业于|此前|曾在)[
 SELF_SKIP = {"学生", "楼主", "本人", "老师", "作者", "招生"}
 WEAK_NAME_RE = re.compile(r"^(?:未知|老师|教授|[\u4e00-\u9fff]老师)$")
 NAME_NOISE_RE = re.compile(
-    r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室"
+    r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室|"
+    r"学院|大学|讲座|教轨|准聘|长聘|教职|轨道|邮件|关注|跟着|主动|恭喜|创智"
 )
+NAME_STOPWORDS = {
+    "这个",
+    "以及",
+    "关于",
+    "并且",
+    "还有",
+    "或者",
+    "香港",
+    "台湾",
+    "北京",
+    "上海",
+    "同学",
+    "学生",
+    "导师",
+    "课题组",
+}
+# Common surnames so "发邮件给陈老师" cannot become 发邮件给.
+CN_SURNAMES = frozenset(
+    "赵钱孙李周吴郑王冯陈褚卫蒋沈韩杨朱秦尤许何吕施张孔曹严华金魏陶姜"
+    "戚谢邹喻柏水窦章云苏潘葛奚范彭郎鲁韦昌马苗凤花方俞任袁柳鲍史唐"
+    "费廉岑薛雷贺倪汤滕殷罗毕郝邬安常乐于时傅皮卞齐康伍余元卜顾孟平"
+    "黄和穆萧尹姚邵湛汪祁毛禹狄米贝明臧计伏成戴谈宋茅庞熊纪舒屈项祝"
+    "董梁杜阮蓝闵季麻强贾路娄危江童颜郭梅盛林刁钟徐邱骆高夏蔡田樊胡"
+    "凌霍虞万柯卢莫房裘缪解应宗丁宣贲邓郁单杭洪包诸左石崔吉钮龚程嵇"
+    "邢滑裴陆荣翁荀羊惠甄曲家封芮羿储靳邴松井富巫乌焦巴弓牧隗山谷车"
+    "侯宓蓬全郗班仰秋仲伊宫宁仇栾暴甘钭厉戎祖武符刘景詹束龙叶幸司韶"
+    "郜黎蓟薄印宿白怀蒲邰从鄂索咸籍赖卓蔺屠蒙池乔阴胥能苍双闻德崔"
+    "肖丛贾潘"
+)
+COMPOUND_SURNAMES = frozenset(
+    {"欧阳", "司马", "上官", "诸葛", "司徒", "夏侯", "皇甫", "公孙", "慕容", "宇文", "东方", "令狐", "端木", "南宫", "闻人"}
+)
+NAME_CONJ = set("和与及为给跟也请向")
+NAME_VERB2 = set("祝跟给为")
+NAME_PARTICLE = set("也再还并请就")
 
 TERM_PATTERNS: list[re.Pattern[str]] = [
     re.compile(r"(20\d{2})\s*(Fall|Spring|Summer|Autumn)", re.I),
@@ -96,15 +132,70 @@ def is_weak_pi_name(name: str) -> bool:
 
 
 def is_main_table_name(name: str) -> bool:
-    """Main table hides 张老师 / 未知 and other weak names."""
+    """Main table hides 张老师 / 未知 and sentence slices before 老师/教授."""
     name = (name or "").strip()
-    if is_weak_pi_name(name) or NAME_NOISE_RE.search(name):
+    if is_weak_pi_name(name) or name in NAME_STOPWORDS or NAME_NOISE_RE.search(name):
+        return False
+    if name.endswith(("的", "和", "给", "任")):
         return False
     if re.match(r"^(从|在|于|地|有|据|任|接)", name):
         return False
     if re.fullmatch(r"[\u4e00-\u9fff]+", name):
-        return 2 <= len(name) <= 4
-    return bool(re.fullmatch(r"[A-Za-z][A-Za-z.\-]+(?:\s+[A-Za-z][A-Za-z.\-]+)+", name))
+        if len(name) in {2, 3}:
+            return name[0] in CN_SURNAMES
+        if len(name) == 4:
+            return name[:2] in COMPOUND_SURNAMES
+        return False
+    return bool(re.fullmatch(r"[A-Za-z][A-Za-z.\-]+(?:\s+[A-Z][A-Za-z.\-]+)+", name))
+
+
+def _cn_titled_names(text: str) -> list[str]:
+    """Take the 2–3 characters immediately before 老师/教授 if they look like a name."""
+    names: list[str] = []
+    for match in CN_TITLE_RE.finditer(text):
+        prefix = text[max(0, match.start() - 24) : match.start()]
+        if ADVISOR_BEFORE_RE.search(prefix):
+            continue
+        window_chars: list[str] = []
+        for char in reversed(text[max(0, match.start() - 4) : match.start()]):
+            if "\u4e00" <= char <= "\u9fff":
+                window_chars.append(char)
+            else:
+                break
+        window = "".join(reversed(window_chars))
+        found = ""
+        for length in (3, 2):
+            if len(window) < length:
+                continue
+            candidate = window[-length:]
+            if length == 3 and candidate[0] in NAME_CONJ:
+                tail = candidate[1:]
+                if is_main_table_name(tail) and not (
+                    tail[0] in NAME_VERB2 and tail[1] in CN_SURNAMES
+                ):
+                    found = tail
+                    break
+                continue
+            if length == 2:
+                before = window[-3] if len(window) >= 3 else ""
+                if before in NAME_PARTICLE:
+                    continue
+                if candidate[0] in NAME_VERB2 and candidate[1] in CN_SURNAMES:
+                    continue
+            if is_main_table_name(candidate):
+                found = candidate
+                break
+        if found:
+            names.append(found)
+        elif window:
+            if match.group(1) == "教授" and prefix.endswith(
+                ("讲席", "特聘", "客座", "兼职", "访问", "讲座")
+            ):
+                continue
+            weak = f"{window[-1]}老师"
+            if is_weak_pi_name(weak):
+                names.append(weak)
+    return names
 
 
 @lru_cache(maxsize=1)
@@ -275,7 +366,9 @@ def _self_names(text: str) -> list[str]:
     for match in SELF_EN_RE.finditer(text):
         add(match.group(1))
     for match in SELF_CN_RE.finditer(text):
-        add(match.group(1))
+        person = match.group(1)
+        if is_main_table_name(person):
+            add(person)
     for match in I_AM_RE.finditer(text):
         add(match.group(1))
     return names
@@ -303,12 +396,8 @@ def _names(text: str) -> list[str]:
         add(match.group(1).lstrip("与和及、， "))
         paired_en.add(_norm_en(match.group(2)))
 
-    for match in CN_NAMED_RE.finditer(text):
-        person = match.group(1).lstrip("与和及、， ")
-        if not person:
-            continue
-        raw = match.group(0)
-        add(raw if is_weak_pi_name(f"{person}老师") or len(person) == 1 else person)
+    for person in _cn_titled_names(text):
+        add(person)
 
     for match in EN_TITLED_RE.finditer(text):
         english = match.group(1)

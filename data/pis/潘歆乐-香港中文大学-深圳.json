@@ -1,0 +1,46 @@
+{
+  "pi_id": "潘歆乐-香港中文大学-深圳",
+  "name": "潘歆乐",
+  "name_en": null,
+  "school_claimed": "香港中文大学（深圳）",
+  "school_canonical": "香港中文大学（深圳）",
+  "school_country": "中国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "ml"
+  ],
+  "research_topics": [
+    "19 不招咯 之后有别的机会会分享～"
+  ],
+  "updated_at": "2026-08-01",
+  "opportunities": [
+    {
+      "opportunity_id": "潘歆乐-香港中文大学-深圳-0",
+      "pi_id": "潘歆乐-香港中文大学-深圳",
+      "types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "excerpt": "19 不招咯 之后有别的机会会分享～",
+      "research_topics": [
+        "19 不招咯 之后有别的机会会分享～"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a6d79b8000000002500b497?xsec_token=AB2jwRO25DOHvmj0RD-jKBOzjmIXLY3ypZDThLf2_m074%3D&xsec_source=pc_search",
+      "source_title": "全世界最幸福的组招科研助理！",
+      "source_note_id": "6a6d79b8000000002500b497",
+      "posted_at": "2026-08-01",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

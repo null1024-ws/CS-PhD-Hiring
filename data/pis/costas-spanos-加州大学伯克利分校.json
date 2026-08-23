@@ -1,0 +1,46 @@
+{
+  "pi_id": "costas-spanos-加州大学伯克利分校",
+  "name": "Costas Spanos",
+  "name_en": null,
+  "school_claimed": "Berkeley",
+  "school_canonical": "加州大学伯克利分校",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://people.eecs.berkeley.edu/~shangding.gu/index.html",
+  "research_areas": [
+    "computer vision",
+    "systems",
+    "security",
+    "robotics"
+  ],
+  "research_topics": [],
+  "updated_at": "2026-08-07",
+  "opportunities": [
+    {
+      "opportunity_id": "costas-spanos-加州大学伯克利分校-0",
+      "pi_id": "costas-spanos-加州大学伯克利分校",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "computer vision · systems · security · robotics",
+      "research_topics": [],
+      "email": "sail.lab.hr@gmail.com",
+      "contact": "sail.lab.hr@gmail.com",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a7574850000000024024a50?xsec_token=ABn9v4UuQqTNtU809rG99Fclz3BZNHqB9mS9LBUmFHaIc%3D&xsec_source=pc_search",
+      "source_title": "本人招生：招收博士生/硕士生/科研实习生",
+      "source_note_id": "6a7574850000000024024a50",
+      "posted_at": "2026-08-07",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

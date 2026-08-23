@@ -1,0 +1,50 @@
+{
+  "pi_id": "陈修司-香港中文大学",
+  "name": "陈修司",
+  "name_en": null,
+  "school_claimed": "香港中文大学",
+  "school_canonical": "香港中文大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "nlp"
+  ],
+  "research_topics": [
+    "主要包括 LLM Reasoning",
+    "Alignment 和 Agents",
+    "具体研究内容可以参考他小红书主页上的招生介绍"
+  ],
+  "updated_at": "2026-08-05",
+  "opportunities": [
+    {
+      "opportunity_id": "陈修司-香港中文大学-0",
+      "pi_id": "陈修司-香港中文大学",
+      "types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "主要包括 LLM Reasoning · Alignment 和 Agents · 具体研究内容可以参考他小红书主页上的招生介绍",
+      "research_topics": [
+        "主要包括 LLM Reasoning",
+        "Alignment 和 Agents",
+        "具体研究内容可以参考他小红书主页上的招生介绍"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a73b8eb0000000025001e0a?xsec_token=ABDZAgIUD0cSBLW57Be_M67SOFimJzE0JuJUFBYFrO6JY%3D&xsec_source=pc_search",
+      "source_title": "招生贴| 陈老师加入香港中文大学啦",
+      "source_note_id": "6a73b8eb0000000025001e0a",
+      "posted_at": "2026-08-05",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

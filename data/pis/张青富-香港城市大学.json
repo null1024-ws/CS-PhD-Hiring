@@ -1,0 +1,62 @@
+{
+  "pi_id": "张青富-香港城市大学",
+  "name": "张青富",
+  "name_en": null,
+  "school_claimed": "香港城市大学",
+  "school_canonical": "香港城市大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://www.cs.cityu.edu.hk/~qzhan7/index.html",
+  "research_areas": [
+    "nlp",
+    "ml"
+  ],
+  "research_topics": [
+    "多目标优化的新概念和方法， 及其在工程设计和人工智能的应用",
+    "机器智能中学习与优化的新概念，方法及其应用",
+    "基于LLM的算法和知识的自动生成， 及其在工程领域的应用",
+    "具有扎实的数学与计算机基础",
+    "具备较强科研潜力和英文读写能力",
+    "提供您的论文、国奖、个人主页链接、科研项目/实习经历等信息",
+    "计算智能",
+    "进化计算"
+  ],
+  "updated_at": "2026-06-03",
+  "opportunities": [
+    {
+      "opportunity_id": "张青富-香港城市大学-0",
+      "pi_id": "张青富-香港城市大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "多目标优化的新概念和方法， 及其在工程设计和人工智能的应用 · 机器智能中学习与优化的新概念，方法及其应用 · 基于LLM的算法和知识的自动生成， 及其在工程领域的应用 · 具有扎实的数学与计算机基础 · 具备较强科研潜力和英文读写能力 · 提供您的论文、国奖、个人主页链接、科研项目/实习经历等信息 · 计算智能 · 进化计算",
+      "research_topics": [
+        "多目标优化的新概念和方法， 及其在工程设计和人工智能的应用",
+        "机器智能中学习与优化的新概念，方法及其应用",
+        "基于LLM的算法和知识的自动生成， 及其在工程领域的应用",
+        "具有扎实的数学与计算机基础",
+        "具备较强科研潜力和英文读写能力",
+        "提供您的论文、国奖、个人主页链接、科研项目/实习经历等信息",
+        "计算智能",
+        "进化计算"
+      ],
+      "email": "qingfu.zhang@cityu.edu.hk",
+      "contact": "qingfu.zhang@cityu.edu.hk",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a1fc9110000000035022523?xsec_token=ABd5hwaLeJ-o-F_geBPvrof1CrUWhrwlZ62QDHfgPdoak%3D&xsec_source=pc_search",
+      "source_title": "城大张青富教授急招26年入学博士生",
+      "source_note_id": "6a1fc9110000000035022523",
+      "posted_at": "2026-06-03",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

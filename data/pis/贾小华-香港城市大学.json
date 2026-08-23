@@ -1,0 +1,48 @@
+{
+  "pi_id": "贾小华-香港城市大学",
+  "name": "贾小华",
+  "name_en": null,
+  "school_claimed": "香港城市大学",
+  "school_canonical": "香港城市大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "security",
+    "ml"
+  ],
+  "research_topics": [
+    "可信机器学习",
+    "ML隐私保护和人工智能对抗鲁棒性"
+  ],
+  "updated_at": "2025-06-27",
+  "opportunities": [
+    {
+      "opportunity_id": "贾小华-香港城市大学-0",
+      "pi_id": "贾小华-香港城市大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "可信机器学习 · ML隐私保护和人工智能对抗鲁棒性",
+      "research_topics": [
+        "可信机器学习",
+        "ML隐私保护和人工智能对抗鲁棒性"
+      ],
+      "email": "csjia@cityu.edu.hk",
+      "contact": "csjia@cityu.edu.hk",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/685e4d340000000017032f3f?xsec_token=AB0aeRQf-2dJXyLWS5ircKE8yzDHNaafBwmeDSRLFcRGg%3D&xsec_source=pc_search",
+      "source_title": "为我的lab发个招生贴 - AI安全",
+      "source_note_id": "685e4d340000000017032f3f",
+      "posted_at": "2025-06-27",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

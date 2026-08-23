@@ -73,6 +73,11 @@ def build_audit(records: list[dict]) -> dict:
             "dropped": len(dropped),
             "warnings": len(warnings),
             "agency": sum(1 for r in dropped if r.get("reason") == "agency"),
+            "weak_name": sum(1 for r in dropped if r.get("reason") == "weak_name"),
+            "by_reason": {
+                reason: sum(1 for r in dropped if r.get("reason") == reason)
+                for reason in sorted({r.get("reason") or "not_listable" for r in dropped})
+            },
         },
         "listed": listed,
         "dropped": dropped,

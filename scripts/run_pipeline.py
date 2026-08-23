@@ -22,10 +22,16 @@ from verify_school import verify_school
 CUTOFF_DAYS = 18 * 30
 
 
-def load_notes(input_dir: Path) -> list[dict]:
+def load_notes(input_dir: Path | list[Path]) -> list[dict]:
+    dirs = [input_dir] if isinstance(input_dir, Path) else list(input_dir)
     notes = []
-    for path in sorted(input_dir.glob("*.json")):
-        notes.append(flatten_collected_note(json.loads(path.read_text(encoding="utf-8"))))
+    for folder in dirs:
+        if not folder.is_dir():
+            continue
+        for path in sorted(folder.glob("*.json")):
+            if path.name == "index.json":
+                continue
+            notes.append(flatten_collected_note(json.loads(path.read_text(encoding="utf-8"))))
     return notes
 
 
@@ -192,12 +198,12 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input-dir", type=Path, default=BUNDLES_DIR)
+    parser.add_argument("--input-dir", type=Path, action="append")
     parser.add_argument("--listings", type=Path, default=LISTINGS_PATH)
     parser.add_argument("--pis-dir", type=Path, default=PIS_DIR)
     parser.add_argument("--audit", type=Path, default=AUDIT_PATH)
     args = parser.parse_args(argv)
-    notes = load_notes(args.input_dir)
+    notes = load_notes(args.input_dir or [BUNDLES_DIR])
     records: list[dict] = []
     for note in notes:
         records.extend(process_note(note))

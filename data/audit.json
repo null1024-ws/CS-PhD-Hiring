@@ -1,13 +1,37 @@
 {
   "generated_at": "2026-08-23",
   "counts": {
-    "records": 54,
-    "listed": 9,
-    "dropped": 45,
+    "records": 142,
+    "listed": 23,
+    "dropped": 119,
     "warnings": 0,
-    "agency": 5
+    "agency": 8,
+    "weak_name": 71,
+    "by_reason": {
+      "agency": 8,
+      "notcs": 2,
+      "review": 32,
+      "unknown": 6,
+      "weak_name": 71
+    }
   },
   "listed": [
+    {
+      "note_id": "685e4d340000000017032f3f",
+      "title": "为我的lab发个招生贴 - AI安全",
+      "name": "贾小华",
+      "school": "香港城市大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/685e4d340000000017032f3f?xsec_token=AB0aeRQf-2dJXyLWS5ircKE8yzDHNaafBwmeDSRLFcRGg%3D&xsec_source=pc_search",
+      "topics": [
+        "可信机器学习",
+        "ML隐私保护和人工智能对抗鲁棒性"
+      ],
+      "reason": null
+    },
     {
       "note_id": "68f2c843000000000503abae",
       "title": "🔎招 CS / HCI 博士生 🔎 PhD in CS",
@@ -19,6 +43,28 @@
       "listable": true,
       "source_url": "https://www.xiaohongshu.com/explore/68f2c843000000000503abae?xsec_token=ABPU8tHgwvbuLUDZJqdubzk5XZQKModIUi7wJzXsv7n-E%3D&xsec_source=pc_search",
       "topics": [],
+      "reason": null
+    },
+    {
+      "note_id": "6a1fc9110000000035022523",
+      "title": "城大张青富教授急招26年入学博士生",
+      "name": "张青富",
+      "school": "香港城市大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a1fc9110000000035022523?xsec_token=ABd5hwaLeJ-o-F_geBPvrof1CrUWhrwlZ62QDHfgPdoak%3D&xsec_source=pc_search",
+      "topics": [
+        "多目标优化的新概念和方法， 及其在工程设计和人工智能的应用",
+        "机器智能中学习与优化的新概念，方法及其应用",
+        "基于LLM的算法和知识的自动生成， 及其在工程领域的应用",
+        "具有扎实的数学与计算机基础",
+        "具备较强科研潜力和英文读写能力",
+        "提供您的论文、国奖、个人主页链接、科研项目/实习经历等信息",
+        "计算智能",
+        "进化计算"
+      ],
       "reason": null
     },
     {
@@ -61,6 +107,102 @@
       "reason": null
     },
     {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "冯思远",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "张伟楠",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "俞勇",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "冯思远",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "张伟楠",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "俞勇",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": null
+    },
+    {
       "note_id": "6a3e77ee000000001102fc80",
       "title": "[本人招生] 计算机安全@新加坡南洋理工",
       "name": "Penghui Li",
@@ -70,6 +212,86 @@
       "contact_class": "academic",
       "listable": true,
       "source_url": "https://www.xiaohongshu.com/explore/6a3e77ee000000001102fc80?xsec_token=ABOI81jT33vBO7T56spiGWNwSzdIRRdg3s4ZSfF8vXIcI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": null
+    },
+    {
+      "note_id": "6a6d79b8000000002500b497",
+      "title": "全世界最幸福的组招科研助理！",
+      "name": "潘歆乐",
+      "school": "香港中文大学（深圳）",
+      "source_kind": "repost",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6d79b8000000002500b497?xsec_token=AB2jwRO25DOHvmj0RD-jKBOzjmIXLY3ypZDThLf2_m074%3D&xsec_source=pc_search",
+      "topics": [
+        "19 不招咯 之后有别的机会会分享～"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a6de0df0000000029031779",
+      "title": "【帮师兄招生啦】上交世界模型方向招生",
+      "name": "周尚辰",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6de0df0000000029031779?xsec_token=AB2jwRO25DOHvmj0RD-jKBOyAzTpJ8sa76A4rQrYsP9_8%3D&xsec_source=pc_search",
+      "topics": [
+        "多模态生成与编辑",
+        "世界模型",
+        "空间智能",
+        "具身智能",
+        "模型加速",
+        "有效的科研指导",
+        "丰富的合作机会",
+        "充足的科研资源"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a73b8eb0000000025001e0a",
+      "title": "招生贴| 陈老师加入香港中文大学啦",
+      "name": "陈修司",
+      "school": "香港中文大学",
+      "source_kind": "repost",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a73b8eb0000000025001e0a?xsec_token=ABDZAgIUD0cSBLW57Be_M67SOFimJzE0JuJUFBYFrO6JY%3D&xsec_source=pc_search",
+      "topics": [
+        "主要包括 LLM Reasoning",
+        "Alignment 和 Agents",
+        "具体研究内容可以参考他小红书主页上的招生介绍"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a7574850000000024024a50",
+      "title": "本人招生：招收博士生/硕士生/科研实习生",
+      "name": "Dawn Song",
+      "school": "加州大学伯克利分校",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a7574850000000024024a50?xsec_token=ABn9v4UuQqTNtU809rG99Fclz3BZNHqB9mS9LBUmFHaIc%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": null
+    },
+    {
+      "note_id": "6a7574850000000024024a50",
+      "title": "本人招生：招收博士生/硕士生/科研实习生",
+      "name": "Costas Spanos",
+      "school": "加州大学伯克利分校",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a7574850000000024024a50?xsec_token=ABn9v4UuQqTNtU809rG99Fclz3BZNHqB9mS9LBUmFHaIc%3D&xsec_source=pc_search",
       "topics": [],
       "reason": null
     },
@@ -86,6 +308,25 @@
       "topics": [
         "将人工智能作为科学研究对象",
         "人工智能科学家伙伴"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a797b9700000000330340e7",
+      "title": "🇭🇰 港理工PhD招生 | 密码学网络安全",
+      "name": "沈俞",
+      "school": "香港理工大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a797b9700000000330340e7?xsec_token=AB8PwVgBK0BgwLMuZaBZSWJX0ycTHcol09B1xBXP2R9QA%3D&xsec_source=pc_search",
+      "topics": [
+        "Blockchain security and privacy",
+        "Distributed computing and consensus",
+        "Secure multi-party computation",
+        "Cryptographic protocols and game theory",
+        "Quantum cryptography"
       ],
       "reason": null
     },
@@ -146,6 +387,32 @@
   ],
   "dropped": [
     {
+      "note_id": "28e14439-7121-405d-9144-5379e7068d59",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/28e14439-7121-405d-9144-5379e7068d59?xsec_token=ABg-RBHsXfIa6e9BfFigpcMRoub-hENWPK5lFdTfCk10XKnSuAg9a0isTLxLdDr6bxn5Y36SyQj-tVexhIcnhcRIFRKpCf6S9aU3MWrEXpX40%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "652cc6d8-de44-489e-8fe7-4c912ee0a38f",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/652cc6d8-de44-489e-8fe7-4c912ee0a38f?xsec_token=ABN6KYpf8hiLx1Kqt7T6q47IxmQHIfCBzKQLml-Pxl6edBkiPyxHXP9z_WfEudHVuVZxHt1K3Vfe1YPqM409ovzkaF3pVNsEvWqCmQbFSqlwk%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
       "note_id": "65b52e720000000011000d9c",
       "title": "UCSD CSE胡教授组内招本科生暑研（3月起步)",
       "name": "胡老师",
@@ -159,9 +426,35 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "65b52e720000000011000d9c",
+      "title": "UCSD CSE胡教授组内招本科生暑研（3月起步)",
+      "name": "的老师",
+      "school": "卡内基梅隆大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/65b52e720000000011000d9c?xsec_token=AB6rPQTw2-Ri8MGjAqv0YfqO_xVm1JEGn0NJ_zUHpesFU%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "679ef1cc00000000180137a5",
+      "title": "HCI PhD 找工经验帖 (二） 准备篇",
+      "name": "做老师",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/679ef1cc00000000180137a5?xsec_token=AB4oRr2qwTG7BnkPuda4SH38dvURyoIgw0t8FTZtCVGDA%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "680c7f6d000000000b0178c1",
       "title": "小红书真的能招生吗 (全奖PhD）？🤣",
-      "name": "未知",
+      "name": "的老师",
       "school": "未知",
       "source_kind": "pi",
       "relevance": "cs",
@@ -170,6 +463,118 @@
       "source_url": "https://www.xiaohongshu.com/explore/680c7f6d000000000b0178c1?xsec_token=ABOZnsdVrF7G76TC9Ks-6fKYtu9ukIUILMEEVWd2TMgX4%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "weak_name"
+    },
+    {
+      "note_id": "682d59f20000000022025599",
+      "title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
+      "name": "任老师",
+      "school": "香港中文大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/682d59f20000000022025599?xsec_token=ABj8Mw-n4dJH8eywK3h7ZzXBprfLQWWkWRRuLjSGFZCYI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "682d59f20000000022025599",
+      "title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
+      "name": "港老师",
+      "school": "香港中文大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/682d59f20000000022025599?xsec_token=ABj8Mw-n4dJH8eywK3h7ZzXBprfLQWWkWRRuLjSGFZCYI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "685e4d340000000017032f3f",
+      "title": "为我的lab发个招生贴 - AI安全",
+      "name": "贾老师",
+      "school": "香港城市大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/685e4d340000000017032f3f?xsec_token=AB0aeRQf-2dJXyLWS5ircKE8yzDHNaafBwmeDSRLFcRGg%3D&xsec_source=pc_search",
+      "topics": [
+        "可信机器学习",
+        "ML隐私保护和人工智能对抗鲁棒性"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6866b4660000000017032dc8",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "agency",
+      "relevance": "review",
+      "contact_class": "social_only",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6866b4660000000017032dc8?xsec_token=AB4oIX13q6Giwr8rvTmucNzWWIsg5BUqabOYH0P1KNzAU%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "68b92854000000001d01aaab",
+      "title": "美国R1 PhD招生 CS系 （本人） [AI+SE方向]",
+      "name": "任老师",
+      "school": "不列颠哥伦比亚大学",
+      "source_kind": "pi",
+      "relevance": "review",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68b92854000000001d01aaab?xsec_token=ABafePj6VG3EXwmFkGH1sDc_LczYENyWKO8fwwUA2mo2Q%3D&xsec_source=pc_search",
+      "topics": [
+        "AI for SE",
+        "Trustworthy AI",
+        "Human-Centered AI",
+        "SE for AI",
+        "AI for Engineering/Science/Education",
+        "LLMs and Agentic Flow for Code",
+        "Driven",
+        "Grit Mindset"
+      ],
+      "reason": "review"
+    },
+    {
+      "note_id": "68b92854000000001d01aaab",
+      "title": "美国R1 PhD招生 CS系 （本人） [AI+SE方向]",
+      "name": "问老师",
+      "school": "不列颠哥伦比亚大学",
+      "source_kind": "pi",
+      "relevance": "review",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68b92854000000001d01aaab?xsec_token=ABafePj6VG3EXwmFkGH1sDc_LczYENyWKO8fwwUA2mo2Q%3D&xsec_source=pc_search",
+      "topics": [
+        "AI for SE",
+        "Trustworthy AI",
+        "Human-Centered AI",
+        "SE for AI",
+        "AI for Engineering/Science/Education",
+        "LLMs and Agentic Flow for Code",
+        "Driven",
+        "Grit Mindset"
+      ],
+      "reason": "review"
+    },
+    {
+      "note_id": "68e0e7790000000005031ff6",
+      "title": "欧陆·CS·暑研汇总",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68e0e7790000000005031ff6?xsec_token=ABd-I6pd0745gOi-TSzNyZ5BTk8lbl0JG-IUQ4owwZiJI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
     },
     {
       "note_id": "68e1dd130000000004004893",
@@ -194,9 +599,75 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "68e443460000000007000b50",
+      "title": "MSU 26 Spring/Fall CS PhD招生",
+      "name": "任老师",
+      "school": "麻省理工学院",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68e443460000000007000b50?xsec_token=AByWJTrOzCiU4ypJhtHcVsCYqGibqjBAAeNC0btzfzfgk%3D&xsec_source=pc_search",
+      "topics": [
+        "对学生提供 RA funding",
+        "MSU校园环境优美，绿意盎然，安逸祥和，非常适合学习和生活",
+        "有扎实的CS/EE基础",
+        "对计算机系统领域有一定的理解",
+        "做事有毅力有恒心，求知欲强，诚实守信，热爱生活",
+        "涉及高性能软件系统和硬件架构",
+        "主要针对人工智能",
+        "机器学习"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "68e443460000000007000b50",
+      "title": "MSU 26 Spring/Fall CS PhD招生",
+      "name": "和老师",
+      "school": "麻省理工学院",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68e443460000000007000b50?xsec_token=AByWJTrOzCiU4ypJhtHcVsCYqGibqjBAAeNC0btzfzfgk%3D&xsec_source=pc_search",
+      "topics": [
+        "对学生提供 RA funding",
+        "MSU校园环境优美，绿意盎然，安逸祥和，非常适合学习和生活",
+        "有扎实的CS/EE基础",
+        "对计算机系统领域有一定的理解",
+        "做事有毅力有恒心，求知欲强，诚实守信，热爱生活",
+        "涉及高性能软件系统和硬件架构",
+        "主要针对人工智能",
+        "机器学习"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "68e443460000000007000b50",
+      "title": "MSU 26 Spring/Fall CS PhD招生",
+      "name": "给老师",
+      "school": "麻省理工学院",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/68e443460000000007000b50?xsec_token=AByWJTrOzCiU4ypJhtHcVsCYqGibqjBAAeNC0btzfzfgk%3D&xsec_source=pc_search",
+      "topics": [
+        "对学生提供 RA funding",
+        "MSU校园环境优美，绿意盎然，安逸祥和，非常适合学习和生活",
+        "有扎实的CS/EE基础",
+        "对计算机系统领域有一定的理解",
+        "做事有毅力有恒心，求知欲强，诚实守信，热爱生活",
+        "涉及高性能软件系统和硬件架构",
+        "主要针对人工智能",
+        "机器学习"
+      ],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6915779a0000000007035f6d",
       "title": "UMD CS系招PhD和intern",
-      "name": "未知",
+      "name": "任老师",
       "school": "未知",
       "source_kind": "pi",
       "relevance": "cs",
@@ -211,6 +682,80 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "69185a72000000000703952b",
+      "title": "🎓招机器学习方向博士生 | 布里斯托大学",
+      "name": "的老师",
+      "school": "新加坡国立大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69185a72000000000703952b?xsec_token=ABFNymoyK3j-Zoi1wTDTx6dqi0gGffB7IhaXVSnAtYZK0%3D&xsec_source=pc_search",
+      "topics": [
+        "是序列决策和公共卫生"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "691fb7a1000000001f00e9be",
+      "title": "Prof. Moritz Schloegel 博士招生",
+      "name": "任老师",
+      "school": "未知",
+      "source_kind": "agency",
+      "relevance": "cs",
+      "contact_class": "social_only",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/691fb7a1000000001f00e9be?xsec_token=ABC0bIwEfNTQsugLGijIp1XV2toNNSzWF_rlOQDjGuq50%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "agency"
+    },
+    {
+      "note_id": "691fb7a1000000001f00e9be",
+      "title": "Prof. Moritz Schloegel 博士招生",
+      "name": "Moritz Schloegel",
+      "school": "未知",
+      "source_kind": "agency",
+      "relevance": "cs",
+      "contact_class": "social_only",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/691fb7a1000000001f00e9be?xsec_token=ABC0bIwEfNTQsugLGijIp1XV2toNNSzWF_rlOQDjGuq50%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "agency"
+    },
+    {
+      "note_id": "694ce3a4000000001f00461f",
+      "title": "博士招生Trustworthy AI & AI for Security",
+      "name": "的老师",
+      "school": "未知",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/694ce3a4000000001f00461f?xsec_token=AByQpeVuLYOFJqEraq3g3iS6Q-oJRWmdh8ZowmUj7d5xg%3D&xsec_source=pc_search",
+      "topics": [
+        "Trustworthy AI 或者 AI for Security"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "69a3af6f000000001a026d6b",
+      "title": "3rd offer CUHK CSE PhD",
+      "name": "和老师",
+      "school": "香港中文大学",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69a3af6f000000001a026d6b?xsec_token=ABcwnW_-JtyN2JuIhWvtp6sttcgbv4bu3Oz1cswaTAN9M%3D&xsec_source=pc_search",
+      "topics": [
+        "11.30 正式轮第二轮系统提交",
+        "01.23 二轮委员会面试免除",
+        "01.31 和老师面试",
+        "2月下旬 老师下offer"
+      ],
+      "reason": "review"
+    },
+    {
       "note_id": "69ad1d7900000000260332bb",
       "title": "不搞抽象了：在线等，挺急的",
       "name": "未知",
@@ -222,6 +767,92 @@
       "source_url": "https://www.xiaohongshu.com/explore/69ad1d7900000000260332bb?xsec_token=ABToLku9dQfJvEPNO3-RprHhuHRp4433qjCQSvmS88I-w%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "review"
+    },
+    {
+      "note_id": "69be296e000000002301c85b",
+      "title": "招博后: Trustworthy AI & GenAI",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69be296e000000002301c85b?xsec_token=ABGOq22jvbVV_dqH_i0dQ5Sdm6jCgwNNoqYKWg0I7xsbo%3D&xsec_source=pc_search",
+      "topics": [
+        "统计机器学习",
+        "Trustworthy AI / 泛化 / 鲁棒性",
+        "生成模型",
+        "多模态模型",
+        "推荐系统和Quant相关ML问题",
+        "80k–100k 刀, 免税",
+        "机器学习 / 统计 / 计算机 / 应用数学相关 PhD",
+        "有一定研究积累"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "69c2178b000000002200123e",
+      "title": "【帮转】港科广新AP招生~【26fall】",
+      "name": "任老师",
+      "school": "香港科技大学（广州）",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69c2178b000000002200123e?xsec_token=ABXNnEpl7kqBJL1zjr1iozXk8t-xtsH7wOqUDdggXQMTo%3D&xsec_source=pc_search",
+      "topics": [
+        "计算机视觉",
+        "例如与 geospatial",
+        "civil engineering 或其他跨学科方向相结合的探索"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "69c80944000000001a021ff5",
+      "title": "找工作六个月 比读博三年都累",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69c80944000000001a021ff5?xsec_token=ABHq604B2aixjhtiJiNaY1GVZ08ZPkXkXsa5ZIx8S6kzM%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "69d87fea0000000029033d1a",
+      "title": "2027年阿尔伯塔大学 MS/PhD RA 招生",
+      "name": "Jung-Hwan Youn",
+      "school": "伊利诺伊大学香槟分校",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "consumer_email",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69d87fea0000000029033d1a?xsec_token=ABiVcLh4fchXPtMyKqCDyx6PfjHHRLP2tcvg3VPbm8E-Q%3D&xsec_source=pc_search",
+      "topics": [
+        "软体机器人",
+        "尤其关注类人机器人灵巧操作中的遥操作"
+      ],
+      "reason": "unknown"
+    },
+    {
+      "note_id": "69d941a8000000002903c13c",
+      "title": "招收Summer Intern和全奖PhD - NLP/LLM/AI",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/69d941a8000000002903c13c?xsec_token=ABdgo6KcsEy6nQTMVQH728Zxu5h_9U-G2v1COVNjvv1RU%3D&xsec_source=pc_search",
+      "topics": [
+        "是自然语言处理NLP",
+        "大语言模型LLM",
+        "多模态模型Multimodal",
+        "实验室提供充足的GPU资源"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "69e04c45000000001a02bde5",
@@ -303,6 +934,19 @@
       "reason": "unknown"
     },
     {
+      "note_id": "6a06ac45000000000803f1f5",
+      "title": "2026暑研申请总结",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a06ac45000000000803f1f5?xsec_token=ABnt3-ey9Yvsf1Tq331O9BIZNSPQ0qwTFqNJJQJ4kAX4A%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
       "note_id": "6a0a9a500000000038020c9f",
       "title": "港城大计算学院招收PhD/RA/访问学生",
       "name": "未知",
@@ -342,9 +986,82 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "6a0e485c000000000603722a",
+      "title": "【帮师兄招生】Stevens招AI方向PhD/Intern",
+      "name": "于老师",
+      "school": "卡内基梅隆大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a0e485c000000000603722a?xsec_token=ABX_jW9vz0pm5R0UEaHiAk5vJWB-3MvkhtKzmGGwJIfU4%3D&xsec_source=pc_search",
+      "topics": [
+        "涵盖以人为中心的 AI",
+        "可解释机器学习",
+        "基础模型以及可信 AI 系统",
+        "致力于将可解释性方法应用于生物医学",
+        "机器人等跨学科领域"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a0e485c000000000603722a",
+      "title": "【帮师兄招生】Stevens招AI方向PhD/Intern",
+      "name": "道老师",
+      "school": "卡内基梅隆大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a0e485c000000000603722a?xsec_token=ABX_jW9vz0pm5R0UEaHiAk5vJWB-3MvkhtKzmGGwJIfU4%3D&xsec_source=pc_search",
+      "topics": [
+        "涵盖以人为中心的 AI",
+        "可解释机器学习",
+        "基础模型以及可信 AI 系统",
+        "致力于将可解释性方法应用于生物医学",
+        "机器人等跨学科领域"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a1288030000000035020f40",
+      "title": "哈工深计算机2026级博士急招（MLSys方向",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a1288030000000035020f40?xsec_token=ABx1l4FUcAwSRDTSzkffUmaqPpd6Xpc1qRiQD9a7ttmyY%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "6a1a9ab8000000000701253e",
+      "title": "🚀非CS专业如何研究AI？教授本人招生",
+      "name": "Simin Chen",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a1a9ab8000000000701253e?xsec_token=AB8OzgqkFmXaIhIo88vRt69INJMGAazb3LgFYewz3SAYw%3D&xsec_source=pc_search",
+      "topics": [
+        "--",
+        "数学基础扎实",
+        "编程能力强",
+        "强烈的驱动力和责任心",
+        "当下的 Agentic AI 时代充满兴趣",
+        "也完全没有关系",
+        "Software Engineering",
+        "或者"
+      ],
+      "reason": "review"
+    },
+    {
       "note_id": "6a1d2f10000000000f03ac00",
       "title": "学院催我招生了|复旦AP招2027博士生",
-      "name": "未知",
+      "name": "任老师",
       "school": "复旦大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -357,9 +1074,143 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "6a1d4dc30000000010001c00",
+      "title": "【西澳大学UWA PhD招生| AI / CV方向】",
+      "name": "Mohammed Bennamoun",
+      "school": "澳门大学",
+      "source_kind": "agency",
+      "relevance": "cs",
+      "contact_class": "social_only",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a1d4dc30000000010001c00?xsec_token=ABvfgdMGZozQPHE9p31pynw7cK2omI155c1CAdL4ej_aM%3D&xsec_source=pc_search",
+      "topics": [
+        "人工智能",
+        "计算机视觉和机器学习"
+      ],
+      "reason": "agency"
+    },
+    {
+      "note_id": "6a1fc9110000000035022523",
+      "title": "城大张青富教授急招26年入学博士生",
+      "name": "张老师",
+      "school": "香港城市大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a1fc9110000000035022523?xsec_token=ABd5hwaLeJ-o-F_geBPvrof1CrUWhrwlZ62QDHfgPdoak%3D&xsec_source=pc_search",
+      "topics": [
+        "多目标优化的新概念和方法， 及其在工程设计和人工智能的应用",
+        "机器智能中学习与优化的新概念，方法及其应用",
+        "基于LLM的算法和知识的自动生成， 及其在工程领域的应用",
+        "具有扎实的数学与计算机基础",
+        "具备较强科研潜力和英文读写能力",
+        "提供您的论文、国奖、个人主页链接、科研项目/实习经历等信息",
+        "计算智能",
+        "进化计算"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "院老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "冯老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a259cfd0000000021022f0c",
+      "title": "【帮导师招生】创智学院MLSys AP招RA/PhD",
+      "name": "及老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a259cfd0000000021022f0c?xsec_token=ABosEDI5vl_5xQP22qvyyuDYP4X4ONkYEhgHvaeA6dCU0%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "院老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "冯老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a2633cb000000001702b315",
+      "title": "导师推荐 （超级 nice 的导师）",
+      "name": "及老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a2633cb000000001702b315?xsec_token=ABKxdUVS2qts45m7xhAW3wqzpbnhEr_4zNuwW92u4d1hc%3D&xsec_source=pc_search",
+      "topics": [
+        "研究方向为大规模分布式 MLsys",
+        "AI编译器以及国产算力的原生系统"
+      ],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6a26ef0f000000000800b801",
       "title": "NUS 计算机学院 CS | 2027 招生",
-      "name": "未知",
+      "name": "过老师",
       "school": "新加坡国立大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -394,9 +1245,9 @@
     {
       "note_id": "6a2bcfb2000000000803f149",
       "title": "2026.6.12 港中文CS PhD early round面试",
-      "name": "感觉没",
+      "name": "没老师",
       "school": "香港中文大学",
-      "source_kind": "repost",
+      "source_kind": "unknown",
       "relevance": "review",
       "contact_class": "none",
       "listable": false,
@@ -429,9 +1280,164 @@
       "reason": "unknown"
     },
     {
+      "note_id": "6a3261d50000000022018013",
+      "title": "拉玛尔大学新晋AP招生-Haoran Li",
+      "name": "的老师",
+      "school": "麻省理工学院",
+      "source_kind": "unknown",
+      "relevance": "notcs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a3261d50000000022018013?xsec_token=AB3oPmfCLKWnoJggOfNPlOs84DJ0n00BVjJUNu1iCycks%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "notcs"
+    },
+    {
+      "note_id": "6a3261d50000000022018013",
+      "title": "拉玛尔大学新晋AP招生-Haoran Li",
+      "name": "国老师",
+      "school": "麻省理工学院",
+      "source_kind": "unknown",
+      "relevance": "notcs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a3261d50000000022018013?xsec_token=AB3oPmfCLKWnoJggOfNPlOs84DJ0n00BVjJUNu1iCycks%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "notcs"
+    },
+    {
+      "note_id": "6a34dd180000000006022c0a",
+      "title": "[本人招生] ATLAS Lab @ MBZUAI 新博导招生",
+      "name": "未知",
+      "school": "斯坦福大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a34dd180000000006022c0a?xsec_token=ABeSKTkEscjfsJZFQt5FvZyg7k23J6xpGPQulQvBd2D5w%3D&xsec_source=pc_search",
+      "topics": [
+        "CV",
+        "成绩单",
+        "代表性论文及简短研究兴趣介绍"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a477c97000000001503e87a",
+      "title": "招收 具身智能 联合培养博士生",
+      "name": "广老师",
+      "school": "香港科技大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a477c97000000001503e87a?xsec_token=ABuTNcKTrgHVjrOWPggCdSBh-Uf_HDhY-ygxQJh1pJEdw%3D&xsec_source=pc_search",
+      "topics": [
+        "拿到国家科研单位",
+        "热爱科研，自驱力强，有探索欲望和动力",
+        "数学和代码基础扎实，英文能力良好",
+        "有一定的深度学习或机器人相关知识，熟悉基本的深度学习框架并有一定实践经验",
+        "加分项",
+        "深度的科研指导",
+        "完善的软硬件平台",
+        "学术深造助力"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a477c97000000001503e87a",
+      "title": "招收 具身智能 联合培养博士生",
+      "name": "聘老师",
+      "school": "香港科技大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a477c97000000001503e87a?xsec_token=ABuTNcKTrgHVjrOWPggCdSBh-Uf_HDhY-ygxQJh1pJEdw%3D&xsec_source=pc_search",
+      "topics": [
+        "拿到国家科研单位",
+        "热爱科研，自驱力强，有探索欲望和动力",
+        "数学和代码基础扎实，英文能力良好",
+        "有一定的深度学习或机器人相关知识，熟悉基本的深度学习框架并有一定实践经验",
+        "加分项",
+        "深度的科研指导",
+        "完善的软硬件平台",
+        "学术深造助力"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a489df8000000000d00bc00",
+      "title": "本人招生贴| 上交人工智能学院Incoming AP",
+      "name": "任老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a489df8000000000d00bc00?xsec_token=ABNg99bTiSzOBtsAQU_kX1fCrjfjmxHJ3j0JRAQ_1slLc%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a4b140800000000080026b7",
+      "title": "招收远程科研实习生，一起合作发论文",
+      "name": "未知",
+      "school": "北京大学",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a4b140800000000080026b7?xsec_token=ABuk469a5mMdBkALipj2nJPXBlu03vFoH7bYhYjxCV3Es%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "6a4e4a5c000000001503c334",
+      "title": "【本人招生】港中文新AP",
+      "name": "任老师",
+      "school": "香港中文大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a4e4a5c000000001503c334?xsec_token=ABZByMrWOh3Bg_p8_wTguLhMDhoOLXS84E3NwAcsObjjE%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a50d4450000000011007bcd",
+      "title": "南洋理工大学PVG课题组招Postdoc/RA",
+      "name": "未知",
+      "school": "南洋理工大学",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a50d4450000000011007bcd?xsec_token=ABrcxYiqKH96tt9GuGY2npSUfHRM7uQ51FUs4au8gsIqg%3D&xsec_source=pc_search",
+      "topics": [
+        "聚焦物理世界感知",
+        "交互与生成等方向"
+      ],
+      "reason": "review"
+    },
+    {
+      "note_id": "6a50e4d6000000001702ed5a",
+      "title": "27fall 美国cs phd求定位",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a50e4d6000000001702ed5a?xsec_token=ABrcxYiqKH96tt9GuGY2npSWJGIMCA0tc7qiKM0vHGP3Q%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6a5b52d0000000001b01c429",
       "title": "2027春秋计算机/AI/ECE博士机会抢先看",
-      "name": "未知",
+      "name": "的老师",
       "school": "未知",
       "source_kind": "unknown",
       "relevance": "review",
@@ -440,6 +1446,90 @@
       "source_url": "https://www.xiaohongshu.com/explore/6a5b52d0000000001b01c429?xsec_token=ABurfGnc3raA2WnqSi7TP3gqIf38F5LQmXaB9_APyq_ek%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "review"
+    },
+    {
+      "note_id": "6a5b6872000000000401c377",
+      "title": "【本人招生】深圳理工大学计算机学院AP",
+      "name": "任老师",
+      "school": "哈尔滨工业大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&xsec_source=pc_search",
+      "topics": [
+        "Edge Computing",
+        "MLSys和LLM Infra等",
+        "主要探索如何构建资源高效的智能计算系统",
+        "使人工智能应用能够在不同硬件平台和系统规模下",
+        "以更低的计算",
+        "存储和通信开销实现高效",
+        "可靠且可持续的运转"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a5b6872000000000401c377",
+      "title": "【本人招生】深圳理工大学计算机学院AP",
+      "name": "聘老师",
+      "school": "哈尔滨工业大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&xsec_source=pc_search",
+      "topics": [
+        "Edge Computing",
+        "MLSys和LLM Infra等",
+        "主要探索如何构建资源高效的智能计算系统",
+        "使人工智能应用能够在不同硬件平台和系统规模下",
+        "以更低的计算",
+        "存储和通信开销实现高效",
+        "可靠且可持续的运转"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a5b6872000000000401c377",
+      "title": "【本人招生】深圳理工大学计算机学院AP",
+      "name": "研老师",
+      "school": "哈尔滨工业大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&xsec_source=pc_search",
+      "topics": [
+        "Edge Computing",
+        "MLSys和LLM Infra等",
+        "主要探索如何构建资源高效的智能计算系统",
+        "使人工智能应用能够在不同硬件平台和系统规模下",
+        "以更低的计算",
+        "存储和通信开销实现高效",
+        "可靠且可持续的运转"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a5b6872000000000401c377",
+      "title": "【本人招生】深圳理工大学计算机学院AP",
+      "name": "石老师",
+      "school": "哈尔滨工业大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a5b6872000000000401c377?xsec_token=ABurfGnc3raA2WnqSi7TP3gk_MRl5PIU4A0KVfyleC4jQ%3D&xsec_source=pc_search",
+      "topics": [
+        "Edge Computing",
+        "MLSys和LLM Infra等",
+        "主要探索如何构建资源高效的智能计算系统",
+        "使人工智能应用能够在不同硬件平台和系统规模下",
+        "以更低的计算",
+        "存储和通信开销实现高效",
+        "可靠且可持续的运转"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a5d0ef1000000000c033c00",
@@ -457,7 +1547,7 @@
     {
       "note_id": "6a65d0d0000000000a0388b2",
       "title": "UWaterloo 27 招生PhD/MASc 安全/架构/系统",
-      "name": "未知",
+      "name": "任老师",
       "school": "未知",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -491,6 +1581,35 @@
         "embodied agents"
       ],
       "reason": "unknown"
+    },
+    {
+      "note_id": "6a6b50080000000022011d00",
+      "title": "🇸🇬帮我的神仙老板招RA！LLM Agent方向",
+      "name": "张老师",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6b50080000000022011d00?xsec_token=AB6yJlnndSKYeqnai8L-yzwhaWLWLFUjTt33YxKuRkqjs%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a6cb557000000003400df45",
+      "title": "cs phd半年了，分享点小众焚诀（全奖篇）",
+      "name": "系老师",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6cb557000000003400df45?xsec_token=AB2ImWyqvQlMJNR22QS1Q03N5PfRQX2vjTKz7voLucluc%3D&xsec_source=pc_search",
+      "topics": [
+        "不要先看学校排名，要先反向筛选导师",
+        "推荐信的顺序"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a6cbc4e000000000801356b",
@@ -530,7 +1649,7 @@
     {
       "note_id": "6a6d6b1d0000000024026751",
       "title": "帮我的神仙好导师发27fall PhD招生贴",
-      "name": "资料到董",
+      "name": "和董",
       "school": "香港城市大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -552,7 +1671,7 @@
     {
       "note_id": "6a6d6b1d0000000024026751",
       "title": "帮我的神仙好导师发27fall PhD招生贴",
-      "name": "每次和董",
+      "name": "到老师",
       "school": "香港城市大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -569,12 +1688,12 @@
         "VLA等进行探索",
         "目前我们也对世界模型有研究兴趣"
       ],
-      "reason": "unknown"
+      "reason": "weak_name"
     },
     {
       "note_id": "6a6d6b1d0000000024026751",
       "title": "帮我的神仙好导师发27fall PhD招生贴",
-      "name": "能感受到",
+      "name": "前老师",
       "school": "香港城市大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -591,29 +1710,88 @@
         "VLA等进行探索",
         "目前我们也对世界模型有研究兴趣"
       ],
-      "reason": "unknown"
+      "reason": "weak_name"
     },
     {
-      "note_id": "6a6d6b1d0000000024026751",
-      "title": "帮我的神仙好导师发27fall PhD招生贴",
-      "name": "组会前",
-      "school": "香港城市大学",
+      "note_id": "6a6d79b8000000002500b497",
+      "title": "全世界最幸福的组招科研助理！",
+      "name": "个老师",
+      "school": "香港中文大学（深圳）",
       "source_kind": "unknown",
       "relevance": "cs",
-      "contact_class": "consumer_email",
+      "contact_class": "none",
       "listable": false,
-      "source_url": "https://www.xiaohongshu.com/explore/6a6d6b1d0000000024026751?xsec_token=AB2jwRO25DOHvmj0RD-jKBOzM2ktQ-y443vvrgjN4u0nc%3D&xsec_source=pc_search",
+      "source_url": "https://www.xiaohongshu.com/explore/6a6d79b8000000002500b497?xsec_token=AB2jwRO25DOHvmj0RD-jKBOzjmIXLY3ypZDThLf2_m074%3D&xsec_source=pc_search",
       "topics": [
-        "主要包括trustworthy AI",
-        "计算机视觉和多模态大模型等",
-        "实验室目前同学主要围绕大模型对抗鲁棒性",
-        "大模型幻觉",
-        "图像生成",
-        "视频生成",
-        "VLA等进行探索",
-        "目前我们也对世界模型有研究兴趣"
+        "19 不招咯 之后有别的机会会分享～"
       ],
-      "reason": "unknown"
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a6de0df0000000029031779",
+      "title": "【帮师兄招生啦】上交世界模型方向招生",
+      "name": "轨老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6de0df0000000029031779?xsec_token=AB2jwRO25DOHvmj0RD-jKBOyAzTpJ8sa76A4rQrYsP9_8%3D&xsec_source=pc_search",
+      "topics": [
+        "多模态生成与编辑",
+        "世界模型",
+        "空间智能",
+        "具身智能",
+        "模型加速",
+        "有效的科研指导",
+        "丰富的合作机会",
+        "充足的科研资源"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a6de0df0000000029031779",
+      "title": "【帮师兄招生啦】上交世界模型方向招生",
+      "name": "究老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6de0df0000000029031779?xsec_token=AB2jwRO25DOHvmj0RD-jKBOyAzTpJ8sa76A4rQrYsP9_8%3D&xsec_source=pc_search",
+      "topics": [
+        "多模态生成与编辑",
+        "世界模型",
+        "空间智能",
+        "具身智能",
+        "模型加速",
+        "有效的科研指导",
+        "丰富的合作机会",
+        "充足的科研资源"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a6de0df0000000029031779",
+      "title": "【帮师兄招生啦】上交世界模型方向招生",
+      "name": "周老师",
+      "school": "上海交通大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6de0df0000000029031779?xsec_token=AB2jwRO25DOHvmj0RD-jKBOyAzTpJ8sa76A4rQrYsP9_8%3D&xsec_source=pc_search",
+      "topics": [
+        "多模态生成与编辑",
+        "世界模型",
+        "空间智能",
+        "具身智能",
+        "模型加速",
+        "有效的科研指导",
+        "丰富的合作机会",
+        "充足的科研资源"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a7098600000000033011b3e",
@@ -649,6 +1827,36 @@
       "source_url": "https://www.xiaohongshu.com/explore/6a7321d8000000002403ee02?xsec_token=ABDZAgIUD0cSBLW57Be_M67dyDCkH_nZc_8ZnY8l_mLuY%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "agency"
+    },
+    {
+      "note_id": "6a737231000000000f03a400",
+      "title": "2027 Spring/Fall PhD Position at UT",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a737231000000000f03a400?xsec_token=ABDZAgIUD0cSBLW57Be_M67TWM6v47Ov-oYlhDhfp4-jc%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a73b8eb0000000025001e0a",
+      "title": "招生贴| 陈老师加入香港中文大学啦",
+      "name": "陈老师",
+      "school": "香港中文大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a73b8eb0000000025001e0a?xsec_token=ABDZAgIUD0cSBLW57Be_M67SOFimJzE0JuJUFBYFrO6JY%3D&xsec_source=pc_search",
+      "topics": [
+        "主要包括 LLM Reasoning",
+        "Alignment 和 Agents",
+        "具体研究内容可以参考他小红书主页上的招生介绍"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a740fe0000000002c001736",
@@ -687,7 +1895,7 @@
     {
       "note_id": "6a7751d500000000250130b0",
       "title": "港城大（东莞）数据科学招全奖PhD",
-      "name": "未知",
+      "name": "系老师",
       "school": "香港城市大学",
       "source_kind": "pi",
       "relevance": "cs",
@@ -707,6 +1915,19 @@
     {
       "note_id": "6a7883130000000024024c5c",
       "title": "【本人招生】 27Spring/Fall Robotics方向",
+      "name": "究老师",
+      "school": "未知",
+      "source_kind": "pi",
+      "relevance": "review",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a7883130000000024024c5c?xsec_token=ABQzZNdk43aumgEQ7nsQQfXuczMLni9KABEtYYwWcfxP0%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "6a7883130000000024024c5c",
+      "title": "【本人招生】 27Spring/Fall Robotics方向",
       "name": "Yifan Xu",
       "school": "未知",
       "source_kind": "pi",
@@ -720,7 +1941,25 @@
     {
       "note_id": "6a7d1bc6000000002c0015a2",
       "title": "【本人招生】 深圳理工大学计算机学院青椒",
-      "name": "未知",
+      "name": "研老师",
+      "school": "香港城市大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a7d1bc6000000002c0015a2?xsec_token=ABYSsTE07sA0XBVVHCzR0rMshpIMxsa-uSkSnbdK1PqYo%3D&xsec_source=pc_search",
+      "topics": [
+        "微生物高分辨率识别",
+        "突变检测",
+        "疾病相关微生物标志物发现",
+        "我们的方向"
+      ],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a7d1bc6000000002c0015a2",
+      "title": "【本人招生】 深圳理工大学计算机学院青椒",
+      "name": "聘老师",
       "school": "香港城市大学",
       "source_kind": "pi",
       "relevance": "cs",
@@ -749,6 +1988,19 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "6a7f09a8000000002402f793",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a7f09a8000000002402f793?xsec_token=ABBMgX7KRQEVuzbXNLEU6tkEc93QGkHSbIUMVU_guZ7OU%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6a8173d9000000002800a84b",
       "title": "[本人招生] CUHK CSE 27Fall博士招生",
       "name": "未知",
@@ -762,11 +2014,24 @@
       "reason": "review"
     },
     {
+      "note_id": "6a81adab000000002c001b60",
+      "title": "【本人招生】McGill新AP",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a81adab000000002c001b60?xsec_token=ABQZCZ_iv7Bj9HC9CnQjzVNd5QiJTypclhDt4Rhrlttso%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
       "note_id": "6a81edbe000000002402d1a3",
       "title": "给最靠谱最Solid的师兄转招生帖",
-      "name": "我觉得王",
+      "name": "王老师",
       "school": "浙江大学",
-      "source_kind": "repost",
+      "source_kind": "unknown",
       "relevance": "review",
       "contact_class": "none",
       "listable": false,
@@ -784,9 +2049,9 @@
     {
       "note_id": "6a81edbe000000002402d1a3",
       "title": "给最靠谱最Solid的师兄转招生帖",
-      "name": "关于",
+      "name": "于老师",
       "school": "浙江大学",
-      "source_kind": "repost",
+      "source_kind": "unknown",
       "relevance": "review",
       "contact_class": "none",
       "listable": false,
@@ -800,11 +2065,24 @@
         "Visiting Student / Intern"
       ],
       "reason": "review"
+    },
+    {
+      "note_id": "6a82b2a1000000002102264a",
+      "title": "🔥中国科学院信工所ASCII Lab简介",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a82b2a1000000002102264a?xsec_token=ABmSZbfMulKTqzmfOTubxXugV7fC5lNt0zNImolARM53Q%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a8403ae000000000801364e",
       "title": "中科大 × 通研院 27级联培博士招生啦！",
-      "name": "组内",
+      "name": "内老师",
       "school": "中国科学技术大学",
       "source_kind": "agency",
       "relevance": "cs",
@@ -818,6 +2096,21 @@
         "可解释 AI"
       ],
       "reason": "agency"
+    },
+    {
+      "note_id": "6a843566000000000c003000",
+      "title": "澳门科技大学AI与机器人控制导师招生",
+      "name": "任老师",
+      "school": "香港中文大学",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a843566000000000c003000?xsec_token=ABcNX8yJveaL_ZLRmvZW_WpW64ANbccXG2TLP0Wttfr5c%3D&xsec_source=pc_search",
+      "topics": [
+        "全职研究助理"
+      ],
+      "reason": "weak_name"
     },
     {
       "note_id": "6a8516bb0000000032022e5f",
@@ -854,6 +2147,19 @@
       "reason": "weak_name"
     },
     {
+      "note_id": "6a853e780000000012029ddf",
+      "title": "数字建造+AI+机器人 PhD/RA 机会",
+      "name": "吕老师",
+      "school": "香港大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a853e780000000012029ddf?xsec_token=ABo2fBaMP1QpDqasKVgvVd8x2TguvDfElr75RNXWx_0HY%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6a8573d0000000002800a23d",
       "title": "🚀 AI × 软件工程方向的博士生注意！",
       "name": "未知",
@@ -865,6 +2171,37 @@
       "source_url": "https://www.xiaohongshu.com/explore/6a8573d0000000002800a23d?xsec_token=ABo2fBaMP1QpDqasKVgvVd8xBJXGFnfm233KNX-lVb80Q%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "weak_name"
+    },
+    {
+      "note_id": "6a859b680000000025006b05",
+      "title": "Stanford大语言模型PhD 27/28fall申请的来",
+      "name": "未知",
+      "school": "斯坦福大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a859b680000000025006b05?xsec_token=ABo2fBaMP1QpDqasKVgvVd85-1YaOzsf7e1LV2DVoRHtA%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "6a8843de0000000017003126",
+      "title": "东方理工人工智能方向27Fall博士招生",
+      "name": "未知",
+      "school": "加州大学伯克利分校",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a8843de0000000017003126?xsec_token=ABFgzSJLU89lLlk5Rs9wsVxFn0T4Wof2SseelJiT9XckI%3D&xsec_source=pc_search",
+      "topics": [
+        "具身智能",
+        "空间智能",
+        "表征学习",
+        "基础模型"
+      ],
+      "reason": "review"
     },
     {
       "note_id": "6a885a4b000000000e03c800",
@@ -893,6 +2230,26 @@
       "reason": "review"
     },
     {
+      "note_id": "6a8902b700000000140254a9",
+      "title": "语言学申博教程（中篇）",
+      "name": "未知",
+      "school": "斯坦福大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a8902b700000000140254a9?xsec_token=ABic7yUldJygxjVdaJ7JLU3CT7H-a7VF-XDgNllT8VW1g%3D&xsec_source=pc_search",
+      "topics": [
+        "计算语言学 / NLP",
+        "心理语言学 / 神经语言学",
+        "社会语言学 / 语言变异",
+        "语言习得",
+        "语言档案学 / 濒危语言",
+        "理论语言学"
+      ],
+      "reason": "weak_name"
+    },
+    {
       "note_id": "6a89852a000000001700182c",
       "title": "试试在xhs给自己招生",
       "name": "未知",
@@ -904,6 +2261,84 @@
       "source_url": "https://www.xiaohongshu.com/explore/6a89852a000000001700182c?xsec_token=ABic7yUldJygxjVdaJ7JLU3FIPBrXNqitNcS4RFZ-Kss4%3D&xsec_source=pc_search",
       "topics": [],
       "reason": "weak_name"
+    },
+    {
+      "note_id": "6a8a5fa9000000003400f354",
+      "title": "27普博申请求定位，MLSys / Arch方向",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a8a5fa9000000003400f354?xsec_token=ABKJDzQ8m12ko1aInS8OAZaHCOChp5QTIS8yFh5Z6dsqU%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "weak_name"
+    },
+    {
+      "note_id": "8a0b3c79-b9f4-47be-8161-46bf07545910",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/8a0b3c79-b9f4-47be-8161-46bf07545910?xsec_token=ABSJfbPZHoafyDK-jKsYPuUCgd5yqF3Av8DpwvRy_0c4hb04VUka3kNYl4MV_tTHka2-C1mM2YmZPfKJi1CURmXLJ5MNTxsOFzF6Nh4HgiaLE%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "8f2b74ad-7e46-4d34-a62a-ec73e7a2d8a9",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/8f2b74ad-7e46-4d34-a62a-ec73e7a2d8a9?xsec_token=ABcFoqkD9FOGVkDkhaX9FFw12JbtAEFKzlkWiqOz2ctLh1a7LDP01zHzMIxj3WKfIQ-f01YmKlQ8AzgwqasKR29c1zBpqydg9knCZ6dDlJWpQ%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "ba071801-0bea-4282-8880-b7b981ba57ff",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/ba071801-0bea-4282-8880-b7b981ba57ff?xsec_token=ABoJJJJ-S0Ve0o9FOC6RaKFFMU1LA4Knf_GrMmNvhZ4Ci3fKE4OWobE1txRaYnqnEZAk-tn2QOPs29GwvY0Ude6C4OUK8qc1mJEqLoIvn3cqw%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "cfbfeb57-d91f-4d5a-a072-3e69dcab1114",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/cfbfeb57-d91f-4d5a-a072-3e69dcab1114?xsec_token=ABzUHFnZr0uoPGoliaY58F1NQ8MSv9o0kKwu2XZSTUgf1vvhQMrHuC7bEIx7pQ_PxzTQu6K4nF_hfrdrUAggXXaier70-L5U0lvle1Lb7Hhjo%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
+    },
+    {
+      "note_id": "d23468c6-a37a-4190-8508-35deec14a2c0",
+      "title": "",
+      "name": "未知",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "review",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/d23468c6-a37a-4190-8508-35deec14a2c0?xsec_token=AByij66m8QPHHSPQ64-fo2NjuZ1FCuU1woBEZmXe4wpvxRT92OARvqG00YuTnG0d4tBEBocQ1-wbExdx5elfATzBmffbYChOjKjLh48MCawDY%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "review"
     }
   ],
   "warnings": []

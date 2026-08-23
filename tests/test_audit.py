@@ -19,6 +19,8 @@ def test_audit_drops_consulting_pitch() -> None:
     )
     payload = build_audit(records)
     assert payload["counts"]["agency"] >= 1
+    assert "weak_name" in payload["counts"]
+    assert "by_reason" in payload["counts"]
     assert all(not row["listable"] for row in records)
     assert any(row["reason"] == "agency" for row in payload["dropped"])
 

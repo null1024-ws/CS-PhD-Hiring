@@ -33,8 +33,39 @@ def test_title_fragments_are_not_listable() -> None:
     assert not is_main_table_name("在麻")
     assert not is_main_table_name("从孙燕妮")
     assert not is_main_table_name("美籍华人")
+    assert not is_main_table_name("香港")
+    assert not is_main_table_name("创智学院")
+    assert not is_main_table_name("发邮件给")
+    assert not is_main_table_name("极主动和")
+    assert not is_main_table_name("关于")
+    assert not is_main_table_name("这个")
     assert is_main_table_name("陈思远")
+    assert is_main_table_name("周尚辰")
+    assert is_main_table_name("张伟楠")
     assert is_main_table_name("Ming Li")
+
+
+def test_laoshi_prefix_is_not_a_pi_name() -> None:
+    rows = extract_opportunities(
+        "大家好，我是这个实验室的学生。请发邮件给导师。"
+        "信跟着陈老师申请。也祝陈老师。和俞勇教授、兄周尚辰教授、为张伟楠教授招 PhD，港科大。"
+    )
+    names = {row.pi_name for row in rows}
+    assert "周尚辰" in names
+    assert "张伟楠" in names
+    assert "俞勇" in names
+    assert names.isdisjoint(
+        {
+            "这个",
+            "发邮件给",
+            "信跟着陈",
+            "兄周尚辰",
+            "为张伟楠",
+            "香港",
+            "祝陈",
+            "和俞勇",
+        }
+    )
 
 
 def test_zhang_laoshi_is_low_and_not_listable() -> None:
