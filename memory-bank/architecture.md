@@ -9,6 +9,7 @@
 | `data/schools.json` | 学校别名表 |
 | `data/listings.json` | 主表发布数据（当前来自 fixture 流水线） |
 | `data/pis/` | 老师详情 JSON |
+| `data/homepage_overrides.json` | 人工补的主页，流水线重跑后仍保留 |
 | `data/schema/` | 字段说明与 JSON Schema |
 | `data/raw/` | 本机原始抓取，gitignore |
 | `scripts/school_normalize.py` | 学校别名规范化 |

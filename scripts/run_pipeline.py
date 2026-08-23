@@ -9,7 +9,15 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from _paths import AUDIT_PATH, BUNDLES_DIR, LISTINGS_PATH, LLM_REVIEWS_PATH, PIS_DIR, ensure_dirs
+from _paths import (
+    AUDIT_PATH,
+    BUNDLES_DIR,
+    HOMEPAGE_OVERRIDES_PATH,
+    LISTINGS_PATH,
+    LLM_REVIEWS_PATH,
+    PIS_DIR,
+    ensure_dirs,
+)
 from llm_review import load_review_cache, review_research, save_review_cache
 from agency import classify_contact, classify_source_kind, should_list_source
 from audit_pipeline import write_audit
@@ -127,11 +135,15 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
     pis_dir.mkdir(parents=True, exist_ok=True)
     listings = []
     keep_pis: set[str] = set()
+    homepage_overrides = {}
+    if HOMEPAGE_OVERRIDES_PATH.is_file():
+        homepage_overrides = json.loads(HOMEPAGE_OVERRIDES_PATH.read_text(encoding="utf-8"))
     for item in merged:
         rec = next((row for row in item.records if row.get("listable")), None)
         if rec is None:
             continue
         pi_id = _slug(item.name, item.school_canonical)
+        homepage_url = homepage_overrides.get(pi_id) or item.homepage_url
         topics: list[str] = []
         for row in item.records:
             if not row.get("listable"):
@@ -149,7 +161,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
             "school_status": item.school_status,
             "school_evidence": rec.get("school_evidence") or [],
             "suggested_school": rec.get("suggested_school"),
-            "homepage_url": item.homepage_url,
+            "homepage_url": homepage_url,
             "research_areas": item.research_areas,
             "research_topics": topics,
             "updated_at": rec.get("updated_at"),
