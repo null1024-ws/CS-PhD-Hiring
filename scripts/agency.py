@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from extract import EMAIL_RE, URL_RE, SKIP_URL_HOST, is_weak_pi_name
+from extract import EMAIL_RE, URL_RE, SKIP_URL_HOST, clean_url, is_weak_pi_name
 
 EXPLICIT_AGENCY_RE = re.compile(
     r"代申|中介|包\s*offer|文书全程|选校定位|申请辅导|保录取|"
@@ -36,9 +36,9 @@ def classify_contact(visible_text: str) -> str:
     text = visible_text or ""
     emails = EMAIL_RE.findall(text)
     urls = [
-        u.rstrip("。．.,，")
-        for u in URL_RE.findall(text)
-        if not SKIP_URL_HOST.search(u)
+        url
+        for url in (clean_url(u) for u in URL_RE.findall(text))
+        if url and not SKIP_URL_HOST.search(url)
     ]
     if any(EDU_EMAIL_RE.search(e) or UNI_EMAIL_RE.search(e) for e in emails) or urls:
         return "academic"

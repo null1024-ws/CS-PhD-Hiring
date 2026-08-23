@@ -201,6 +201,15 @@ def test_joining_mbzuai_not_stanford_postdoc() -> None:
     assert rows[0].school_claimed == "MBZUAI"
 
 
+def test_homepage_does_not_swallow_following_chinese() -> None:
+    rows = extract_opportunities(
+        "大家好，我是沈俞，目前在香港理工大学担任助理教授。"
+        "我的个人主页是：https://shenyu-official.icu。今年准备招收几名 PhD学生。"
+    )
+    assert rows[0].homepage_url == "https://shenyu-official.icu"
+    assert "今年准备" not in (rows[0].homepage_url or "")
+
+
 def test_does_not_invent_email_or_term() -> None:
     rows = extract_opportunities(_load("no_contact.txt"))
     assert len(rows) == 1

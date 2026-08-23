@@ -32,7 +32,9 @@ AREA_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 EMAIL_RE = re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.I)
-URL_RE = re.compile(r"https?://[^\s)）,\"']+", re.I)
+# ASCII URL only so "https://a.com。今年准备招收" does not swallow the sentence.
+URL_RE = re.compile(r"https?://[A-Za-z0-9._~:/?#\[\]@!$&'()*+,;=%\-]+", re.I)
+URL_TRAIL_RE = re.compile(r"[。．.,，;；、）)\]\"']+$")
 SKIP_URL_HOST = re.compile(
     r"xiaohongshu\.com|xhslink\.com|weixin\.qq\.com|1point3acres\.com", re.I
 )
@@ -66,7 +68,6 @@ HIRE_SCHOOL_RE = re.compile(
 PAST_AFFILIATION_RE = re.compile(
     r"(?:目前在|目前就读|师从|毕业于|获得[^。]{0,20}学位|此前|曾在|导师为|导师是)[^。\n]*"
 )
-URL_STRIP_RE = re.compile(r"https?://[^\s)）,\"']+", re.I)
 SELF_SKIP = {"学生", "楼主", "本人", "老师", "作者", "招生"}
 WEAK_NAME_RE = re.compile(r"^(?:未知|老师|教授|[\u4e00-\u9fff]老师)$")
 NAME_NOISE_RE = re.compile(
@@ -211,7 +212,7 @@ def _alias_list(path: str) -> list[str]:
 
 
 def _text_without_urls(text: str) -> str:
-    return URL_STRIP_RE.sub(" ", text or "")
+    return URL_RE.sub(" ", text or "")
 
 
 def find_claimed_school(text: str, *, schools_path: Path | None = None) -> str | None:
@@ -247,10 +248,19 @@ def _emails(text: str) -> list[str]:
     return EMAIL_RE.findall(text)
 
 
+def clean_url(raw: str) -> str:
+    """Keep only the URL. Cut CJK or a Chinese period that authors glue on."""
+    url = (raw or "").strip()
+    cut = re.search(r"[\u4e00-\u9fff]", url)
+    if cut:
+        url = url[: cut.start()]
+    return URL_TRAIL_RE.sub("", url)
+
+
 def _homepage(text: str) -> str | None:
     for match in URL_RE.findall(text):
-        url = match.rstrip("。．.,，")
-        if not SKIP_URL_HOST.search(url):
+        url = clean_url(match)
+        if url and not SKIP_URL_HOST.search(url):
             return url
     return None
 
