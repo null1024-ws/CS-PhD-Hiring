@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 SCHOOLS_PATH = DATA_DIR / "schools.json"
 LISTINGS_PATH = DATA_DIR / "listings.json"
+AUDIT_PATH = DATA_DIR / "audit.json"
 RAW_DIR = DATA_DIR / "raw"
 RAW_XHS = RAW_DIR / "xhs"
 RAW_IMAGES = RAW_DIR / "images"

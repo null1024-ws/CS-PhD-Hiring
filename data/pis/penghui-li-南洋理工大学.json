@@ -14,6 +14,7 @@
     "systems",
     "security"
   ],
+  "research_topics": [],
   "updated_at": "2026-06-26",
   "opportunities": [
     {
@@ -25,13 +26,15 @@
         "visiting"
       ],
       "start_term": "2027 Spring",
-      "excerpt": "研究方向 AI 系统安全、软件与 Web 安全、程序分析、LLM for Security。我过去的工作曾获 ACM CCS 2024 杰出论文奖、CCS 2022 最佳论文提名、CCS 2025 杰出 Artifact 奖。 👨‍🏫 导师 Style 在过去的研究经历中，我有幸遇到了非常 supportive 的导师们，所以我也希望能 pass this on。我喜欢钻研技术，所以我会非常 hands-on 地和学生一起推项目，逐步帮助学生成为独立的研究者。 💡 我期待这样的你 - 研究热情：对安全研究有强烈兴趣，CS/Sec/AI基础扎实。 - 工程能力：具备突出的 (vibe) coding 能力，有 CTF 或 System 相关经验。 - 沟通能力：具备突出的英语表达能力（speaking & writing）。 - 专业素养：工作上 professional & reliable。 🔗 申请方式 ：",
+      "excerpt": "nlp · systems · security",
+      "research_topics": [],
       "email": null,
       "contact": "https://peng-hui.github.io/openings.html",
       "contact_class": "academic",
       "source": "xhs",
       "source_kind": "pi",
       "source_url": "https://www.xiaohongshu.com/explore/6a3e77ee000000001102fc80?xsec_token=ABOI81jT33vBO7T56spiGWNwSzdIRRdg3s4ZSfF8vXIcI%3D&xsec_source=pc_search",
+      "source_title": "[本人招生] 计算机安全@新加坡南洋理工",
       "source_note_id": "6a3e77ee000000001102fc80",
       "posted_at": "2026-06-26",
       "collected_at": "2026-08-23",

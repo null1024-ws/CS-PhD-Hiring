@@ -57,6 +57,8 @@ def test_detail_is_one_reading_not_two_posts(tmp_path) -> None:
     assert "学期" not in text
     assert "邮箱" in text
     assert "主页" in text
+    assert "打开原帖" not in text
+    assert "topic-list" in text
     assert "max-width: 720px" in text
 
 
@@ -90,8 +92,7 @@ def test_compose_merges_duplicate_excerpts() -> None:
     assert view["emails"] == ["chen.siyuan@ust.hk"]
     assert view["homepages"] == ["https://www.cs.ust.hk/~siyuan"]
     assert len(view["sources"]) == 2
-    assert view["excerpt"].count("邮箱") == 0
-    assert "http" not in view["excerpt"]
+    assert view["sources"][0]["label"] != "打开原帖"
     assert clean_excerpt("招生 陈思远教授 邮箱 a@b.edu") == "陈思远教授"
 
 

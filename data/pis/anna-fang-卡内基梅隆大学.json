@@ -13,6 +13,7 @@
     "hci",
     "ml"
   ],
+  "research_topics": [],
   "updated_at": "2025-10-17",
   "opportunities": [
     {
@@ -22,13 +23,15 @@
         "phd"
       ],
       "start_term": null,
-      "excerpt": "我的研究已在 CHI, CSCW, JMIR 等国际顶级会议和期刊上发表并获奖，并且是卡内基梅隆大学机器学习与健康中心（Center for Machine Learning & Health）的两届研究员奖学金获得者。 我将于 2026 年加入墨尔本大学（University of Melbourne）计算机科学学院，担任助理教授。我的研究聚焦于人机交互在心理健康与社会福祉领域的应用，特别关注如何利用沉浸式技术、人工智能（如大型语言模型和机器学习）以及社会计算方法。我正在寻找对人机交互及其社会影响充满热情的博士生！🏅墨尔本大学在人机交互领域全球排名第 11 位 (CS Rankings)，综合排名全球第 19 位 (QS World Rankings)。 所有博士生将获得全额奖学金支持（学费 + 生活费），我们可以自由探索有意义且有影响力的研究方向！ 有兴趣的同学请直接给我发送邮件，并附上自我介绍和简历 —> 💻 🌸 如果有拼写错误，请多包涵～我是美籍华人，从小在美国长大 😅。申请者需要能够使用英文进行研究与交流!",
+      "excerpt": "hci · ml",
+      "research_topics": [],
       "email": null,
       "contact": "https://annamfang.com",
       "contact_class": "academic",
       "source": "xhs",
       "source_kind": "pi",
       "source_url": "https://www.xiaohongshu.com/explore/68f2c843000000000503abae?xsec_token=ABPU8tHgwvbuLUDZJqdubzk5XZQKModIUi7wJzXsv7n-E%3D&xsec_source=pc_search",
+      "source_title": "🔎招 CS / HCI 博士生 🔎 PhD in CS",
       "source_note_id": "68f2c843000000000503abae",
       "posted_at": "2025-10-17",
       "collected_at": "2026-08-23",

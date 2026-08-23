@@ -9,8 +9,9 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from _paths import BUNDLES_DIR, LISTINGS_PATH, PIS_DIR, ensure_dirs
+from _paths import AUDIT_PATH, BUNDLES_DIR, LISTINGS_PATH, PIS_DIR, ensure_dirs
 from agency import classify_contact, classify_source_kind, should_list_source
+from audit_pipeline import write_audit
 from content_bundle import bundle_extract_text, bundle_visible_text, flatten_collected_note
 from dedup import merge_records
 from extract import extract_opportunities, is_main_table_name
@@ -74,6 +75,7 @@ def process_note(note: dict) -> list[dict]:
             "suggested_school": verification.suggested_school,
             "homepage_url": row.homepage_url,
             "research_areas": row.research_areas,
+            "research_topics": row.research_topics,
             "opportunity_types": row.opportunity_types or ["other"],
             "types": row.opportunity_types or ["other"],
             "start_term": row.start_term,
@@ -86,6 +88,7 @@ def process_note(note: dict) -> list[dict]:
                 "source_kind": kind,
                 "url": note.get("source_url") or "",
                 "note_id": note.get("note_id"),
+                "title": note.get("title") or "",
             },
             "source_kind": kind,
             "relevance": relevance,
@@ -111,6 +114,11 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
         if not rec.get("listable"):
             continue
         pi_id = _slug(item.name, item.school_canonical)
+        topics: list[str] = []
+        for row in item.records:
+            for topic in row.get("research_topics") or []:
+                if topic and topic not in topics:
+                    topics.append(topic)
         detail = {
             "pi_id": pi_id,
             "name": item.name,
@@ -123,6 +131,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
             "suggested_school": rec.get("suggested_school"),
             "homepage_url": item.homepage_url,
             "research_areas": item.research_areas,
+            "research_topics": topics,
             "updated_at": rec.get("updated_at"),
             "opportunities": [
                 {
@@ -131,12 +140,14 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
                     "types": r.get("opportunity_types") or ["other"],
                     "start_term": r.get("start_term"),
                     "excerpt": r.get("excerpt") or "",
+                    "research_topics": r.get("research_topics") or [],
                     "email": r.get("email"),
                     "contact": r.get("contact"),
                     "contact_class": r.get("contact_class"),
                     "source": (r.get("source") or {}).get("source") or "xhs",
                     "source_kind": (r.get("source") or {}).get("source_kind") or "unknown",
                     "source_url": (r.get("source") or {}).get("url") or "",
+                    "source_title": (r.get("source") or {}).get("title") or "",
                     "source_note_id": (r.get("source") or {}).get("note_id"),
                     "posted_at": r.get("updated_at"),
                     "collected_at": datetime.now(timezone.utc).date().isoformat(),
@@ -167,6 +178,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
                 "suggested_school": rec.get("suggested_school"),
             }
         )
+    listings.sort(key=lambda row: row.get("updated_at") or "", reverse=True)
     payload = {
         "generated_at": datetime.now(timezone.utc).date().isoformat(),
         "listings": listings,
@@ -183,14 +195,20 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--input-dir", type=Path, default=BUNDLES_DIR)
     parser.add_argument("--listings", type=Path, default=LISTINGS_PATH)
     parser.add_argument("--pis-dir", type=Path, default=PIS_DIR)
+    parser.add_argument("--audit", type=Path, default=AUDIT_PATH)
     args = parser.parse_args(argv)
     notes = load_notes(args.input_dir)
     records: list[dict] = []
     for note in notes:
         records.extend(process_note(note))
+    audit = write_audit(records, args.audit)
     merged = merge_records(records)
     write_outputs(merged, args.listings, args.pis_dir)
-    print(f"Wrote {args.listings} ({len(json.loads(args.listings.read_text(encoding='utf-8'))['listings'])} listings)")
+    listed = len(json.loads(args.listings.read_text(encoding="utf-8"))["listings"])
+    print(
+        f"Wrote {args.listings} ({listed} listings); "
+        f"audit {args.audit} dropped={audit['counts']['dropped']} agency={audit['counts']['agency']}"
+    )
     return 0
 
 

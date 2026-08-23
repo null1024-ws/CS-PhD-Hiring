@@ -2,154 +2,25 @@
   "generated_at": "2026-08-23",
   "listings": [
     {
-      "pi_id": "anna-fang-卡内基梅隆大学",
-      "name": "Anna Fang",
+      "pi_id": "萧建聪-新加坡国立大学",
+      "name": "萧建聪",
       "name_en": null,
-      "school_canonical": "卡内基梅隆大学",
-      "school_country": "美国",
+      "school_canonical": "新加坡国立大学",
+      "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "hci",
+        "nlp",
         "ml"
       ],
       "opportunity_types": [
-        "phd"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2025-10-17",
-      "detail_path": "pis/anna-fang-卡内基梅隆大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "马晓娟-香港科技大学",
-      "name": "马晓娟",
-      "name_en": null,
-      "school_canonical": "香港科技大学",
-      "school_country": "中国香港",
-      "school_status": "unverified",
-      "research_areas": [
-        "computer vision",
-        "hci",
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd"
+        "phd",
+        "postdoc",
+        "visiting"
       ],
       "start_term": "2027 Fall",
       "source_count": 1,
-      "updated_at": "2026-04-18",
-      "detail_path": "pis/马晓娟-香港科技大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "jiahao-yu-纽约大学阿布扎比分校",
-      "name": "Jiahao Yu",
-      "name_en": null,
-      "school_canonical": "纽约大学阿布扎比分校",
-      "school_country": "阿联酋",
-      "school_status": "unverified",
-      "research_areas": [
-        "nlp",
-        "systems",
-        "security"
-      ],
-      "opportunity_types": [
-        "phd",
-        "postdoc"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2026-06-04",
-      "detail_path": "pis/jiahao-yu-纽约大学阿布扎比分校.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "yuejiang-liu-新加坡国立大学",
-      "name": "Yuejiang Liu",
-      "name_en": null,
-      "school_canonical": "新加坡国立大学",
-      "school_country": "新加坡",
-      "school_status": "unverified",
-      "research_areas": [
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern",
-        "postdoc"
-      ],
-      "start_term": "2027 Spring",
-      "source_count": 1,
-      "updated_at": "2026-06-06",
-      "detail_path": "pis/yuejiang-liu-新加坡国立大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "penghui-li-南洋理工大学",
-      "name": "Penghui Li",
-      "name_en": null,
-      "school_canonical": "南洋理工大学",
-      "school_country": "新加坡",
-      "school_status": "unverified",
-      "research_areas": [
-        "nlp",
-        "systems",
-        "security"
-      ],
-      "opportunity_types": [
-        "phd",
-        "postdoc",
-        "visiting"
-      ],
-      "start_term": "2027 Spring",
-      "source_count": 1,
-      "updated_at": "2026-06-26",
-      "detail_path": "pis/penghui-li-南洋理工大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "dianbo-liu-新加坡国立大学",
-      "name": "Dianbo Liu",
-      "name_en": null,
-      "school_canonical": "新加坡国立大学",
-      "school_country": "新加坡",
-      "school_status": "unverified",
-      "research_areas": [
-        "systems",
-        "ml"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern",
-        "postdoc",
-        "visiting"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2026-08-07",
-      "detail_path": "pis/dianbo-liu-新加坡国立大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "丛林-南洋理工大学",
-      "name": "丛林",
-      "name_en": null,
-      "school_canonical": "南洋理工大学",
-      "school_country": "新加坡",
-      "school_status": "unverified",
-      "research_areas": [
-        "computer vision",
-        "ml"
-      ],
-      "opportunity_types": [
-        "phd",
-        "ra"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2026-08-14",
-      "detail_path": "pis/丛林-南洋理工大学.html",
+      "updated_at": "2026-08-22",
+      "detail_path": "pis/萧建聪-新加坡国立大学.html",
       "suggested_school": null
     },
     {
@@ -193,25 +64,133 @@
       "suggested_school": null
     },
     {
-      "pi_id": "萧建聪-新加坡国立大学",
-      "name": "萧建聪",
+      "pi_id": "丛林-南洋理工大学",
+      "name": "丛林",
+      "name_en": null,
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "computer vision",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-14",
+      "detail_path": "pis/丛林-南洋理工大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "dianbo-liu-新加坡国立大学",
+      "name": "Dianbo Liu",
       "name_en": null,
       "school_canonical": "新加坡国立大学",
       "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "nlp",
+        "systems",
         "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-07",
+      "detail_path": "pis/dianbo-liu-新加坡国立大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "penghui-li-南洋理工大学",
+      "name": "Penghui Li",
+      "name_en": null,
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "nlp",
+        "systems",
+        "security"
       ],
       "opportunity_types": [
         "phd",
         "postdoc",
         "visiting"
       ],
-      "start_term": "2027 Fall",
+      "start_term": "2027 Spring",
       "source_count": 1,
-      "updated_at": "2026-08-22",
-      "detail_path": "pis/萧建聪-新加坡国立大学.html",
+      "updated_at": "2026-06-26",
+      "detail_path": "pis/penghui-li-南洋理工大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "yuejiang-liu-新加坡国立大学",
+      "name": "Yuejiang Liu",
+      "name_en": null,
+      "school_canonical": "新加坡国立大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "robotics"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": "2027 Spring",
+      "source_count": 1,
+      "updated_at": "2026-06-06",
+      "detail_path": "pis/yuejiang-liu-新加坡国立大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "jiahao-yu-纽约大学阿布扎比分校",
+      "name": "Jiahao Yu",
+      "name_en": null,
+      "school_canonical": "纽约大学阿布扎比分校",
+      "school_country": "阿联酋",
+      "school_status": "unverified",
+      "research_areas": [
+        "nlp",
+        "systems",
+        "security"
+      ],
+      "opportunity_types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-06-04",
+      "detail_path": "pis/jiahao-yu-纽约大学阿布扎比分校.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "anna-fang-卡内基梅隆大学",
+      "name": "Anna Fang",
+      "name_en": null,
+      "school_canonical": "卡内基梅隆大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "hci",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2025-10-17",
+      "detail_path": "pis/anna-fang-卡内基梅隆大学.html",
       "suggested_school": null
     }
   ]

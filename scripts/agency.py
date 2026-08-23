@@ -7,10 +7,15 @@ import re
 from extract import EMAIL_RE, URL_RE, SKIP_URL_HOST, is_weak_pi_name
 
 EXPLICIT_AGENCY_RE = re.compile(
-    r"代申|中介|包\s*offer|文书全程|选校定位|申请辅导|保录取",
+    r"代申|中介|包\s*offer|文书全程|选校定位|申请辅导|保录取|"
+    r"帮你避坑|别再海投|针对性套磁|留学中介|我帮你(?:改|看|避)",
     re.I,
 )
-SOCIAL_RE = re.compile(r"私信|加微信|加\s*vx|微信|评论区扣|扣\s*1|看主页私", re.I)
+SOCIAL_RE = re.compile(
+    r"私信|加微信|加\s*vx|微信|评论区扣|扣\s*1|看主页私|踢我|滴我|勾搭我",
+    re.I,
+)
+PITCH_RE = re.compile(r"推荐.{0,10}老师组|来看看.{0,16}导师组")
 CONSUMER_HOST_RE = re.compile(
     r"@(?:gmail|qq|163|126|outlook|hotmail|yahoo)\.",
     re.I,
@@ -56,6 +61,8 @@ def classify_source_kind(
         return "agency"
 
     contact = classify_contact(text)
+    if contact != "academic" and PITCH_RE.search(text):
+        return "agency"
     has_pi = bool(pi_name) and not is_weak_pi_name(pi_name) and bool(school_claimed)
     if contact == "academic":
         return "pi"

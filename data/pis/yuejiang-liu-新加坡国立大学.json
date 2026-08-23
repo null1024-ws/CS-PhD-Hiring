@@ -12,6 +12,11 @@
   "research_areas": [
     "robotics"
   ],
+  "research_topics": [
+    "Adaptive Robot Policies",
+    "Interactive World Models",
+    "Proactive Self-Improvement"
+  ],
   "updated_at": "2026-06-06",
   "opportunities": [
     {
@@ -23,13 +28,19 @@
         "postdoc"
       ],
       "start_term": "2027 Spring",
-      "excerpt": "实验室关注开放动态世界中的具身智能：如何让智能体在充满未知与不确定性的环境中持续感知、推理与行动？ 主要方向： • Adaptive Robot Policies：适应新任务、新环境和真实世界不确定性 • Interactive World Models：预测世界变化、理解交互、规划行动后果 • Proactive Self-Improvement：主动发现不足、收集经验、持续自我提升 🎨 [我们的科研] • 关注重要且有趣的问题，同时重视学生兴趣和长期成长 • 常年发表于 ICML / ICLR / NeurIPS / CVPR / CoRL 等顶会，近期多次荣获专题研讨会最佳论文奖项 • 与 Stanford / Harvard / EPFL / DeepMind / NVIDIA 等机构保持合作，支持国际交流、企业实习 🔍 [我们在找谁] • 高年级本科生、硕士生，或低年级博士生 • 对科研有真实好奇心，愿意独立思考、主动探索 • 有论文、开源项目、机器人项目经验者优先 📌 [申请时间] • 2027春季入学PhD申请：2026 年 6 月 15 日 • 科研实习生常年滚动招收，欢迎随时联系 📮 [如何申请] 请见： 期待你的加入！",
+      "excerpt": "Adaptive Robot Policies · Interactive World Models · Proactive Self-Improvement",
+      "research_topics": [
+        "Adaptive Robot Policies",
+        "Interactive World Models",
+        "Proactive Self-Improvement"
+      ],
       "email": null,
       "contact": "https://lema-nus.github.io",
       "contact_class": "academic",
       "source": "xhs",
       "source_kind": "pi",
       "source_url": "https://www.xiaohongshu.com/explore/6a23ca78000000000803ca18?xsec_token=ABhZeZ1pYAL1dUy6fVd0F_YilGJ6PV0wzp4U3sdTQGLz8%3D&xsec_source=pc_search",
+      "source_title": "[本人招生] NUS CS｜博士 / 实习｜具身智能",
       "source_note_id": "6a23ca78000000000803ca18",
       "posted_at": "2026-06-06",
       "collected_at": "2026-08-23",

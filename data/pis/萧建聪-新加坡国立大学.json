@@ -13,6 +13,9 @@
     "nlp",
     "ml"
   ],
+  "research_topics": [
+    "大语言模型与可信人工智能的理论基础"
+  ],
   "updated_at": "2026-08-22",
   "opportunities": [
     {
@@ -24,13 +27,17 @@
         "visiting"
       ],
       "start_term": "2027 Fall",
-      "excerpt": "我的研究主要围绕机器学习理论、统计与优化，重点关注大语言模型与可信人工智能的理论基础。目前主要研究方向包括： 🔹 大语言模型的理论基础 研究大模型的对齐、模型校准（calibration）、幻觉等问题。 🔹 大语言模型与经济学、社会科学的交叉研究，相关问题及理论挑战。 🔹 LLM微调（fine-tuning）与后训练（post-training）方法的理论性质。 🔹 经典机器学习 研究优化、泛化等机器学习中的经典理论问题。 近期研究成果发表于 JMLR、Annals of Statistics、JASA 等期刊，以及 COLT、NeurIPS、ICML、ICLR 等会议。 📌 招生计划 - 1–3 名 2027 Fall 入学的博士生 - 1 名博士后（视明年经费情况而定） - 同时欢迎访问学生和RA NUS 的 Ph.D. 招生采用强committee制。但我仍然欢迎对我的研究方向感兴趣的同学提前与我联系，交流研究兴趣和未来规划。 我期待有扎实的数学、统计或机器学习理论基础，并对大语言模型或可信 AI 有浓厚兴趣的同学加入。 📩 感兴趣的同学欢迎通过邮件与我联系，也欢迎转发给身边可能感兴趣的朋友！",
+      "excerpt": "大语言模型与可信人工智能的理论基础",
+      "research_topics": [
+        "大语言模型与可信人工智能的理论基础"
+      ],
       "email": null,
       "contact": null,
       "contact_class": "none",
       "source": "xhs",
       "source_kind": "repost",
       "source_url": "https://www.xiaohongshu.com/explore/6a89b26500000000280270d2?xsec_token=ABic7yUldJygxjVdaJ7JLU3B1snlJvWhopkMROSDXg8T0%3D&xsec_source=pc_search",
+      "source_title": "【本人招生】NUS CS｜27 Fall 博士生、博后",
       "source_note_id": "6a89b26500000000280270d2",
       "posted_at": "2026-08-22",
       "collected_at": "2026-08-23",

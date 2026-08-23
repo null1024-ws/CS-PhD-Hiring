@@ -14,6 +14,16 @@
     "systems",
     "security"
   ],
+  "research_topics": [
+    "Software / System Security",
+    "LLM / RL / Trustworthy AI",
+    "LLM security",
+    "fuzzing",
+    "program repair",
+    "AI-assisted vulnerability discovery",
+    "RL for security",
+    "LLM reasoning"
+  ],
   "updated_at": "2026-06-04",
   "opportunities": [
     {
@@ -24,13 +34,24 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "我的研究主要在 AI + Security 交叉方向，过去做过 LLM security、fuzzing、program repair、AI-assisted vulnerability discovery、RL for security、LLM reasoning/alignment 等。论文发表在 USENIX Security、NeurIPS、ICML、ICSE 等。 ： 我现在开始招 Postdoc 和 PhD 学生。组里会有 2 个 postdoc line。PhD 需要通过 NYUAD/NYU 申请流程，学生 funding 也是 fully supported。 主要招两个方向，不要求都掌握，感兴趣一个就可以： 1. Software / System Security AI-assisted vulnerability discovery、fuzzing、program analysis、automated repair、software supply chain security、cyber agents 等。了解 AIxCC、打过 CTF、有安全/系统开源项目会很合适。 2. LLM / RL / Trustworthy AI RL for reasoning/coding agents、LLM alignment/robustness/interpretability、agent safety/evaluation、LLM for code 等。 作为新 AP，我会比较 hands-on 地带学生，一起讨论 idea、推项目、写 paper。组里也会有GPU/HPC 等启动资源。我也有不少师兄、朋友和合作者在北美大厂，会持续保持 connection 和 paper 合作",
+      "excerpt": "Software / System Security · LLM / RL / Trustworthy AI · LLM security · fuzzing · program repair · AI-assisted vulnerability discovery · RL for security · LLM reasoning",
+      "research_topics": [
+        "Software / System Security",
+        "LLM / RL / Trustworthy AI",
+        "LLM security",
+        "fuzzing",
+        "program repair",
+        "AI-assisted vulnerability discovery",
+        "RL for security",
+        "LLM reasoning"
+      ],
       "email": "jy5951@nyu.edu",
       "contact": "jy5951@nyu.edu",
       "contact_class": "academic",
       "source": "xhs",
       "source_kind": "pi",
       "source_url": "https://www.xiaohongshu.com/explore/6a21e6580000000010001c00?xsec_token=ABbI3iHwT8XCkshotfe2Fq0nAXo7vq-F_kbzNjNVDz9jg%3D&xsec_source=pc_search",
+      "source_title": "NYUAD 新ap招Phd和Postdoc",
       "source_note_id": "6a21e6580000000010001c00",
       "posted_at": "2026-06-04",
       "collected_at": "2026-08-23",

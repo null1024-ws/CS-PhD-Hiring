@@ -68,12 +68,6 @@ NAME_NOISE_RE = re.compile(
     r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室"
 )
 
-RESEARCH_START_RE = re.compile(
-    r"(?:我的研究|研究方向|主要方向|主要招|目前主要研究|重点关注|过去做过|实验室关注|研究主要)"
-)
-RESEARCH_STOP_RE = re.compile(r"(欢迎感兴趣|邮件联系|加微信|私信我|评论区)")
-HASHTAG_RE = re.compile(r"#\S+")
-
 TERM_PATTERNS: list[re.Pattern[str]] = [
     re.compile(r"(20\d{2})\s*(Fall|Spring|Summer|Autumn)", re.I),
     re.compile(r"(20\d{2})\s*(秋|春|夏)(?:季|天)?", re.I),
@@ -93,6 +87,7 @@ class ExtractedOpportunity:
     research_areas: list[str]
     extract_confidence: str
     excerpt: str
+    research_topics: list[str] = field(default_factory=list)
     extras: dict = field(default_factory=dict)
 
 
@@ -176,22 +171,58 @@ def _areas(text: str) -> list[str]:
     return found
 
 
+TOPIC_SKIP_RE = re.compile(
+    r"入学|背景|奖学金|GPA|宝子|勾搭|Nice|快乐|氛围|Case|全奖|津贴|海鲜|避坑|套磁|海投|"
+    r"博士后|访问学|招收|本科|硕士|优先|好奇|热情|工程能力|沟通|专业素养|成长|"
+    r"联系|规划|申请|欢迎|实习生"
+)
+TOPIC_LEAD_RE = re.compile(
+    r"(?:过去做过|研究方向(?:包括)?|目前主要研究方向包括|重点关注|"
+    r"如果你对)([^。\n]{4,160}?)(?:等[。.]|感兴趣|。|$)"
+)
+TOPIC_ITEM_RE = re.compile(
+    r"(?:^|[\n;；。]|[•·])\s*(?:\d+[.、]|[•·\-])\s*([^\n。]{2,80})"
+)
+
+
+def _ok_topic(text: str) -> bool:
+    topic = re.sub(r"\s+", " ", text or "").strip(" .。；;，,：:")
+    if not topic or len(topic) < 2 or len(topic) > 48:
+        return False
+    if TOPIC_SKIP_RE.search(topic):
+        return False
+    if topic.lower() in {"phd", "intern", "ra", "postdoc", "cs"}:
+        return False
+    return True
+
+
+def research_topics(text: str) -> list[str]:
+    """A few concrete directions, not a marketing paragraph."""
+    found: list[str] = []
+    seen: set[str] = set()
+
+    def add(raw: str) -> None:
+        topic = re.split(r"[：:（(]", raw, 1)[0].strip()
+        topic = re.sub(r"\s+", " ", topic).strip(" .。；;，,")
+        key = topic.lower()
+        if not _ok_topic(topic) or key in seen:
+            return
+        seen.add(key)
+        found.append(topic)
+
+    for match in TOPIC_ITEM_RE.finditer(text or ""):
+        add(match.group(1))
+    for match in TOPIC_LEAD_RE.finditer(text or ""):
+        for part in re.split(r"[、，,/]| and ", match.group(1)):
+            add(part.strip(" 的在为"))
+    return found[:8]
+
+
 def research_excerpt(text: str) -> str:
-    """Keep the research-direction passage instead of a 160-char bio cut."""
-    cleaned = re.sub(r"\s+", " ", text or "").strip()
-    cleaned = EMAIL_RE.sub("", cleaned)
-    cleaned = URL_RE.sub("", cleaned)
-    cleaned = HASHTAG_RE.sub("", cleaned)
-    cleaned = re.sub(r"(邮箱|主页)\s*", "", cleaned)
-    cleaned = re.sub(r"\s+", " ", cleaned).strip(" 。.;；,，")
-    match = RESEARCH_START_RE.search(cleaned)
-    if match:
-        chunk = cleaned[match.start() :]
-        stop = RESEARCH_STOP_RE.search(chunk)
-        if stop and stop.start() > 20:
-            chunk = chunk[: stop.start()]
-        cleaned = chunk.strip(" 。.;；,，")
-    return cleaned[:2000]
+    topics = research_topics(text)
+    if topics:
+        return " · ".join(topics)
+    return " · ".join(_areas(text))
 
 
 def _start_term(text: str) -> str | None:
@@ -319,7 +350,8 @@ def extract_opportunities(
     types = _types(text)
     areas = _areas(text)
     term = _start_term(text)
-    excerpt = research_excerpt(text)
+    topics = research_topics(text)
+    excerpt = " · ".join(topics) if topics else " · ".join(areas)
 
     rows: list[ExtractedOpportunity] = []
     for name in names:
@@ -332,6 +364,7 @@ def extract_opportunities(
                 email=email,
                 homepage_url=homepage,
                 research_areas=areas,
+                research_topics=topics,
                 extract_confidence=_confidence(name, school, email, homepage, term),
                 excerpt=excerpt,
             )

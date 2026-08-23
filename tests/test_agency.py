@@ -53,6 +53,20 @@ def test_ocr_email_counts_as_academic() -> None:
     assert should_list_source(kind, "academic")
 
 
+def test_consulting_pitch_is_agency() -> None:
+    text = (AGENCY / "consulting_pitch.txt").read_text(encoding="utf-8")
+    row = extract_opportunities(text)[0]
+    kind = classify_source_kind(
+        visible_text=text,
+        pi_name=row.pi_name,
+        school_claimed=row.school_claimed,
+        school_resolvable=normalize_school(row.school_claimed) is not None,
+    )
+    assert classify_contact(text) == "social_only"
+    assert kind == "agency"
+    assert not should_list_source(kind, classify_contact(text))
+
+
 def test_student_repost_kept() -> None:
     text = (AGENCY / "student_repost.txt").read_text(encoding="utf-8")
     row = extract_opportunities(text)[0]

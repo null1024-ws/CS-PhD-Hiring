@@ -115,21 +115,45 @@ def compose_pi_view(pi: dict) -> dict:
     """Collapse many near-duplicate posts into one reading view."""
     opps = pi.get("opportunities") or []
     types = _uniq([t for opp in opps for t in (opp.get("types") or [])])
-    sources = _uniq([opp.get("source_url") or "" for opp in opps])
-    excerpts = [clean_excerpt(opp.get("excerpt") or "") for opp in opps]
-    excerpts = [e for e in excerpts if e]
-    excerpt = _best_excerpt(excerpts)
+    topics = _uniq(list(pi.get("research_topics") or []))
+    for opp in opps:
+        topics = _uniq(topics + list(opp.get("research_topics") or []))
+    if not topics:
+        excerpt = _best_excerpt(
+            [clean_excerpt(opp.get("excerpt") or "") for opp in opps if opp.get("excerpt")]
+        )
+        topics = [part.strip() for part in excerpt.split("·") if 1 < len(part.strip()) < 48]
+    if not topics:
+        topics = _uniq(pi.get("research_areas") or [])
+    labeled_sources = []
+    seen_urls: set[str] = set()
+    for opp in opps:
+        url = (opp.get("source_url") or "").strip()
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        title = re.sub(r"\s+", " ", (opp.get("source_title") or "").strip())
+        date = (opp.get("posted_at") or "").strip()
+        if title:
+            label = title[:42]
+            if date:
+                label = f"{label} · {date}"
+        elif date:
+            label = f"小红书 · {date}"
+        else:
+            label = "小红书"
+        labeled_sources.append({"url": url, "label": label})
     emails, homepages = _split_contacts(pi, opps)
     return {
         "name": pi.get("name") or "",
         "school": pi.get("school_canonical") or pi.get("school_claimed") or "",
         "country": pi.get("school_country") or "",
         "areas": _uniq(pi.get("research_areas") or []),
+        "topics": topics,
         "types": types,
         "emails": emails,
         "homepages": homepages,
-        "excerpt": excerpt,
-        "sources": sources,
+        "sources": labeled_sources,
         "updated": pi.get("updated_at") or "",
     }
 
@@ -353,6 +377,8 @@ td a { font-weight: 500; }
   margin: 8px 0 24px;
   color: var(--dark-warm);
 }
+.topic-list { margin: 8px 0 24px; padding-left: 1.2em; color: var(--dark-warm); }
+.topic-list li { margin: 0 0 6px; }
 .source-list { list-style: none; padding: 0; margin: 0 0 48px; }
 .source-list li { margin: 0 0 8px; }
 .source-list a { font-family: var(--latin-ui); font-size: 14px; }
@@ -486,7 +512,11 @@ def _filter_row(label: str, group: str, values: list[str], labels: dict[str, str
 
 
 def render_index(payload: dict) -> str:
-    listings = payload.get("listings") or []
+    listings = sorted(
+        payload.get("listings") or [],
+        key=lambda row: row.get("updated_at") or "",
+        reverse=True,
+    )
     countries = sorted({row.get("school_country") for row in listings if row.get("school_country")})
     areas = sorted({a for row in listings for a in (row.get("research_areas") or [])})
     types = sorted({t for row in listings for t in (row.get("opportunity_types") or [])})
@@ -576,8 +606,8 @@ def render_detail(pi: dict) -> str:
         for url in view["homepages"]
     ) or "—"
     sources = "".join(
-        f'<li><a href="{escape(url)}" target="_blank" rel="noopener">打开原帖</a></li>'
-        for url in view["sources"]
+        f'<li><a href="{escape(item["url"])}" target="_blank" rel="noopener">{escape(item["label"])}</a></li>'
+        for item in view["sources"]
     ) or "<li>暂无原帖链接</li>"
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -601,7 +631,7 @@ def render_detail(pi: dict) -> str:
       <div class="k">主页</div><div>{homepages}</div>
     </div>
     <p class="eyebrow">研究方向</p>
-    <p class="excerpt">{escape(view["excerpt"]) or "—"}</p>
+    {('<ul class="topic-list">' + "".join(f"<li>{escape(t)}</li>" for t in view["topics"]) + "</ul>") if view["topics"] else '<p class="excerpt">—</p>'}
     <p class="eyebrow">原帖</p>
     <ul class="source-list">{sources}</ul>
     {_site_footer(escape(DISCLAIMER))}
@@ -619,9 +649,12 @@ def build(listings_path: Path, pis_dir: Path, out_dir: Path) -> None:
     for stale in pis_out.glob("*.html"):
         stale.unlink()
     payload = _load_listings(listings_path)
+    listed_ids = {row.get("pi_id") for row in payload.get("listings") or [] if row.get("pi_id")}
     (out_dir / "index.html").write_text(render_index(payload), encoding="utf-8")
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     for pi_id, pi in _load_pis(pis_dir).items():
+        if listed_ids and pi_id not in listed_ids:
+            continue
         (pis_out / f"{pi_id}.html").write_text(render_detail(pi), encoding="utf-8")
     print(f"Built site into {out_dir} ({date.today().isoformat()})")
 
