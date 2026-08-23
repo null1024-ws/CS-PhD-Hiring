@@ -1,0 +1,60 @@
+{
+  "pi_id": "刘世隆-哥伦比亚大学",
+  "name": "刘世隆",
+  "name_en": null,
+  "school_claimed": "哥伦比亚大学",
+  "school_canonical": "哥伦比亚大学",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "computer vision",
+    "systems"
+  ],
+  "research_topics": [
+    "计算机视觉，包括空间感知和表示学习",
+    "自进化智能体",
+    "世界模型",
+    "视觉",
+    "多模态学习",
+    "智能体",
+    "具身等方向"
+  ],
+  "updated_at": "2026-05-19",
+  "opportunities": [
+    {
+      "opportunity_id": "刘世隆-哥伦比亚大学-0",
+      "pi_id": "刘世隆-哥伦比亚大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "计算机视觉，包括空间感知和表示学习 · 自进化智能体 · 世界模型 · 视觉 · 多模态学习 · 智能体 · 具身等方向",
+      "research_topics": [
+        "计算机视觉，包括空间感知和表示学习",
+        "自进化智能体",
+        "世界模型",
+        "视觉",
+        "多模态学习",
+        "智能体",
+        "具身等方向"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a0be0ca00000000070232b2?xsec_token=ABhbQcz06VLSSPUzCUuOMVTK1RKm4rmcuA9jg6Zhcnb28%3D&xsec_source=pc_search",
+      "source_title": "【本人招生/实习信息】哥伦比亚大学新AP",
+      "source_note_id": "6a0be0ca00000000070232b2",
+      "posted_at": "2026-05-19",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

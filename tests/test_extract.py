@@ -43,6 +43,7 @@ def test_title_fragments_are_not_listable() -> None:
     assert is_main_table_name("周尚辰")
     assert is_main_table_name("张伟楠")
     assert is_main_table_name("Ming Li")
+    assert not is_main_table_name("World Explorer")
 
 
 def test_laoshi_prefix_is_not_a_pi_name() -> None:
@@ -199,6 +200,42 @@ def test_joining_mbzuai_not_stanford_postdoc() -> None:
     )
     assert [row.pi_name for row in rows] == ["吴冬夏"]
     assert rows[0].school_claimed == "MBZUAI"
+
+
+def test_new_ap_joining_school_not_degree_school() -> None:
+    rows = extract_opportunities(
+        "UW-Madison新AP。大家好，我是章鹤梓 (Hezi Zhang)，"
+        "将于2026年秋季加入University of Wisconsin-Madison电子与计算机工程系担任助理教授。"
+        "Georgia Tech 计算机硕士。中国科学技术大学物理学学士。"
+    )
+    assert [row.pi_name for row in rows] == ["章鹤梓"]
+    assert rows[0].school_claimed in {
+        "University of Wisconsin-Madison",
+        "UW-Madison",
+        "威斯康星大学麦迪逊分校",
+    }
+
+
+def test_columbia_joining_not_empty() -> None:
+    rows = extract_opportunities(
+        "大家好，我是刘世隆，现在在普林斯顿大学做博后。"
+        "我将于 2027 年秋季加入哥伦比亚大学电子工程系，担任助理教授。"
+    )
+    assert [row.pi_name for row in rows] == ["刘世隆"]
+    assert rows[0].school_claimed == "哥伦比亚大学"
+
+
+def test_english_name_before_laoshi() -> None:
+    rows = extract_opportunities(
+        "港大新晋AP招生Zhuoran Lu。"
+        "Zhuoran Lu老师即将加入香港大学数据与系统工程系担任助理教授，"
+        "本科毕业于伊利诺伊大学香槟分校。"
+    )
+    names = {row.pi_name for row in rows}
+    assert "Zhuoran Lu" in names
+    assert "Zhuoran Lu Zhuoran Lu" not in names
+    assert "任老师" not in names
+    assert rows[0].school_claimed in {"香港大学", "港大", "HKU"}
 
 
 def test_homepage_does_not_swallow_following_chinese() -> None:

@@ -1,0 +1,43 @@
+{
+  "pi_id": "weiyang-liu-香港中文大学",
+  "name": "Weiyang Liu",
+  "name_en": null,
+  "school_claimed": "香港中文大学",
+  "school_canonical": "香港中文大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "computer vision",
+    "systems",
+    "ml"
+  ],
+  "research_topics": [],
+  "updated_at": "2025-05-23",
+  "opportunities": [
+    {
+      "opportunity_id": "weiyang-liu-香港中文大学-0",
+      "pi_id": "weiyang-liu-香港中文大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "computer vision · systems · ml",
+      "research_topics": [],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/682d59f20000000022025599?xsec_token=ABj8Mw-n4dJH8eywK3h7ZzXBprfLQWWkWRRuLjSGFZCYI%3D&xsec_source=pc_search",
+      "source_title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
+      "source_note_id": "682d59f20000000022025599",
+      "posted_at": "2025-05-23",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

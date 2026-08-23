@@ -1,21 +1,34 @@
 {
   "generated_at": "2026-08-23",
   "counts": {
-    "records": 134,
-    "listed": 21,
-    "dropped": 113,
+    "records": 136,
+    "listed": 25,
+    "dropped": 111,
     "warnings": 0,
-    "agency": 8,
-    "weak_name": 65,
+    "agency": 7,
+    "weak_name": 63,
     "by_reason": {
-      "agency": 8,
-      "notcs": 2,
-      "review": 32,
-      "unknown": 6,
-      "weak_name": 65
+      "agency": 7,
+      "notcs": 3,
+      "review": 31,
+      "unknown": 7,
+      "weak_name": 63
     }
   },
   "listed": [
+    {
+      "note_id": "682d59f20000000022025599",
+      "title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
+      "name": "Weiyang Liu",
+      "school": "香港中文大学",
+      "source_kind": "repost",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/682d59f20000000022025599?xsec_token=ABj8Mw-n4dJH8eywK3h7ZzXBprfLQWWkWRRuLjSGFZCYI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": null
+    },
     {
       "note_id": "685e4d340000000017032f3f",
       "title": "为我的lab发个招生贴 - AI安全",
@@ -43,6 +56,27 @@
       "listable": true,
       "source_url": "https://www.xiaohongshu.com/explore/68f2c843000000000503abae?xsec_token=ABPU8tHgwvbuLUDZJqdubzk5XZQKModIUi7wJzXsv7n-E%3D&xsec_source=pc_search",
       "topics": [],
+      "reason": null
+    },
+    {
+      "note_id": "6a0be0ca00000000070232b2",
+      "title": "【本人招生/实习信息】哥伦比亚大学新AP",
+      "name": "刘世隆",
+      "school": "哥伦比亚大学",
+      "source_kind": "repost",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a0be0ca00000000070232b2?xsec_token=ABhbQcz06VLSSPUzCUuOMVTK1RKm4rmcuA9jg6Zhcnb28%3D&xsec_source=pc_search",
+      "topics": [
+        "计算机视觉，包括空间感知和表示学习",
+        "自进化智能体",
+        "世界模型",
+        "视觉",
+        "多模态学习",
+        "智能体",
+        "具身等方向"
+      ],
       "reason": null
     },
     {
@@ -165,6 +199,41 @@
       "contact_class": "academic",
       "listable": true,
       "source_url": "https://www.xiaohongshu.com/explore/6a3e77ee000000001102fc80?xsec_token=ABOI81jT33vBO7T56spiGWNwSzdIRRdg3s4ZSfF8vXIcI%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": null
+    },
+    {
+      "note_id": "6a3ef673000000001603ceeb",
+      "title": "UW-Madison新AP [量子计算/编译/体系结构]",
+      "name": "章鹤梓",
+      "school": "威斯康星大学麦迪逊分校",
+      "source_kind": "pi",
+      "relevance": "cs",
+      "contact_class": "academic",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a3ef673000000001603ceeb?xsec_token=ABOI81jT33vBO7T56spiGWN-67rbXaNu0ALPn3yI611xc%3D&xsec_source=pc_search",
+      "topics": [
+        "UCSD 计算机博士，导师为Yufei Ding",
+        "中国科学技术大学",
+        "个人主页",
+        "Google Scholar",
+        "研究方向包括量子计算编译与体系结构",
+        "具体包括多种量子计算平台",
+        "研究成果已发表在顶级计算机体系结构会议上",
+        "在UW-Madison读PhD将获得充足的资助"
+      ],
+      "reason": null
+    },
+    {
+      "note_id": "6a4363f9000000001702f9ab",
+      "title": "港大数据与系统工程系新晋AP招生Zhuoran Lu",
+      "name": "Zhuoran Lu",
+      "school": "香港大学",
+      "source_kind": "repost",
+      "relevance": "cs",
+      "contact_class": "none",
+      "listable": true,
+      "source_url": "https://www.xiaohongshu.com/explore/6a4363f9000000001702f9ab?xsec_token=ABAJvFvPBnSrxwBV2KCErHLdNMrwicJiZtpPAVKb9govU%3D&xsec_source=pc_search",
       "topics": [],
       "reason": null
     },
@@ -441,19 +510,6 @@
     {
       "note_id": "682d59f20000000022025599",
       "title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
-      "name": "任老师",
-      "school": "香港中文大学",
-      "source_kind": "unknown",
-      "relevance": "cs",
-      "contact_class": "none",
-      "listable": false,
-      "source_url": "https://www.xiaohongshu.com/explore/682d59f20000000022025599?xsec_token=ABj8Mw-n4dJH8eywK3h7ZzXBprfLQWWkWRRuLjSGFZCYI%3D&xsec_source=pc_search",
-      "topics": [],
-      "reason": "weak_name"
-    },
-    {
-      "note_id": "682d59f20000000022025599",
-      "title": "港中文计算机科学与工程新晋AP-Weiyang Liu",
       "name": "港老师",
       "school": "香港中文大学",
       "source_kind": "unknown",
@@ -491,28 +547,6 @@
       "listable": false,
       "source_url": "https://www.xiaohongshu.com/explore/6866b4660000000017032dc8?xsec_token=AB4oIX13q6Giwr8rvTmucNzWWIsg5BUqabOYH0P1KNzAU%3D&xsec_source=pc_search",
       "topics": [],
-      "reason": "review"
-    },
-    {
-      "note_id": "68b92854000000001d01aaab",
-      "title": "美国R1 PhD招生 CS系 （本人） [AI+SE方向]",
-      "name": "任老师",
-      "school": "不列颠哥伦比亚大学",
-      "source_kind": "pi",
-      "relevance": "review",
-      "contact_class": "academic",
-      "listable": false,
-      "source_url": "https://www.xiaohongshu.com/explore/68b92854000000001d01aaab?xsec_token=ABafePj6VG3EXwmFkGH1sDc_LczYENyWKO8fwwUA2mo2Q%3D&xsec_source=pc_search",
-      "topics": [
-        "AI for SE",
-        "Trustworthy AI",
-        "Human-Centered AI",
-        "SE for AI",
-        "AI for Engineering/Science/Education",
-        "LLMs and Agentic Flow for Code",
-        "Driven",
-        "Grit Mindset"
-      ],
       "reason": "review"
     },
     {
@@ -575,28 +609,6 @@
     {
       "note_id": "68e443460000000007000b50",
       "title": "MSU 26 Spring/Fall CS PhD招生",
-      "name": "任老师",
-      "school": "麻省理工学院",
-      "source_kind": "unknown",
-      "relevance": "cs",
-      "contact_class": "none",
-      "listable": false,
-      "source_url": "https://www.xiaohongshu.com/explore/68e443460000000007000b50?xsec_token=AByWJTrOzCiU4ypJhtHcVsCYqGibqjBAAeNC0btzfzfgk%3D&xsec_source=pc_search",
-      "topics": [
-        "对学生提供 RA funding",
-        "MSU校园环境优美，绿意盎然，安逸祥和，非常适合学习和生活",
-        "有扎实的CS/EE基础",
-        "对计算机系统领域有一定的理解",
-        "做事有毅力有恒心，求知欲强，诚实守信，热爱生活",
-        "涉及高性能软件系统和硬件架构",
-        "主要针对人工智能",
-        "机器学习"
-      ],
-      "reason": "weak_name"
-    },
-    {
-      "note_id": "68e443460000000007000b50",
-      "title": "MSU 26 Spring/Fall CS PhD招生",
       "name": "和老师",
       "school": "麻省理工学院",
       "source_kind": "unknown",
@@ -641,7 +653,7 @@
     {
       "note_id": "6915779a0000000007035f6d",
       "title": "UMD CS系招PhD和intern",
-      "name": "任老师",
+      "name": "未知",
       "school": "未知",
       "source_kind": "pi",
       "relevance": "cs",
@@ -673,19 +685,6 @@
     {
       "note_id": "691fb7a1000000001f00e9be",
       "title": "Prof. Moritz Schloegel 博士招生",
-      "name": "任老师",
-      "school": "未知",
-      "source_kind": "agency",
-      "relevance": "cs",
-      "contact_class": "social_only",
-      "listable": false,
-      "source_url": "https://www.xiaohongshu.com/explore/691fb7a1000000001f00e9be?xsec_token=ABC0bIwEfNTQsugLGijIp1XV2toNNSzWF_rlOQDjGuq50%3D&xsec_source=pc_search",
-      "topics": [],
-      "reason": "agency"
-    },
-    {
-      "note_id": "691fb7a1000000001f00e9be",
-      "title": "Prof. Moritz Schloegel 博士招生",
       "name": "Moritz Schloegel",
       "school": "未知",
       "source_kind": "agency",
@@ -700,7 +699,7 @@
       "note_id": "694ce3a4000000001f00461f",
       "title": "博士招生Trustworthy AI & AI for Security",
       "name": "的老师",
-      "school": "未知",
+      "school": "威斯康星大学麦迪逊分校",
       "source_kind": "pi",
       "relevance": "cs",
       "contact_class": "academic",
@@ -767,7 +766,7 @@
     {
       "note_id": "69c2178b000000002200123e",
       "title": "【帮转】港科广新AP招生~【26fall】",
-      "name": "任老师",
+      "name": "未知",
       "school": "香港科技大学（广州）",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -1035,7 +1034,7 @@
     {
       "note_id": "6a1d2f10000000000f03ac00",
       "title": "学院催我招生了|复旦AP招2027博士生",
-      "name": "任老师",
+      "name": "未知",
       "school": "复旦大学",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -1280,6 +1279,19 @@
       "reason": "notcs"
     },
     {
+      "note_id": "6a3261d50000000022018013",
+      "title": "拉玛尔大学新晋AP招生-Haoran Li",
+      "name": "Haoran Li",
+      "school": "未知",
+      "source_kind": "unknown",
+      "relevance": "notcs",
+      "contact_class": "none",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a3261d50000000022018013?xsec_token=AB3oPmfCLKWnoJggOfNPlOs84DJ0n00BVjJUNu1iCycks%3D&xsec_source=pc_search",
+      "topics": [],
+      "reason": "notcs"
+    },
+    {
       "note_id": "6a477c97000000001503e87a",
       "title": "招收 具身智能 联合培养博士生",
       "name": "广老师",
@@ -1407,7 +1419,7 @@
     {
       "note_id": "6a65d0d0000000000a0388b2",
       "title": "UWaterloo 27 招生PhD/MASc 安全/架构/系统",
-      "name": "任老师",
+      "name": "未知",
       "school": "未知",
       "source_kind": "unknown",
       "relevance": "cs",
@@ -1571,6 +1583,28 @@
         "目前我们也对世界模型有研究兴趣"
       ],
       "reason": "weak_name"
+    },
+    {
+      "note_id": "6a6d6b1d0000000024026751",
+      "title": "帮我的神仙好导师发27fall PhD招生贴",
+      "name": "Minjing Dong",
+      "school": "香港城市大学",
+      "source_kind": "unknown",
+      "relevance": "cs",
+      "contact_class": "consumer_email",
+      "listable": false,
+      "source_url": "https://www.xiaohongshu.com/explore/6a6d6b1d0000000024026751?xsec_token=AB2jwRO25DOHvmj0RD-jKBOzM2ktQ-y443vvrgjN4u0nc%3D&xsec_source=pc_search",
+      "topics": [
+        "主要包括trustworthy AI",
+        "计算机视觉和多模态大模型等",
+        "实验室目前同学主要围绕大模型对抗鲁棒性",
+        "大模型幻觉",
+        "图像生成",
+        "视频生成",
+        "VLA等进行探索",
+        "目前我们也对世界模型有研究兴趣"
+      ],
+      "reason": "unknown"
     },
     {
       "note_id": "6a6d79b8000000002500b497",
@@ -1960,7 +1994,7 @@
     {
       "note_id": "6a843566000000000c003000",
       "title": "澳门科技大学AI与机器人控制导师招生",
-      "name": "任老师",
+      "name": "未知",
       "school": "未知",
       "source_kind": "pi",
       "relevance": "cs",
@@ -1989,7 +2023,7 @@
       "note_id": "6a853108000000002c007b40",
       "title": "27fall语言学PhD，全奖导师招人",
       "name": "未知",
-      "school": "斯坦福大学",
+      "school": "澳大利亚国立大学",
       "source_kind": "unknown",
       "relevance": "cs",
       "contact_class": "none",

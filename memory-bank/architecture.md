@@ -12,7 +12,7 @@
 | `data/schema/` | 字段说明与 JSON Schema |
 | `data/raw/` | 本机原始抓取，gitignore |
 | `scripts/school_normalize.py` | 学校别名规范化 |
-| `scripts/extract.py` | 纯文本抽取。自报「我是」优先；不把合作者/导师/URL 里的学校当成招生方。学校取即将加入/现任，不取伯克利主页或师从单位 |
+| `scripts/extract.py` | 纯文本抽取。自报「我是」优先；不把合作者/导师/URL 里的学校当成招生方。即将加入窗口停在逗号/`担任`。主页 URL 遇中文句号即停 |
 | `scripts/relevance.py` | `cs` / `review` / `notcs` |
 | `scripts/agency.py` | 联系方式分级与中介判定（只看正文+OCR） |
 | `scripts/verify_school.py` | 主页/OpenAlex 文本核对学校 |
@@ -36,7 +36,11 @@
 
 `note`（`xhs` / `1p3a` / `github`）→ `bundle_visible_text`（标题+正文+OCR）→ 抽取 / 相关性 / 中介 → `verify_school` → `merge_records` → `listings.json` + `pis/*.json` → `site/dist`（本地）以及仓库根 `index.html` / `pis/`（Pages）。
 
-主表只收：`relevance=cs` 且 `source_kind` 为 `pi`/`repost` 且姓名能通过姓氏/英文全名校验。中介、`notcs`、句子切片弱名不出现。`audit.json` 含 `weak_name` 与 `by_reason`。
+主表只收：`relevance=cs` 且 `source_kind` 为 `pi`/`repost` 且姓名能通过姓氏/英文全名校验。中介、`notcs`、句子切片弱名、作者昵称（如 World Explorer）不出现。`audit.json` 含 `weak_name` 与 `by_reason`。
+
+`merge_records` 会把同一人同校的可列表帖和不可列表帖并在一起。`write_outputs` 必须取其中一条 `listable` 记录，不能只看 `records[0]`，否则转发帖会被本人帖的 `unknown`/`consumer_email` 整行吃掉。
+
+`First Last老师` 只匹配同一行，避免标题换行后再写一遍英文名时变成 `Zhuoran Lu Zhuoran Lu`。即将加入的学校窗口停在 `，` / `担任`，不把本科毕业学校吸进来。
 
 ## School quality
 

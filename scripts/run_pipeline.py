@@ -116,8 +116,8 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
     listings = []
     keep_pis: set[str] = set()
     for item in merged:
-        rec = item.records[0]
-        if not rec.get("listable"):
+        rec = next((row for row in item.records if row.get("listable")), None)
+        if rec is None:
             continue
         pi_id = _slug(item.name, item.school_canonical)
         topics: list[str] = []

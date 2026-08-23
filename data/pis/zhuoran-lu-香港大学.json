@@ -1,0 +1,84 @@
+{
+  "pi_id": "zhuoran-lu-香港大学",
+  "name": "Zhuoran Lu",
+  "name_en": null,
+  "school_claimed": "香港大学",
+  "school_canonical": "香港大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "systems",
+    "hci"
+  ],
+  "research_topics": [
+    "Postdoc x 1",
+    "Full-time RA × N",
+    "PhD x 2",
+    "part-time remote RA × N",
+    "Human-centered Agent Design",
+    "Human-centerd Agent Eval",
+    "AI-driven interactive systems",
+    "AI in societal systems"
+  ],
+  "updated_at": "2026-07-04",
+  "opportunities": [
+    {
+      "opportunity_id": "zhuoran-lu-香港大学-0",
+      "pi_id": "zhuoran-lu-香港大学",
+      "types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "Postdoc x 1 · Full-time RA × N · PhD x 2 · part-time remote RA × N · Human-centered Agent Design · Human-centerd Agent Eval · AI-driven interactive systems · AI in societal systems",
+      "research_topics": [
+        "Postdoc x 1",
+        "Full-time RA × N",
+        "PhD x 2",
+        "part-time remote RA × N",
+        "Human-centered Agent Design",
+        "Human-centerd Agent Eval",
+        "AI-driven interactive systems",
+        "AI in societal systems"
+      ],
+      "email": "zhuoranlu34@gmail.com",
+      "contact": "zhuoranlu34@gmail.com",
+      "contact_class": "consumer_email",
+      "source": "xhs",
+      "source_kind": "unknown",
+      "source_url": "https://www.xiaohongshu.com/explore/6a290a98000000002202af9b?xsec_token=ABdu2Kl4S0HnaSUYjpNAmt4Kn87Cyizur3pykaIFmIdkY%3D&xsec_source=pc_search",
+      "source_title": "[本人招生帖] HKU AI x HCI 方向招生",
+      "source_note_id": "6a290a98000000002202af9b",
+      "posted_at": "2026-06-10",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    },
+    {
+      "opportunity_id": "zhuoran-lu-香港大学-1",
+      "pi_id": "zhuoran-lu-香港大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "systems · hci",
+      "research_topics": [],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a4363f9000000001702f9ab?xsec_token=ABAJvFvPBnSrxwBV2KCErHLdNMrwicJiZtpPAVKb9govU%3D&xsec_source=pc_search",
+      "source_title": "港大数据与系统工程系新晋AP招生Zhuoran Lu",
+      "source_note_id": "6a4363f9000000001702f9ab",
+      "posted_at": "2026-07-04",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

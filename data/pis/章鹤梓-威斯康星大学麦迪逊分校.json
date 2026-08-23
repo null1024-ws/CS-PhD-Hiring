@@ -1,0 +1,60 @@
+{
+  "pi_id": "章鹤梓-威斯康星大学麦迪逊分校",
+  "name": "章鹤梓",
+  "name_en": null,
+  "school_claimed": "University of Wisconsin-Madison",
+  "school_canonical": "威斯康星大学麦迪逊分校",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://www.hezizhang.com",
+  "research_areas": [
+    "systems"
+  ],
+  "research_topics": [
+    "UCSD 计算机博士，导师为Yufei Ding",
+    "中国科学技术大学",
+    "个人主页",
+    "Google Scholar",
+    "研究方向包括量子计算编译与体系结构",
+    "具体包括多种量子计算平台",
+    "研究成果已发表在顶级计算机体系结构会议上",
+    "在UW-Madison读PhD将获得充足的资助"
+  ],
+  "updated_at": "2026-06-26",
+  "opportunities": [
+    {
+      "opportunity_id": "章鹤梓-威斯康星大学麦迪逊分校-0",
+      "pi_id": "章鹤梓-威斯康星大学麦迪逊分校",
+      "types": [
+        "phd",
+        "intern"
+      ],
+      "start_term": null,
+      "excerpt": "UCSD 计算机博士，导师为Yufei Ding · 中国科学技术大学 · 个人主页 · Google Scholar · 研究方向包括量子计算编译与体系结构 · 具体包括多种量子计算平台 · 研究成果已发表在顶级计算机体系结构会议上 · 在UW-Madison读PhD将获得充足的资助",
+      "research_topics": [
+        "UCSD 计算机博士，导师为Yufei Ding",
+        "中国科学技术大学",
+        "个人主页",
+        "Google Scholar",
+        "研究方向包括量子计算编译与体系结构",
+        "具体包括多种量子计算平台",
+        "研究成果已发表在顶级计算机体系结构会议上",
+        "在UW-Madison读PhD将获得充足的资助"
+      ],
+      "email": "hzhang2587@wisc.edu",
+      "contact": "hzhang2587@wisc.edu",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a3ef673000000001603ceeb?xsec_token=ABOI81jT33vBO7T56spiGWN-67rbXaNu0ALPn3yI611xc%3D&xsec_source=pc_search",
+      "source_title": "UW-Madison新AP [量子计算/编译/体系结构]",
+      "source_note_id": "6a3ef673000000001603ceeb",
+      "posted_at": "2026-06-26",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

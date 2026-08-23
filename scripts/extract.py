@@ -43,6 +43,10 @@ CN_TITLE_RE = re.compile(r"(助理教授|副教授|教授|老师)")
 EN_TITLED_RE = re.compile(
     r"(?:Prof\.?|Dr\.?|Professor)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){1,2})"
 )
+EN_LAOSHI_RE = re.compile(
+    r"([A-Z][A-Za-z]+(?:[ \t]+[A-Z][A-Za-z]+){1,2})[ \t]*老师"
+)
+EN_NAME_SKIP = {"world", "explorer", "official", "academy", "creator", "helper"}
 SELF_EN_RE = re.compile(
     r"(?:我是|我叫)\s*([A-Z][A-Za-z]+(?:[\s\-]+[A-Z][A-Za-z]+){1,3})"
 )
@@ -63,7 +67,8 @@ ADVISOR_BEFORE_RE = re.compile(
     r"(师从|指导下|毕业于|此前|曾在|合作|导师为|导师是|主要与|和\s+Prof)"
 )
 HIRE_SCHOOL_RE = re.compile(
-    r"(?:即将加入|将加入|会加入|现已加入|入职|现任|将于[^。\n]{0,24}加入)\s*([^。\n]{2,80})"
+    r"(?:即将加入|将加入|会加入|现已加入|入职|现任|将于[^。\n]{0,24}加入)"
+    r"\s*([^。\n，,；;]{2,60}?)(?:担任|任助理|任副教授|，|,|。|$)"
 )
 PAST_AFFILIATION_RE = re.compile(
     r"(?:目前在|目前就读|师从|毕业于|获得[^。]{0,20}学位|此前|曾在|导师为|导师是)[^。\n]*"
@@ -152,6 +157,8 @@ def is_main_table_name(name: str) -> bool:
         if len(name) == 4:
             return name[:2] in COMPOUND_SURNAMES
         return False
+    if any(part.lower() in EN_NAME_SKIP for part in name.split()):
+        return False
     return bool(re.fullmatch(r"[A-Za-z][A-Za-z.\-]+(?:\s+[A-Z][A-Za-z.\-]+)+", name))
 
 
@@ -195,8 +202,10 @@ def _cn_titled_names(text: str) -> list[str]:
             names.append(found)
         elif window:
             if match.group(1) == "教授" and prefix.endswith(
-                ("讲席", "特聘", "客座", "兼职", "访问", "讲座")
+                ("讲席", "特聘", "客座", "兼职", "访问", "讲座", "担任", "出任")
             ):
+                continue
+            if prefix.endswith(("担任", "出任", "加入")):
                 continue
             weak = f"{window[-1]}老师"
             if is_weak_pi_name(weak):
@@ -419,6 +428,14 @@ def _names(text: str) -> list[str]:
         add(person)
 
     for match in EN_TITLED_RE.finditer(text):
+        english = match.group(1)
+        if _norm_en(english) in paired_en:
+            continue
+        prefix = text[max(0, match.start() - 24) : match.start()]
+        if ADVISOR_BEFORE_RE.search(prefix):
+            continue
+        add(english)
+    for match in EN_LAOSHI_RE.finditer(text):
         english = match.group(1)
         if _norm_en(english) in paired_en:
             continue

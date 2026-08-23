@@ -44,3 +44,52 @@ def test_pipeline_fixture_listings(tmp_path: Path) -> None:
         "https://www.xiaohongshu.com/explore/n1",
         "https://www.xiaohongshu.com/explore/n2",
     }
+    ada = next(row for row in payload["listings"] if row["name"] == "Ada Ng")
+    ada_detail = json.loads((tmp_path / "pis" / f"{ada['pi_id']}.json").read_text(encoding="utf-8"))
+    assert any(o["source"] == "1p3a" for o in ada_detail["opportunities"])
+    assert all(o["source"] != "1p3a" or "4821999" not in (o.get("source_note_id") or "") for o in ada_detail["opportunities"])
+    assert "4821999" not in json.dumps(payload, ensure_ascii=False)
+
+
+def test_write_outputs_keeps_listable_when_merged_with_dropped(tmp_path: Path) -> None:
+    records = [
+        {
+            "name": "Zhuoran Lu",
+            "school_canonical": "香港大学",
+            "school_country": "中国香港",
+            "school_status": "unverified",
+            "homepage_url": None,
+            "research_areas": ["systems"],
+            "opportunity_types": ["phd"],
+            "listable": False,
+            "updated_at": "2026-07-01",
+            "source": {
+                "source": "xhs",
+                "source_kind": "unknown",
+                "url": "https://example.com/a",
+                "note_id": "a",
+                "title": "a",
+            },
+        },
+        {
+            "name": "Zhuoran Lu",
+            "school_canonical": "香港大学",
+            "school_country": "中国香港",
+            "school_status": "unverified",
+            "homepage_url": None,
+            "research_areas": ["hci"],
+            "opportunity_types": ["phd"],
+            "listable": True,
+            "updated_at": "2026-07-04",
+            "source": {
+                "source": "xhs",
+                "source_kind": "repost",
+                "url": "https://example.com/b",
+                "note_id": "b",
+                "title": "b",
+            },
+        },
+    ]
+    payload = write_outputs(merge_records(records), tmp_path / "listings.json", tmp_path / "pis")
+    names = {row["name"] for row in payload["listings"]}
+    assert "Zhuoran Lu" in names
