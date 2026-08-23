@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>丛林 · CS-PhD-Hiring</title>
+  <style>
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W04.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W05.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --parchment: #f5f4ed;
+  --ivory: #faf9f5;
+  --warm-sand: #e8e6dc;
+  --brand: #1B365D;
+  --brand-light: #2D5A8A;
+  --brand-tint: #EEF2F7;
+  --near-black: #141413;
+  --dark-warm: #3d3d3a;
+  --olive: #504e49;
+  --stone: #6b6a64;
+  --border: #e8e6dc;
+  --border-soft: #e5e3d8;
+  --serif: "TsangerJinKai02", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", Georgia, serif;
+  --latin-ui: "PingFang SC", system-ui, -apple-system, sans-serif;
+  --measure: 760px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--parchment);
+  color: var(--near-black);
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.35px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { color: var(--brand-light); }
+a:focus-visible, .filter-chip:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.page { max-width: 1140px; margin: 0 auto; padding: 72px 40px 104px; }
+.narrow { max-width: var(--measure); }
+.site-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.site-top .eyebrow { margin: 0; }
+.site-nav {
+  font-family: var(--latin-ui);
+  font-size: 13px;
+  color: var(--stone);
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.site-nav a { color: var(--stone); }
+.site-nav a:hover { color: var(--brand); }
+.github-star {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  background: var(--ivory);
+  color: var(--brand);
+  font-family: var(--latin-ui);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 999px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.github-star:hover { border-color: var(--brand); background: var(--brand-tint); color: var(--brand); }
+.github-star svg { width: 14px; height: 14px; fill: currentColor; }
+.eyebrow {
+  font-family: var(--latin-ui);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin: 0 0 10px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--near-black);
+  margin: 0 0 10px;
+}
+.hero { margin-bottom: 28px; }
+.hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+  margin: 0 0 18px;
+}
+.lede { color: var(--olive); margin: 0 0 8px; max-width: var(--measure); }
+.hero .lede { font-size: 19px; margin: 0; }
+.disclaimer {
+  background: var(--brand-tint);
+  border-left: 3px solid var(--brand);
+  padding: 16px 20px;
+  margin: 24px 0 0;
+  font-size: 15px;
+  color: var(--olive);
+  line-height: 1.55;
+}
+.toolbar { margin: 0 0 8px; }
+.search {
+  appearance: none;
+  -webkit-appearance: none;
+  width: min(320px, 100%);
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  color: var(--olive);
+  padding: 4px 0 8px;
+  margin: 0 0 18px;
+  font-family: var(--latin-ui);
+  font-size: 14px;
+  outline: none;
+}
+.search:focus { border-bottom-color: var(--brand); color: var(--near-black); }
+.search::placeholder { color: var(--stone); }
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: 0 0 12px;
+}
+.filter-k {
+  font-family: var(--latin-ui);
+  font-size: 13px;
+  color: var(--stone);
+  width: 2.5em;
+  flex-shrink: 0;
+}
+.filter-chip {
+  font-family: var(--latin-ui);
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--ivory);
+  cursor: pointer;
+  color: var(--olive);
+}
+.filter-chip:hover { border-color: var(--brand-light); color: var(--brand); }
+.filter-chip.active { background: var(--brand); color: var(--ivory); border-color: var(--brand); }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 40px; }
+th {
+  font-family: var(--latin-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+td a { font-weight: 500; }
+.chip {
+  display: inline-block;
+  font-family: var(--latin-ui);
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 3px 10px;
+  margin: 0 4px 4px 0;
+  border-radius: 999px;
+  background: #E4ECF5;
+  color: var(--brand);
+}
+.back-link {
+  font-family: var(--latin-ui);
+  font-size: 14px;
+  color: var(--stone);
+  display: inline-block;
+  margin: 28px 0 18px;
+}
+.meta-grid {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 8px 16px;
+  margin: 22px 0;
+  padding: 16px 18px;
+  background: var(--ivory);
+  border: 1px solid var(--border-soft);
+}
+.meta-grid .k {
+  font-family: var(--latin-ui);
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--stone);
+  padding-top: 4px;
+}
+.excerpt {
+  margin: 8px 0 24px;
+  color: var(--dark-warm);
+}
+.source-list { list-style: none; padding: 0; margin: 0 0 48px; }
+.source-list li { margin: 0 0 8px; }
+.source-list a { font-family: var(--latin-ui); font-size: 14px; }
+footer.site {
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border-soft);
+  color: var(--stone);
+  font-size: 14px;
+}
+footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+.hidden { display: none; }
+@media (max-width: 880px) {
+  .page { padding: 48px 22px 72px; }
+  .hero h1 { font-size: 34px; }
+  .hero .lede { font-size: 17px; }
+}
+@media (max-width: 720px) {
+  h1 { font-size: 26px; }
+  .hero h1 { font-size: 28px; }
+  .hero .lede { font-size: 16px; }
+  .filter-chip { font-size: 12px; padding: 7px 12px; }
+  table, thead, tbody, th, td, tr { display: block; width: 100%; }
+  th { display: none; }
+  td { border: 0; padding: 4px 0; }
+  td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--latin-ui);
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 2px;
+  }
+  tr { padding: 14px 0; border-bottom: 1px solid var(--border-soft); }
+  .meta-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+  <div class="page narrow">
+    <div class="site-top"><p class="eyebrow">CS-PhD-Hiring · 招募索引</p><nav class="site-nav"><a class="github-star" href="https://github.com/null1024-ws/CS-PhD-Hiring"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25l1.86 3.77 4.16.6-3.01 2.93.71 4.14L8 9.74l-3.72 1.95.71-4.14L1.98 4.62l4.16-.6z"/></svg>Star</a></nav></div>
+    <a class="back-link" href="../index.html">← 返回老师列表</a>
+    <p class="eyebrow">新加坡</p>
+    <h1>丛林</h1>
+    <p class="lede">南洋理工大学</p>
+    <div class="meta-grid">
+      <div class="k">方向</div><div>computer vision · ml</div>
+      <div class="k">机会</div><div><span class="chip">PhD</span><span class="chip">RA</span></div>
+      <div class="k">学期</div><div>—</div>
+      <div class="k">联系</div><div><a href="mailto:2024213165@stu.sufe.edu.cn">2024213165@stu.sufe.edu.cn</a></div>
+    </div>
+    <p class="excerpt">NTU丛林教授团队招聘RA 南洋理工大学（NTU）丛林教授（Prof. Lin William Cong）研究团队现招募若干名科研助理（RA），参与人工智能、机器学习与金融科技交叉方向的研究工作。 丛林教授现任南洋理工大学金融、计算机与数据科学校长讲席教授，南洋商学院副院长兼全球金融科技与社会研究所（GIFTS）所长</p>
+    <p class="eyebrow">原帖</p>
+    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a7ef8890000000022030402">https://www.xiaohongshu.com/explore/6a7ef8890000000022030402</a></li></ul>
+    <footer class="site"><p class="visit-count">Total visits: <span id="busuanzi_value_site_pv">Loading…</span></p><p>信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </div>
+</body>
+</html>
