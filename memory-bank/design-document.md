@@ -2,19 +2,21 @@
 
 ## 1. Goal
 
-做一个可筛选的公开站点：从小红书收集 CS 相关老师的招生/招募帖（不限于 PhD），整理成「老师存在 + 当前机会」索引。列表交互参考 [DuoOffer](https://duooffer.github.io/)，采集与纸感详情参考 [CityU-CS-Guide](https://github.com/null1024-ws/CityU-CS-Guide)。
+做一个可筛选的公开站点：收集 CS 相关老师的招生/招募帖（不限于 PhD），整理成「老师存在 + 当前机会」索引。列表交互参考 [DuoOffer](https://duooffer.github.io/)，采集与纸感详情参考 [CityU-CS-Guide](https://github.com/null1024-ws/CityU-CS-Guide)。
 
-核心差异：
+数据源（可并存，进同一套抽取 / 中介 / 去重）：
 
-- 数据源是小红书，不是一亩三分地。
-- 学校字段必须经过自动核对，不能把帖子里的单位原文直接当任职学校。
-- 一条帖子的价值首先是「发现这位老师」，机会类型是附加属性。
+- 小红书（已有，有限速风控）
+- 一亩三分地 [招生版](https://www.1point3acres.com/bbs/forum-173-1.html)（fid=173）。自己解析版面与帖文，**不镜像 DuoOffer 数据**。
+
+学校字段必须经过自动核对。一条帖子的价值首先是「发现这位老师」。
 
 ## 2. Scope
 
 ### In scope (v1)
 
 - 用 `xhs-cli` 按关键词搜索并抓取笔记正文、评论、图片。
+- 采集一亩三分地招生版（fid=173）的帖表与帖文，转成同一 `note` 再进流水线。
 - 对图片做 OCR，正文 + OCR 合并后再抽取。
 - 抽出老师、学校、国家/地区、方向、机会类型、学期、联系方式、原帖。
 - 用主页或公开学术资料核对学校，给出 `verified` / `unverified` / `conflict`。
@@ -25,7 +27,7 @@
 
 ### Non-goals (v1)
 
-- 不抓一亩三分地、不镜像 DuoOffer 数据。
+- 不镜像 DuoOffer 的数据文件；一亩三分地只读招生版，不爬面经/求职全站。
 - 不做账号系统、推荐匹配、邮件订阅、聊天机器人。
 - 不在站点上展示小红书原图或完整笔记备份。
 - 不保证录取结果、不评价老师好坏。
@@ -58,13 +60,22 @@
 
 ### 4.1 采集
 
-复用 CityU-CS-Guide 的采集纪律，不复用它的「按课号」模型。
+复用 CityU-CS-Guide 的采集纪律。
 
-- 工具：`xhs-cli`（Camoufox），比逆向 API 稳。
-- 搜索：一组全局中文/英文关键词（如「CS PhD 招生」「计算机 博士 招生 2026」「招收 PhD intern」「组里招 RA」等），按方向再补若干条（NLP、CV、系统、安全、机器人、HCI）。
+小红书：
+
+- 工具：`xhs-cli`（Camoufox）。
+- 搜索：一组全局中文/英文关键词，按方向再补若干条。
 - 每条 query 只取首页结果，保守限速，checkpoint 可续跑。
-- 同一 `note_id` 被多个 query 命中则记交叉引用，不重复抓取。
 - 登录失败或验证码：停跑并提示，不重试打爆风控。
+
+一亩三分地招生版（fid=173）：
+
+- 只爬 `forum-173-*.html` 帖表，再按 `thread-<tid>-1-1.html`（或 `viewthread&tid=`）读楼主正文。
+- 默认每次 1 页帖表、少量新帖；sleep + checkpoint；遇到 Cloudflare / 验证码停跑。
+- 先用保存的 HTML fixture 解析（无网络）。线上若被 Cloudflare 拦，本机再用浏览器抓取（可选 [Crawl4AI](https://github.com/unclecode/crawl4ai)），Cookie 只留本机。
+- 转成 `note`：`source=1p3a`，`source_url` 为原帖，`note_id` 为 `1p3a-<tid>`。
+- 同一 `tid` 不重复抓。不把整页 HTML 提交进 git。
 
 ### 4.2 文本合并
 
@@ -95,6 +106,9 @@
 
 - 邮箱、主页 URL、学期（2026 Fall / 26fall / 春博 / 暑研）用规则。
 - 老师名、学校别名、方向标签用规则 + 学校别名表。
+- 「我是 / I am」自报的姓名优先；师从、指导、毕业、此前任职里出现的教授不是招生老师。
+- 「中文名（Prof. English Name）」算同一个人，不拆成两行。
+- 学校优先取「即将加入 / 现任」附近的单位，不用「目前在 / 师从 / 毕业于」里的访问或旧单位。
 - 抽不到的字段留空，`extract_confidence` 为 `low`，进入待补全，不编造。
 
 ### 4.4 CS 相关性
@@ -126,8 +140,9 @@
 
 判定：
 
-1. 显式中介词（代申、中介、包 offer、文书全程、选校定位收费等）→ `source_kind=agency`，丢掉。
-2. 正文+OCR 没有 `academic` 联系，且存在 `social_only` 引导 → `agency`，丢掉。这是主规则：看起来再正常也丢。
+1. 显式中介词（代申、中介、包 offer、文书全程、选校定位、帮你避坑、海投套磁收费等）→ `source_kind=agency`，丢掉。
+2. 正文+OCR 没有 `academic` 联系，且存在 `social_only` 引导（私信 / 微信 / 踢我）→ `agency`，丢掉。这是主规则：看起来再正常也丢。
+2b. 正文没有学术联系，却在「推荐老师组 / 来看看导师组」并让读者找发帖人 → `agency`。
 3. 正文+OCR 没有 `academic` 联系，也没有可核验的具体老师名+学校 → `agency` 或 `unknown`，不进主表。
 4. 没有邮箱/主页，但抽出了具体老师且学校能核对 → 视为学生转发真招生（`repost`），可进主表；联系方式空着即可。
 5. 正文没有、图里 OCR 到学校邮箱或主页 → 算 `academic`，保留。真老师海报经常把邮箱写在图上。
@@ -162,9 +177,12 @@ DuoOffer 的典型失败：同名、转校、把合作单位/访问单位/招聘
 
 ### 4.8 站点
 
-- 首页：Kami 纸感目录表。列：更新、导师、学校、地区、方向、机会、学期。不展示校验状态。
+- 首页：Kami 纸感目录表。列：更新、导师、学校、地区、方向、机会。不展示学期、校验状态。
 - 筛选：地区、方向、机会类型、关键词。
-- 详情：一位老师一页。机会类型与学期合并展示，只留一条去重摘录、一组联系方式、一组原帖链接。不展示学校核对或冲突徽章。
+- 详情：一位老师一页。研究方向用短 bullet，不用整段营销文。邮箱和主页分行。原帖链接用标题或日期，不写「打开原帖」。
+- 主表按 `updated_at` 倒序。
+- 每次流水线写 `data/audit.json`：列出收录、丢弃原因（agency / notcs / weak_name）和警告。
+- 访问量：只显示**本页** `page_pv`。不蒜子 3.x 的 `site_pv` 按域名合计，GitHub Pages 上会和同用户其他站（如 CityU-CS-Guide）混在一起。数字未返回前不显示，避免一直 Loading。
 - 页脚免责声明：社区信息，非官方，以原帖和导师主页为准。
 - 视觉：Kami / CityU-CS-Guide 同套 token（`#f5f4ed` 纸、`#1B365D` 墨蓝、TsangerJinKai02）。
 
@@ -223,7 +241,7 @@ start_term?
 excerpt
 contact?
 contact_class          # academic | consumer_email | social_only | none
-source                 # xhs | github
+source                 # xhs | github | 1p3a
 source_kind            # pi | repost | agency | unknown
 source_url
 source_note_id?
@@ -251,8 +269,9 @@ Cookie、原始笔记、原图不进 git。测试用少量脱敏 fixture。
 6. 同一老师两条帖子合并为一行，详情保留两条来源。
 7. 只有图片、文字为空的 fixture，OCR 文本必须进入抽取输入。
 8. Issue 模板字段能被导入脚本读成一条 `source=github` 记录。
-9. 页面声明数据来自小红书社区，非官方。
-10. 仓库内无 Cookie、无小红书原图、无完整笔记镜像。
+9. 页面声明数据来自社区帖子，非官方。
+10. 仓库内无 Cookie、无小红书原图、无一亩三分地整页镜像。
+11. 一亩三分地招生版 HTML fixture 能解析出 tid、标题、正文和原帖 URL；不登录也能跑通抽取。
 
 ## 8. Open defaults (locked unless you change them)
 

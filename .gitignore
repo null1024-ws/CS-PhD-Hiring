@@ -21,6 +21,12 @@ data/raw/*
 site/dist/
 .pytest_cache/
 
+# Local working notes — not published
+memory-bank/
+AGENTS.md
+skills-lock.json
+.agents/
+
 # OS
 .DS_Store
 Thumbs.db

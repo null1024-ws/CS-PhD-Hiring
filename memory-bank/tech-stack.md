@@ -21,8 +21,11 @@
 ## Collection
 
 - **[xhs-cli](https://github.com/jackwener/xhs-cli) + Camoufox**
-  - CityU-CS-Guide 已验证：浏览器模式比逆向 API 稳，支持 search / read --comments、断点、限速。
-  - 登录态只存在维护者本机 `~/.xhs-cli/`。
+  - 小红书：浏览器模式，登录态只在维护者本机。
+- **一亩三分地招生版**
+  - 解析：标准库 HTML（`html.parser`），输入是保存的论坛/帖文 HTML。
+  - 拉取：先 `httpx`；若 Cloudflare 拦截，本机可选 [Crawl4AI](https://github.com/unclecode/crawl4ai)（浏览器）。Cookie 不入库。
+  - 不把 crawl4ai 作为测试或 CI 依赖。
 
 ## Storage
 
@@ -63,4 +66,4 @@
 
 - Next.js / React / 数据库：对筛选表格过重。
 - 在线 LLM 抽取：增加密钥和费用，v1 用规则 + 别名表；准确率靠校验和 GitHub 纠错。
-- 自建爬虫：不重复造轮子，沿用 `xhs-cli`。
+- 全站 Discuz 爬虫 / Scrapy / 镜像 DuoOffer：过重，且一亩三分地只开招生版。

@@ -34,7 +34,7 @@
       "type": "string",
       "enum": ["academic", "consumer_email", "social_only", "none"]
     },
-    "source": { "type": "string", "enum": ["xhs", "github"] },
+    "source": { "type": "string", "enum": ["xhs", "github", "1p3a"] },
     "source_kind": { "type": "string", "enum": ["pi", "repost", "agency", "unknown"] },
     "source_url": { "type": "string" },
     "source_note_id": { "type": ["string", "null"] },

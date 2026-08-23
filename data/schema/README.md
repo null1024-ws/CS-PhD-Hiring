@@ -1,6 +1,6 @@
 # 发布数据字段
 
-站点只读这些文件：`data/listings.json`、`data/pis/<pi_id>.json`、`data/schools.json`。原始小红书笔记不在这里。
+站点只读这些文件：`data/listings.json`、`data/pis/<pi_id>.json`、`data/schools.json`。原始小红书 / 一亩三分地笔记不在这里。
 
 ## `data/schools.json`
 
@@ -34,7 +34,7 @@
 - `school_status`: `verified` | `unverified` | `conflict`
 - `opportunity.types`: `phd` | `ra` | `intern` | `postdoc` | `mres` | `visiting` | `other`
 - `contact_class`: `academic` | `consumer_email` | `social_only` | `none`
-- `source`: `xhs` | `github`
+- `source`: `xhs` | `github` | `1p3a`
 - `source_kind`: `pi` | `repost` | `agency` | `unknown`
 - `relevance`: `cs` | `review` | `notcs`
 - `extract_confidence`: `high` | `medium` | `low`

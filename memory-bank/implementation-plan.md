@@ -97,3 +97,21 @@
 GitHub Actions：对 `site/dist` 发 Pages。首页/详情有免责声明。README 写清：如何采集、如何本地建站、如何用 fixture 测。
 
 **验证**：Actions 配置能通过语法检查；本地 `build_site` 产物含声明；README 按文档走一遍 fixture 建站成功。
+
+## Step 16 — 一亩三分地招生帖离线解析
+
+准备脱敏的招生版帖表 HTML 和一篇楼主帖 HTML（自制，非整页镜像）。实现：从帖表抽出 tid / 标题 / 原帖 URL / 日期；从帖文抽出标题和正文；转成与现有流水线相同的 `note`（`source=1p3a`）。无网络。
+
+**验证**：pytest 能解析出至少一条招生帖的 tid、标题、正文片段和 `1point3acres.com` 原帖链接；置顶广告或非 thread 链接不会变成帖子。
+
+## Step 17 — 一亩三分地本机采集（可先空跑）
+
+保守拉 fid=173 第一页新帖并读楼主正文。限速、checkpoint、Cloudflare/验证码停跑。原始 HTML 只写 `data/raw/1p3a/`。
+
+**验证**：对本地 fixture HTML 跑采集入口不访问网络也能写出 note；未配置浏览器时命令失败信息不写坏 index。
+
+## Step 18 — 一亩三分地进入同一流水线
+
+`run_pipeline` 能读 `source=1p3a` 的 note，与小红书记录一起抽取、过滤、去重。详情原帖标签能看出是一亩三分地。
+
+**验证**：fixture 流水线里出现 `source=1p3a` 的可列表老师；中介帖仍不进主表。
