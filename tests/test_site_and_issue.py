@@ -29,8 +29,11 @@ def test_homepage_has_no_verification_ui(tmp_path) -> None:
     assert "本站用来发现老师" in html
     assert "CS PhD Hiring" in html
     assert "非官方招募索引" not in html
-    assert "busuanzi_site_pv" in html
-    assert "cdn.busuanzi.cc" in html
+    assert "visit-page-pv" in html
+    assert "visit-line" in html
+    assert "Loading…" not in html
+    assert "busuanzi_site_pv" not in html
+    assert "cdn.busuanzi.cc/api.php" in html
     assert "学期" not in html
     assert "<select" not in html
     assert "filter-chip" in html
@@ -52,8 +55,9 @@ def test_detail_is_one_reading_not_two_posts(tmp_path) -> None:
     assert "学校核对" not in text
     assert "校验" not in text
     assert DISCLAIMER in text
-    assert "busuanzi_site_pv" in text
-    assert "cdn.busuanzi.cc" in text
+    assert "visit-page-pv" in text
+    assert "Loading…" not in text
+    assert "busuanzi_site_pv" not in text
     assert "学期" not in text
     assert "邮箱" in text
     assert "主页" in text
@@ -94,6 +98,28 @@ def test_compose_merges_duplicate_excerpts() -> None:
     assert len(view["sources"]) == 2
     assert view["sources"][0]["label"] != "打开原帖"
     assert clean_excerpt("招生 陈思远教授 邮箱 a@b.edu") == "陈思远教授"
+
+
+def test_1p3a_detail_label(tmp_path) -> None:
+    out = _built_site(tmp_path)
+    pages = list((out / "pis").glob("*.html"))
+    combined = "\n".join(path.read_text(encoding="utf-8") for path in pages)
+    assert "1point3acres.com" in combined
+    assert "一亩三分地" in combined
+    view = compose_pi_view(
+        {
+            "name": "Ada Ng",
+            "opportunities": [
+                {
+                    "source": "1p3a",
+                    "source_title": "[招生] NUS CS Prof. Ada Ng",
+                    "source_url": "https://www.1point3acres.com/bbs/thread-4821001-1-1.html",
+                    "posted_at": "2026-08-20",
+                }
+            ],
+        }
+    )
+    assert "一亩三分地" in view["sources"][0]["label"]
 
 
 def test_issue_import_is_not_auto_verified() -> None:

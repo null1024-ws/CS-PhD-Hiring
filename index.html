@@ -236,6 +236,7 @@ footer.site {
   font-size: 14px;
 }
 footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+footer.site .visit-count[hidden] { display: none; }
 .hidden { display: none; }
 @media (max-width: 880px) {
   .page { padding: 48px 22px 72px; }
@@ -270,8 +271,8 @@ footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
     <div class="site-top"><p class="eyebrow">CS-PhD-Hiring · 招募索引</p><nav class="site-nav"><a class="github-star" href="https://github.com/null1024-ws/CS-PhD-Hiring"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25l1.86 3.77 4.16.6-3.01 2.93.71 4.14L8 9.74l-3.72 1.95.71-4.14L1.98 4.62l4.16-.6z"/></svg>Star</a></nav></div>
     <header class="hero">
       <h1>CS PhD Hiring</h1>
-      <p class="lede">汇总小红书上的 CS 老师招募帖，涵盖 PhD、RA、实习与博后。本站用来发现老师；是否仍在招、如何联系，请回原帖核对。</p>
-      <p class="disclaimer">信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。 最后更新：2026-08-23</p>
+      <p class="lede">汇总小红书与一亩三分地招生版的 CS 老师招募帖，涵盖 PhD、RA、实习与博后。本站用来发现老师；是否仍在招、如何联系，请回原帖核对。</p>
+      <p class="disclaimer">信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。 最后更新：2026-08-23</p>
     </header>
     <div class="toolbar">
       <input id="q" class="search" type="search" placeholder="搜索老师 / 学校 / 方向" autocomplete="off">
@@ -296,7 +297,22 @@ footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
         </tbody>
       </table>
     </main>
-    <footer class="site"><p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p><p>CS-PhD-Hiring · 2026-08-23</p></footer><script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    <footer class="site"><p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p><p>CS-PhD-Hiring · 2026-08-23</p></footer><script>
+(function () {
+  var line = document.getElementById("visit-line");
+  var num = document.getElementById("visit-page-pv");
+  if (!line || !num) return;
+  fetch("https://cdn.busuanzi.cc/api.php", {
+    method: "POST",
+    body: JSON.stringify({ url: location.href, referrer: document.referrer || "" })
+  }).then(function (r) { return r.json(); }).then(function (data) {
+    var n = data && data.busuanzi_page_pv;
+    if (n == null || n === "") return;
+    num.textContent = String(n);
+    line.removeAttribute("hidden");
+  }).catch(function () {});
+})();
+</script>
   </div>
   <script>
 const cutoffDays = 18 * 30;

@@ -236,6 +236,7 @@ footer.site {
   font-size: 14px;
 }
 footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+footer.site .visit-count[hidden] { display: none; }
 .hidden { display: none; }
 @media (max-width: 880px) {
   .page { padding: 48px 22px 72px; }
@@ -281,8 +282,23 @@ footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
     <p class="eyebrow">研究方向</p>
     <ul class="topic-list"><li>将人工智能作为科学研究对象</li><li>人工智能科学家伙伴</li></ul>
     <p class="eyebrow">原帖</p>
-    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a7663d00000000033010c95?xsec_token=ABNSC9X6_JDWWD-Jocp-dv1ZdqP6oj01m-SYSCr1_ivg4%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">【导师本人招生】 新国立 ASI Lab · 2026-08-07</a></li></ul>
-    <footer class="site"><p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p><p>信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a7663d00000000033010c95?xsec_token=ABNSC9X6_JDWWD-Jocp-dv1ZdqP6oj01m-SYSCr1_ivg4%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · 【导师本人招生】 新国立 ASI Lab · 2026-08-07</a></li></ul>
+    <footer class="site"><p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p><p>信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script>
+(function () {
+  var line = document.getElementById("visit-line");
+  var num = document.getElementById("visit-page-pv");
+  if (!line || !num) return;
+  fetch("https://cdn.busuanzi.cc/api.php", {
+    method: "POST",
+    body: JSON.stringify({ url: location.href, referrer: document.referrer || "" })
+  }).then(function (r) { return r.json(); }).then(function (data) {
+    var n = data && data.busuanzi_page_pv;
+    if (n == null || n === "") return;
+    num.textContent = String(n);
+    line.removeAttribute("hidden");
+  }).catch(function () {});
+})();
+</script>
   </div>
 </body>
 </html>

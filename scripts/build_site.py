@@ -12,11 +12,16 @@ from pathlib import Path
 
 from _paths import LISTINGS_PATH, PIS_DIR, SITE_DIST, ensure_dirs
 
-DISCLAIMER = "信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。"
+DISCLAIMER = "信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。"
 LEDE = (
-    "汇总小红书上的 CS 老师招募帖，涵盖 PhD、RA、实习与博后。"
+    "汇总小红书与一亩三分地招生版的 CS 老师招募帖，涵盖 PhD、RA、实习与博后。"
     "本站用来发现老师；是否仍在招、如何联系，请回原帖核对。"
 )
+SOURCE_SITE = {
+    "1p3a": "一亩三分地",
+    "github": "GitHub",
+    "xhs": "小红书",
+}
 REPO_URL = "https://github.com/null1024-ws/CS-PhD-Hiring"
 SITE_TITLE = "CS PhD Hiring"
 STAR_SVG = (
@@ -24,9 +29,25 @@ STAR_SVG = (
     '<path d="M8 .25l1.86 3.77 4.16.6-3.01 2.93.71 4.14L8 9.74l-3.72 1.95.71-4.14L1.98 4.62l4.16-.6z"/>'
     "</svg>"
 )
-BUSUANZI_SCRIPT = (
-    '<script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>'
-)
+# busuanzi.cc 3.x site_* is per hostname, so all repos on the same
+# GitHub Pages host share one total (CityU-CS-Guide + this site).
+# Only show this page's pv, and hide the line until a number arrives.
+VISIT_SCRIPT = """<script>
+(function () {
+  var line = document.getElementById("visit-line");
+  var num = document.getElementById("visit-page-pv");
+  if (!line || !num) return;
+  fetch("https://cdn.busuanzi.cc/api.php", {
+    method: "POST",
+    body: JSON.stringify({ url: location.href, referrer: document.referrer || "" })
+  }).then(function (r) { return r.json(); }).then(function (data) {
+    var n = data && data.busuanzi_page_pv;
+    if (n == null || n === "") return;
+    num.textContent = String(n);
+    line.removeAttribute("hidden");
+  }).catch(function () {});
+})();
+</script>"""
 
 TYPE_LABEL = {
     "phd": "PhD",
@@ -134,14 +155,19 @@ def compose_pi_view(pi: dict) -> dict:
         seen_urls.add(url)
         title = re.sub(r"\s+", " ", (opp.get("source_title") or "").strip())
         date = (opp.get("posted_at") or "").strip()
+        site = SOURCE_SITE.get(opp.get("source") or "", "")
+        if not site and "1point3acres.com" in url:
+            site = "一亩三分地"
         if title:
             label = title[:42]
             if date:
                 label = f"{label} · {date}"
+            if site and site not in label:
+                label = f"{site} · {label}"
         elif date:
-            label = f"小红书 · {date}"
+            label = f"{site or '小红书'} · {date}"
         else:
-            label = "小红书"
+            label = site or "小红书"
         labeled_sources.append({"url": url, "label": label})
     emails, homepages = _split_contacts(pi, opps)
     return {
@@ -390,6 +416,7 @@ footer.site {
   font-size: 14px;
 }
 footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+footer.site .visit-count[hidden] { display: none; }
 .hidden { display: none; }
 @media (max-width: 880px) {
   .page { padding: 48px 22px 72px; }
@@ -488,10 +515,10 @@ def _site_top() -> str:
 def _site_footer(note: str) -> str:
     return (
         '<footer class="site">'
-        '<p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p>'
+        '<p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p>'
         f"<p>{note}</p>"
         "</footer>"
-        f"{BUSUANZI_SCRIPT}"
+        f"{VISIT_SCRIPT}"
     )
 
 

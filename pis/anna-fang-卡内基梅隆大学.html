@@ -236,6 +236,7 @@ footer.site {
   font-size: 14px;
 }
 footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+footer.site .visit-count[hidden] { display: none; }
 .hidden { display: none; }
 @media (max-width: 880px) {
   .page { padding: 48px 22px 72px; }
@@ -281,8 +282,23 @@ footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
     <p class="eyebrow">研究方向</p>
     <ul class="topic-list"><li>hci</li><li>ml</li></ul>
     <p class="eyebrow">原帖</p>
-    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/68f2c843000000000503abae?xsec_token=ABPU8tHgwvbuLUDZJqdubzk5XZQKModIUi7wJzXsv7n-E%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">🔎招 CS / HCI 博士生 🔎 PhD in CS · 2025-10-17</a></li></ul>
-    <footer class="site"><p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p><p>信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/68f2c843000000000503abae?xsec_token=ABPU8tHgwvbuLUDZJqdubzk5XZQKModIUi7wJzXsv7n-E%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · 🔎招 CS / HCI 博士生 🔎 PhD in CS · 2025-10-17</a></li></ul>
+    <footer class="site"><p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p><p>信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script>
+(function () {
+  var line = document.getElementById("visit-line");
+  var num = document.getElementById("visit-page-pv");
+  if (!line || !num) return;
+  fetch("https://cdn.busuanzi.cc/api.php", {
+    method: "POST",
+    body: JSON.stringify({ url: location.href, referrer: document.referrer || "" })
+  }).then(function (r) { return r.json(); }).then(function (data) {
+    var n = data && data.busuanzi_page_pv;
+    if (n == null || n === "") return;
+    num.textContent = String(n);
+    line.removeAttribute("hidden");
+  }).catch(function () {});
+})();
+</script>
   </div>
 </body>
 </html>

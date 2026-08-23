@@ -236,6 +236,7 @@ footer.site {
   font-size: 14px;
 }
 footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
+footer.site .visit-count[hidden] { display: none; }
 .hidden { display: none; }
 @media (max-width: 880px) {
   .page { padding: 48px 22px 72px; }
@@ -281,8 +282,23 @@ footer.site .visit-count { margin: 0 0 10px; font-size: 13px; }
     <p class="eyebrow">研究方向</p>
     <ul class="topic-list"><li>Software / System Security</li><li>LLM / RL / Trustworthy AI</li><li>LLM security</li><li>fuzzing</li><li>program repair</li><li>AI-assisted vulnerability discovery</li><li>RL for security</li><li>LLM reasoning</li></ul>
     <p class="eyebrow">原帖</p>
-    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a21e6580000000010001c00?xsec_token=ABbI3iHwT8XCkshotfe2Fq0nAXo7vq-F_kbzNjNVDz9jg%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">NYUAD 新ap招Phd和Postdoc · 2026-06-04</a></li></ul>
-    <footer class="site"><p class="visit-count">Total visits: <span id="busuanzi_site_pv">Loading…</span></p><p>信息来自小红书帖子，未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    <ul class="source-list"><li><a href="https://www.xiaohongshu.com/explore/6a21e6580000000010001c00?xsec_token=ABbI3iHwT8XCkshotfe2Fq0nAXo7vq-F_kbzNjNVDz9jg%3D&amp;xsec_source=pc_search" target="_blank" rel="noopener">小红书 · NYUAD 新ap招Phd和Postdoc · 2026-06-04</a></li></ul>
+    <footer class="site"><p class="visit-count" id="visit-line" hidden>本页访问 <span id="visit-page-pv"></span></p><p>信息来自社区帖子（小红书 / 一亩三分地），未经学校或导师官方核实。请以原帖和导师主页为准。</p></footer><script>
+(function () {
+  var line = document.getElementById("visit-line");
+  var num = document.getElementById("visit-page-pv");
+  if (!line || !num) return;
+  fetch("https://cdn.busuanzi.cc/api.php", {
+    method: "POST",
+    body: JSON.stringify({ url: location.href, referrer: document.referrer || "" })
+  }).then(function (r) { return r.json(); }).then(function (data) {
+    var n = data && data.busuanzi_page_pv;
+    if (n == null || n === "") return;
+    num.textContent = String(n);
+    line.removeAttribute("hidden");
+  }).catch(function () {});
+})();
+</script>
   </div>
 </body>
 </html>
