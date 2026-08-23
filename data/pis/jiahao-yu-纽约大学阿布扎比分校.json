@@ -10,19 +10,16 @@
   "suggested_school": null,
   "homepage_url": "https://sherdencooper.github.io/publications/",
   "research_areas": [
+    "security",
     "nlp",
-    "systems",
-    "security"
+    "ml"
   ],
   "research_topics": [
     "Software / System Security",
     "LLM / RL / Trustworthy AI",
-    "LLM security",
     "fuzzing",
     "program repair",
-    "AI-assisted vulnerability discovery",
-    "RL for security",
-    "LLM reasoning"
+    "AI-assisted vulnerability discovery"
   ],
   "updated_at": "2026-06-04",
   "opportunities": [
@@ -34,16 +31,13 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "Software / System Security · LLM / RL / Trustworthy AI · LLM security · fuzzing · program repair · AI-assisted vulnerability discovery · RL for security · LLM reasoning",
+      "excerpt": "Software / System Security · LLM / RL / Trustworthy AI · fuzzing · program repair · AI-assisted vulnerability discovery",
       "research_topics": [
         "Software / System Security",
         "LLM / RL / Trustworthy AI",
-        "LLM security",
         "fuzzing",
         "program repair",
-        "AI-assisted vulnerability discovery",
-        "RL for security",
-        "LLM reasoning"
+        "AI-assisted vulnerability discovery"
       ],
       "email": "jy5951@nyu.edu",
       "contact": "jy5951@nyu.edu",

@@ -98,6 +98,10 @@ Issue 模板 + `import_issue.py`。`source=github`，自称学校不会直接 ve
 
 「我是顾尚定，与 Dawn Song 合作，加入上交」只保留顾尚定 + 上海交通大学。导师为/合作者、URL 里的 berkeley.edu、目前就读的学校不再覆盖即将加入的单位。大陆学校地区为「中国大陆」。主表日期和地区列不再换行。
 
+## Step 19 — 研究方向 LLM 审阅（2026-08-23）
+
+规则不再决定「这是不是研究方向」。`scripts/llm_review.py` 用固定 prompt 审 `research_areas` / `research_topics`，结果缓存 `data/llm_reviews.json`。吴冬夏：ml/nlp + 可信大模型/多模态/科学智能体，不再是 CV/成绩单。采集默认 `--max-notes 20`，可 `--query` / `--force`。新晋 AP 相关词补采后主表约 35 行。
+
 ## 新 AP 补采与合并 hotfix（2026-08-23）
 
 重查「新ap招生」后写入 章鹤梓（威斯康星大学麦迪逊分校）、刘世隆（哥伦比亚大学）、Zhuoran Lu（香港大学）。英文名跨行重复已去掉；World Explorer 不再进主表。同一人同校只要有一条 listable 就保留。当前主表 24 行。

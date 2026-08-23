@@ -10,13 +10,13 @@
   "suggested_school": null,
   "homepage_url": "https://syfeng.net/",
   "research_areas": [
-    "nlp",
     "systems",
-    "ml"
+    "nlp"
   ],
   "research_topics": [
-    "研究方向为大规模分布式 MLsys",
-    "AI编译器以及国产算力的原生系统"
+    "大规模分布式 MLSys",
+    "AI 编译器",
+    "国产算力原生系统"
   ],
   "updated_at": "2026-06-07",
   "opportunities": [
@@ -28,10 +28,11 @@
         "intern"
       ],
       "start_term": null,
-      "excerpt": "研究方向为大规模分布式 MLsys · AI编译器以及国产算力的原生系统",
+      "excerpt": "大规模分布式 MLSys · AI 编译器 · 国产算力原生系统",
       "research_topics": [
-        "研究方向为大规模分布式 MLsys",
-        "AI编译器以及国产算力的原生系统"
+        "大规模分布式 MLSys",
+        "AI 编译器",
+        "国产算力原生系统"
       ],
       "email": "syfeng@sii.edu.cn",
       "contact": "syfeng@sii.edu.cn",
@@ -54,10 +55,11 @@
         "intern"
       ],
       "start_term": null,
-      "excerpt": "研究方向为大规模分布式 MLsys · AI编译器以及国产算力的原生系统",
+      "excerpt": "大规模分布式 MLSys · AI 编译器 · 国产算力原生系统",
       "research_topics": [
-        "研究方向为大规模分布式 MLsys",
-        "AI编译器以及国产算力的原生系统"
+        "大规模分布式 MLSys",
+        "AI 编译器",
+        "国产算力原生系统"
       ],
       "email": "syfeng@sii.edu.cn",
       "contact": "syfeng@sii.edu.cn",

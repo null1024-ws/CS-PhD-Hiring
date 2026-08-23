@@ -1,0 +1,55 @@
+{
+  "pi_id": "王镇海龙-西湖大学",
+  "name": "王镇海龙",
+  "name_en": null,
+  "school_claimed": "西湖大学",
+  "school_canonical": "西湖大学",
+  "school_country": "中国大陆",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://mikewangwzhl.github.io/lab/",
+  "research_areas": [
+    "nlp",
+    "ml"
+  ],
+  "research_topics": [
+    "Predictive Thinking Models",
+    "Multimodal Representations",
+    "Native Interactive Learning",
+    "AI for Scientific Discovery"
+  ],
+  "updated_at": "2026-08-17",
+  "opportunities": [
+    {
+      "opportunity_id": "王镇海龙-西湖大学-0",
+      "pi_id": "王镇海龙-西湖大学",
+      "types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "Predictive Thinking Models · Multimodal Representations · Native Interactive Learning · AI for Scientific Discovery",
+      "research_topics": [
+        "Predictive Thinking Models",
+        "Multimodal Representations",
+        "Native Interactive Learning",
+        "AI for Scientific Discovery"
+      ],
+      "email": null,
+      "contact": "https://mikewangwzhl.github.io/lab/",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a82587c00000000220307dc?xsec_token=ABmSZbfMulKTqzmfOTubxXura9FbL0DpC9_7onH9slmxE%3D&xsec_source=pc_search",
+      "source_title": "西湖大学博导招生！速来！",
+      "source_note_id": "6a82587c00000000220307dc",
+      "posted_at": "2026-08-17",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}

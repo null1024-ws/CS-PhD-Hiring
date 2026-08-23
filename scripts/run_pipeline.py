@@ -9,7 +9,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from _paths import AUDIT_PATH, BUNDLES_DIR, LISTINGS_PATH, PIS_DIR, ensure_dirs
+from _paths import AUDIT_PATH, BUNDLES_DIR, LISTINGS_PATH, LLM_REVIEWS_PATH, PIS_DIR, ensure_dirs
+from llm_review import load_review_cache, review_research, save_review_cache
 from agency import classify_contact, classify_source_kind, should_list_source
 from audit_pipeline import write_audit
 from content_bundle import bundle_extract_text, bundle_visible_text, flatten_collected_note
@@ -41,13 +42,24 @@ def _slug(name: str, school: str) -> str:
     return slug or "unknown"
 
 
-def process_note(note: dict) -> list[dict]:
+def process_note(note: dict, review_cache: dict | None = None) -> list[dict]:
     visible = bundle_visible_text(note)
     extract_text = bundle_extract_text(note)
     relevance = classify_relevance(extract_text)
     rows = extract_opportunities(extract_text)
     out: list[dict] = []
     for row in rows:
+        reviewed = review_research(
+            extract_text,
+            name=row.pi_name,
+            school=row.school_claimed or "",
+            note_id=note.get("note_id"),
+            cache=review_cache,
+        )
+        if reviewed is not None:
+            row.research_areas = reviewed["research_areas"]
+            row.research_topics = reviewed["research_topics"]
+            row.excerpt = " · ".join(reviewed["research_topics"]) or row.excerpt
         school = normalize_school(row.school_claimed or "")
         contact = classify_contact(visible)
         kind = classify_source_kind(
@@ -122,6 +134,8 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
         pi_id = _slug(item.name, item.school_canonical)
         topics: list[str] = []
         for row in item.records:
+            if not row.get("listable"):
+                continue
             for topic in row.get("research_topics") or []:
                 if topic and topic not in topics:
                     topics.append(topic)
@@ -204,9 +218,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--audit", type=Path, default=AUDIT_PATH)
     args = parser.parse_args(argv)
     notes = load_notes(args.input_dir or [BUNDLES_DIR])
+    review_cache = load_review_cache(LLM_REVIEWS_PATH)
     records: list[dict] = []
     for note in notes:
-        records.extend(process_note(note))
+        records.extend(process_note(note, review_cache=review_cache))
+    save_review_cache(review_cache, LLM_REVIEWS_PATH)
     audit = write_audit(records, args.audit)
     merged = merge_records(records)
     write_outputs(merged, args.listings, args.pis_dir)

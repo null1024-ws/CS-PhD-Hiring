@@ -1,0 +1,426 @@
+{
+  "6a34dd180000000006022c0a": {
+    "research_areas": [
+      "ml",
+      "nlp"
+    ],
+    "research_topics": [
+      "可信大模型/生成模型",
+      "多模态模型",
+      "科学智能体",
+      "概率机器学习",
+      "AI for Science"
+    ]
+  },
+  "68f2c843000000000503abae": {
+    "research_areas": [
+      "hci",
+      "ml"
+    ],
+    "research_topics": [
+      "HCI for mental health",
+      "immersive technology",
+      "LLM and social computing"
+    ]
+  },
+  "6a7663d00000000033010c95": {
+    "research_areas": [
+      "ml"
+    ],
+    "research_topics": [
+      "自主科研 Autoresearch",
+      "AI as Science",
+      "AI as Co-scientist",
+      "机器学习基础",
+      "AI for Medicine"
+    ]
+  },
+  "6a21e6580000000010001c00": {
+    "research_areas": [
+      "security",
+      "nlp",
+      "ml"
+    ],
+    "research_topics": [
+      "Software / System Security",
+      "LLM / RL / Trustworthy AI",
+      "fuzzing",
+      "program repair",
+      "AI-assisted vulnerability discovery"
+    ]
+  },
+  "6a3e77ee000000001102fc80": {
+    "research_areas": [
+      "security",
+      "nlp"
+    ],
+    "research_topics": [
+      "AI 系统安全",
+      "软件与 Web 安全",
+      "程序分析",
+      "LLM for Security"
+    ]
+  },
+  "682d59f20000000022025599": {
+    "research_areas": [
+      "ml",
+      "computer vision"
+    ],
+    "research_topics": []
+  },
+  "6a23ca78000000000803ca18": {
+    "research_areas": [
+      "robotics",
+      "ml"
+    ],
+    "research_topics": [
+      "Adaptive Robot Policies",
+      "Interactive World Models",
+      "Proactive Self-Improvement"
+    ]
+  },
+  "6a290a98000000002202af9b": {
+    "research_areas": [
+      "hci",
+      "ml"
+    ],
+    "research_topics": [
+      "Human-centered Agent Design",
+      "Human-centered Agent Eval",
+      "AI-driven interactive systems",
+      "AI in societal systems"
+    ]
+  },
+  "6a4363f9000000001702f9ab": {
+    "research_areas": [
+      "hci"
+    ],
+    "research_topics": [
+      "Human-centered AI"
+    ]
+  },
+  "6a7ef8890000000022030402": {
+    "research_areas": [
+      "ml"
+    ],
+    "research_topics": [
+      "机器学习与金融决策",
+      "强化学习",
+      "因果机器学习",
+      "金融大模型"
+    ]
+  },
+  "6a259cfd0000000021022f0c": {
+    "research_areas": [
+      "systems",
+      "nlp"
+    ],
+    "research_topics": [
+      "大规模分布式 MLSys",
+      "AI 编译器",
+      "国产算力原生系统"
+    ]
+  },
+  "6a2633cb000000001702b315": {
+    "research_areas": [
+      "systems",
+      "nlp"
+    ],
+    "research_topics": [
+      "大规模分布式 MLSys",
+      "AI 编译器",
+      "国产算力原生系统"
+    ]
+  },
+  "6a0be0ca00000000070232b2": {
+    "research_areas": [
+      "computer vision",
+      "ml"
+    ],
+    "research_topics": [
+      "空间感知和表示学习",
+      "自进化智能体",
+      "世界模型",
+      "多模态学习",
+      "具身智能"
+    ]
+  },
+  "6a853e780000000012029ddf": {
+    "research_areas": [
+      "robotics"
+    ],
+    "research_topics": [
+      "数字建造",
+      "AI + 机器人"
+    ]
+  },
+  "6a6de0df0000000029031779": {
+    "research_areas": [
+      "computer vision",
+      "ml"
+    ],
+    "research_topics": [
+      "多模态生成与编辑",
+      "世界模型",
+      "空间智能",
+      "具身智能",
+      "模型加速"
+    ]
+  },
+  "6a1fc9110000000035022523": {
+    "research_areas": [
+      "ml",
+      "nlp"
+    ],
+    "research_topics": [
+      "计算智能",
+      "进化计算",
+      "多目标优化",
+      "基于 LLM 的自动算法生成"
+    ]
+  },
+  "6a797b9700000000330340e7": {
+    "research_areas": [
+      "security",
+      "theory"
+    ],
+    "research_topics": [
+      "Blockchain security and privacy",
+      "Distributed computing and consensus",
+      "Secure multi-party computation",
+      "Cryptographic protocols",
+      "Quantum cryptography"
+    ]
+  },
+  "6a6d79b8000000002500b497": {
+    "research_areas": [
+      "ml"
+    ],
+    "research_topics": [
+      "计算社会科学",
+      "计算建模"
+    ]
+  },
+  "6a5b6872000000000401c377": {
+    "research_areas": [
+      "systems",
+      "nlp"
+    ],
+    "research_topics": [
+      "Edge Computing",
+      "MLSys",
+      "LLM Infra",
+      "Efficient Agentic AI Systems",
+      "Edge Intelligence"
+    ]
+  },
+  "6a3ef673000000001603ceeb": {
+    "research_areas": [
+      "systems"
+    ],
+    "research_topics": [
+      "量子计算编译与体系结构",
+      "分布式量子计算",
+      "容错量子计算",
+      "量子计算与 AI/ML"
+    ]
+  },
+  "6a89b26500000000280270d2": {
+    "research_areas": [
+      "nlp",
+      "ml",
+      "theory"
+    ],
+    "research_topics": [
+      "大语言模型的理论基础",
+      "LLM 与经济学社会科学交叉",
+      "LLM 微调与后训练理论",
+      "经典机器学习理论"
+    ]
+  },
+  "685e4d340000000017032f3f": {
+    "research_areas": [
+      "security",
+      "ml"
+    ],
+    "research_topics": [
+      "可信机器学习",
+      "ML 隐私保护",
+      "对抗鲁棒性"
+    ]
+  },
+  "6a73b8eb0000000025001e0a": {
+    "research_areas": [
+      "nlp"
+    ],
+    "research_topics": [
+      "LLM Reasoning",
+      "Alignment",
+      "Agents"
+    ]
+  },
+  "6a489df8000000000d00bc00": {
+    "research_areas": [
+      "hci",
+      "ml"
+    ],
+    "research_topics": [
+      "Human-AI Interaction",
+      "Responsible and Trustworthy AI",
+      "Collaborative AI Agents",
+      "AI for Education",
+      "Human-AI alignment"
+    ]
+  },
+  "6a1e90dc0000000038034355": {
+    "research_areas": [
+      "security"
+    ],
+    "research_topics": [
+      "量子计算",
+      "量子机器学习"
+    ]
+  },
+  "6a828625000000002202c3a7": {
+    "research_areas": [
+      "nlp",
+      "ml"
+    ],
+    "research_topics": [
+      "大语言模型",
+      "多模态大语言模型",
+      "智能体 Agent"
+    ]
+  },
+  "6a839c8e000000000e03f000": {
+    "research_areas": [
+      "computer vision",
+      "robotics"
+    ],
+    "research_topics": [
+      "Computer Vision",
+      "Agentic AI",
+      "Robotics",
+      "Computer Graphics"
+    ]
+  },
+  "6a82cfeb0000000029032a45": {
+    "research_areas": [
+      "security",
+      "ml"
+    ],
+    "research_topics": [
+      "系统可靠性与韧性",
+      "能源信息物理系统安全",
+      "能源物联网与分布式控制"
+    ]
+  },
+  "6a7bfa06000000003303320d": {
+    "research_areas": [
+      "security",
+      "theory"
+    ],
+    "research_topics": [
+      "安全计算基础",
+      "面向智能体与区块链的安全计算"
+    ]
+  },
+  "6a2c6107000000001700887b": {
+    "research_areas": [
+      "security",
+      "nlp"
+    ],
+    "research_topics": [
+      "Agentic AI 系统安全与隐私",
+      "Responsible AI in Social Context",
+      "多模态 AI 安全",
+      "Trustworthy AI for X"
+    ]
+  },
+  "6a4368e2000000000802649e": {
+    "research_areas": [
+      "security"
+    ],
+    "research_topics": [
+      "人工智能安全与隐私"
+    ]
+  },
+  "6a7c216c0000000029031b3c": {
+    "research_areas": [
+      "security"
+    ],
+    "research_topics": [
+      "人工智能安全与隐私"
+    ]
+  },
+  "6a81e851000000002c002d48": {
+    "research_areas": [
+      "nlp",
+      "ml"
+    ],
+    "research_topics": [
+      "Generative AI",
+      "Large Language Models",
+      "Multimodal LLMs",
+      "Foundation Models",
+      "AI for Science"
+    ]
+  },
+  "6a6b5a260000000024027d09": {
+    "research_areas": [
+      "ml",
+      "nlp"
+    ],
+    "research_topics": [
+      "GenAI × RL",
+      "多智能体协作与博弈",
+      "AI for Social Impact"
+    ]
+  },
+  "69db496a000000001d018001": {
+    "research_areas": [
+      "security",
+      "systems"
+    ],
+    "research_topics": [
+      "系统安全",
+      "AI4SE",
+      "SE4AI"
+    ]
+  },
+  "6a1e923a00000000210152a4": {
+    "research_areas": [
+      "ml"
+    ],
+    "research_topics": [
+      "可信机器学习",
+      "因果表示学习"
+    ]
+  },
+  "6a82587c00000000220307dc": {
+    "research_areas": [
+      "nlp",
+      "ml"
+    ],
+    "research_topics": [
+      "Predictive Thinking Models",
+      "Multimodal Representations",
+      "Native Interactive Learning",
+      "AI for Scientific Discovery"
+    ]
+  },
+  "6a7574850000000024024a50": {
+    "research_areas": [
+      "security",
+      "robotics",
+      "ml"
+    ],
+    "research_topics": [
+      "Safe AI Agents",
+      "AI Safety Evaluation",
+      "Embodied AI & Robot Learning",
+      "Foundation Models",
+      "Multi-Agent Intelligence"
+    ]
+  }
+}

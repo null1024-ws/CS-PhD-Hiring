@@ -77,7 +77,7 @@ SELF_SKIP = {"学生", "楼主", "本人", "老师", "作者", "招生"}
 WEAK_NAME_RE = re.compile(r"^(?:未知|老师|教授|[\u4e00-\u9fff]老师)$")
 NAME_NOISE_RE = re.compile(
     r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室|"
-    r"学院|大学|讲座|教轨|准聘|长聘|教职|轨道|邮件|关注|跟着|主动|恭喜|创智"
+    r"学院|大学|讲座|教轨|准聘|长聘|教职|轨道|邮件|关注|跟着|主动|恭喜|创智|方向|程系"
 )
 NAME_STOPWORDS = {
     "这个",
@@ -94,6 +94,9 @@ NAME_STOPWORDS = {
     "学生",
     "导师",
     "课题组",
+    "程系",
+    "能方向",
+    "方向",
 }
 # Common surnames so "发邮件给陈老师" cannot become 发邮件给.
 CN_SURNAMES = frozenset(
@@ -155,7 +158,7 @@ def is_main_table_name(name: str) -> bool:
         if len(name) in {2, 3}:
             return name[0] in CN_SURNAMES
         if len(name) == 4:
-            return name[:2] in COMPOUND_SURNAMES
+            return name[:2] in COMPOUND_SURNAMES or name[0] in CN_SURNAMES
         return False
     if any(part.lower() in EN_NAME_SKIP for part in name.split()):
         return False

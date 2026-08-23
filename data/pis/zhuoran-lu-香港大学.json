@@ -10,18 +10,11 @@
   "suggested_school": null,
   "homepage_url": null,
   "research_areas": [
-    "systems",
-    "hci"
+    "hci",
+    "ml"
   ],
   "research_topics": [
-    "Postdoc x 1",
-    "Full-time RA × N",
-    "PhD x 2",
-    "part-time remote RA × N",
-    "Human-centered Agent Design",
-    "Human-centerd Agent Eval",
-    "AI-driven interactive systems",
-    "AI in societal systems"
+    "Human-centered AI"
   ],
   "updated_at": "2026-07-04",
   "opportunities": [
@@ -34,14 +27,10 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "Postdoc x 1 · Full-time RA × N · PhD x 2 · part-time remote RA × N · Human-centered Agent Design · Human-centerd Agent Eval · AI-driven interactive systems · AI in societal systems",
+      "excerpt": "Human-centered Agent Design · Human-centered Agent Eval · AI-driven interactive systems · AI in societal systems",
       "research_topics": [
-        "Postdoc x 1",
-        "Full-time RA × N",
-        "PhD x 2",
-        "part-time remote RA × N",
         "Human-centered Agent Design",
-        "Human-centerd Agent Eval",
+        "Human-centered Agent Eval",
         "AI-driven interactive systems",
         "AI in societal systems"
       ],
@@ -65,8 +54,10 @@
         "phd"
       ],
       "start_term": null,
-      "excerpt": "systems · hci",
-      "research_topics": [],
+      "excerpt": "Human-centered AI",
+      "research_topics": [
+        "Human-centered AI"
+      ],
       "email": null,
       "contact": null,
       "contact_class": "none",

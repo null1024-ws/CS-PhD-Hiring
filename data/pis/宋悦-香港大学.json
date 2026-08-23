@@ -1,0 +1,53 @@
+{
+  "pi_id": "宋悦-香港大学",
+  "name": "宋悦",
+  "name_en": null,
+  "school_claimed": "香港大学",
+  "school_canonical": "香港大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "ml",
+    "nlp"
+  ],
+  "research_topics": [
+    "GenAI × RL",
+    "多智能体协作与博弈",
+    "AI for Social Impact"
+  ],
+  "updated_at": "2026-07-30",
+  "opportunities": [
+    {
+      "opportunity_id": "宋悦-香港大学-0",
+      "pi_id": "宋悦-香港大学",
+      "types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "暑研",
+      "excerpt": "GenAI × RL · 多智能体协作与博弈 · AI for Social Impact",
+      "research_topics": [
+        "GenAI × RL",
+        "多智能体协作与博弈",
+        "AI for Social Impact"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a6b5a260000000024027d09?xsec_token=AB6yJlnndSKYeqnai8L-yzwsfA7WxzcmZMFoKC2fO8R7s%3D&xsec_source=pc_search",
+      "source_title": "香港大学新AP孔令恺全奖博士/博后/RA/暑研",
+      "source_note_id": "6a6b5a260000000024027d09",
+      "posted_at": "2026-07-30",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

@@ -10,7 +10,8 @@
       "school_status": "unverified",
       "research_areas": [
         "nlp",
-        "ml"
+        "ml",
+        "theory"
       ],
       "opportunity_types": [
         "phd",
@@ -64,6 +65,72 @@
       "suggested_school": null
     },
     {
+      "pi_id": "王镇海龙-西湖大学",
+      "name": "王镇海龙",
+      "name_en": null,
+      "school_canonical": "西湖大学",
+      "school_country": "中国大陆",
+      "school_status": "unverified",
+      "research_areas": [
+        "nlp",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": "2027 Fall",
+      "source_count": 1,
+      "updated_at": "2026-08-17",
+      "detail_path": "pis/王镇海龙-西湖大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "刘景荣-澳门大学",
+      "name": "刘景荣",
+      "name_en": null,
+      "school_canonical": "澳门大学",
+      "school_country": "中国澳门",
+      "school_status": "unverified",
+      "research_areas": [
+        "security",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "visiting"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-17",
+      "detail_path": "pis/刘景荣-澳门大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "刘罡-香港城市大学",
+      "name": "刘罡",
+      "name_en": null,
+      "school_canonical": "香港城市大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "nlp",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-08-16",
+      "detail_path": "pis/刘罡-香港城市大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "丛林-南洋理工大学",
       "name": "丛林",
       "name_en": null,
@@ -71,7 +138,6 @@
       "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision",
         "ml"
       ],
       "opportunity_types": [
@@ -85,6 +151,28 @@
       "suggested_school": null
     },
     {
+      "pi_id": "tiantian-gong-南洋理工大学",
+      "name": "Tiantian Gong",
+      "name_en": null,
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
+      "school_status": "unverified",
+      "research_areas": [
+        "security",
+        "theory"
+      ],
+      "opportunity_types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "2027 Fall",
+      "source_count": 1,
+      "updated_at": "2026-08-12",
+      "detail_path": "pis/tiantian-gong-南洋理工大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "沈俞-香港理工大学",
       "name": "沈俞",
       "name_en": null,
@@ -92,7 +180,8 @@
       "school_country": "中国香港",
       "school_status": "unverified",
       "research_areas": [
-        "security"
+        "security",
+        "theory"
       ],
       "opportunity_types": [
         "phd"
@@ -111,10 +200,9 @@
       "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision",
-        "systems",
         "security",
-        "robotics"
+        "robotics",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -135,7 +223,6 @@
       "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "systems",
         "ml"
       ],
       "opportunity_types": [
@@ -198,7 +285,8 @@
       "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision"
+        "computer vision",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -212,6 +300,75 @@
       "suggested_school": null
     },
     {
+      "pi_id": "孔令恺-香港大学",
+      "name": "孔令恺",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "ml",
+        "nlp"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "暑研",
+      "source_count": 1,
+      "updated_at": "2026-07-30",
+      "detail_path": "pis/孔令恺-香港大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "王同翰-香港大学",
+      "name": "王同翰",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "ml",
+        "nlp"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "暑研",
+      "source_count": 1,
+      "updated_at": "2026-07-30",
+      "detail_path": "pis/王同翰-香港大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "宋悦-香港大学",
+      "name": "宋悦",
+      "name_en": null,
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "ml",
+        "nlp"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "暑研",
+      "source_count": 1,
+      "updated_at": "2026-07-30",
+      "detail_path": "pis/宋悦-香港大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "石拓-深圳理工大学",
       "name": "石拓",
       "name_en": null,
@@ -219,8 +376,8 @@
       "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
-        "nlp",
-        "systems"
+        "systems",
+        "nlp"
       ],
       "opportunity_types": [
         "phd",
@@ -234,6 +391,29 @@
       "suggested_school": null
     },
     {
+      "pi_id": "xinfeng-li-香港理工大学",
+      "name": "Xinfeng Li",
+      "name_en": null,
+      "school_canonical": "香港理工大学",
+      "school_country": "中国香港",
+      "school_status": "unverified",
+      "research_areas": [
+        "security",
+        "nlp"
+      ],
+      "opportunity_types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 3,
+      "updated_at": "2026-07-06",
+      "detail_path": "pis/xinfeng-li-香港理工大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "zhuoran-lu-香港大学",
       "name": "Zhuoran Lu",
       "name_en": null,
@@ -241,8 +421,8 @@
       "school_country": "中国香港",
       "school_status": "unverified",
       "research_areas": [
-        "systems",
-        "hci"
+        "hci",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -263,8 +443,8 @@
       "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
-        "systems",
-        "hci"
+        "hci",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -284,9 +464,8 @@
       "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "nlp",
-        "systems",
-        "security"
+        "security",
+        "nlp"
       ],
       "opportunity_types": [
         "phd",
@@ -327,9 +506,8 @@
       "school_country": "阿联酋",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision",
-        "security",
-        "ml"
+        "ml",
+        "nlp"
       ],
       "opportunity_types": [
         "phd",
@@ -351,9 +529,8 @@
       "school_country": "中国大陆",
       "school_status": "unverified",
       "research_areas": [
-        "nlp",
         "systems",
-        "ml"
+        "nlp"
       ],
       "opportunity_types": [
         "phd",
@@ -373,7 +550,8 @@
       "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "robotics"
+        "robotics",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -394,9 +572,9 @@
       "school_country": "阿联酋",
       "school_status": "unverified",
       "research_areas": [
+        "security",
         "nlp",
-        "systems",
-        "security"
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -409,6 +587,25 @@
       "suggested_school": null
     },
     {
+      "pi_id": "郑雨嘉-伊利诺伊大学香槟分校",
+      "name": "郑雨嘉",
+      "name_en": null,
+      "school_canonical": "伊利诺伊大学香槟分校",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-06-03",
+      "detail_path": "pis/郑雨嘉-伊利诺伊大学香槟分校.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "张青富-香港城市大学",
       "name": "张青富",
       "name_en": null,
@@ -416,8 +613,8 @@
       "school_country": "中国香港",
       "school_status": "unverified",
       "research_areas": [
-        "nlp",
-        "ml"
+        "ml",
+        "nlp"
       ],
       "opportunity_types": [
         "phd",
@@ -431,6 +628,26 @@
       "suggested_school": null
     },
     {
+      "pi_id": "cheng-chu-乔治梅森大学",
+      "name": "Cheng Chu",
+      "name_en": null,
+      "school_canonical": "乔治梅森大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "security"
+      ],
+      "opportunity_types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-06-02",
+      "detail_path": "pis/cheng-chu-乔治梅森大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "刘世隆-哥伦比亚大学",
       "name": "刘世隆",
       "name_en": null,
@@ -439,7 +656,7 @@
       "school_status": "unverified",
       "research_areas": [
         "computer vision",
-        "systems"
+        "ml"
       ],
       "opportunity_types": [
         "phd",
@@ -450,6 +667,27 @@
       "source_count": 1,
       "updated_at": "2026-05-19",
       "detail_path": "pis/刘世隆-哥伦比亚大学.html",
+      "suggested_school": null
+    },
+    {
+      "pi_id": "巴金声-香港中文大学-深圳",
+      "name": "巴金声",
+      "name_en": null,
+      "school_canonical": "香港中文大学（深圳）",
+      "school_country": "中国大陆",
+      "school_status": "unverified",
+      "research_areas": [
+        "security",
+        "systems"
+      ],
+      "opportunity_types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2026-04-15",
+      "detail_path": "pis/巴金声-香港中文大学-深圳.html",
       "suggested_school": null
     },
     {
@@ -500,9 +738,8 @@
       "school_country": "中国香港",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision",
-        "systems",
-        "ml"
+        "ml",
+        "computer vision"
       ],
       "opportunity_types": [
         "phd"

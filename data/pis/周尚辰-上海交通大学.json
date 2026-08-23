@@ -10,17 +10,15 @@
   "suggested_school": null,
   "homepage_url": "https://shangchenzhou.com/",
   "research_areas": [
-    "computer vision"
+    "computer vision",
+    "ml"
   ],
   "research_topics": [
     "多模态生成与编辑",
     "世界模型",
     "空间智能",
     "具身智能",
-    "模型加速",
-    "有效的科研指导",
-    "丰富的合作机会",
-    "充足的科研资源"
+    "模型加速"
   ],
   "updated_at": "2026-08-01",
   "opportunities": [
@@ -33,16 +31,13 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "多模态生成与编辑 · 世界模型 · 空间智能 · 具身智能 · 模型加速 · 有效的科研指导 · 丰富的合作机会 · 充足的科研资源",
+      "excerpt": "多模态生成与编辑 · 世界模型 · 空间智能 · 具身智能 · 模型加速",
       "research_topics": [
         "多模态生成与编辑",
         "世界模型",
         "空间智能",
         "具身智能",
-        "模型加速",
-        "有效的科研指导",
-        "丰富的合作机会",
-        "充足的科研资源"
+        "模型加速"
       ],
       "email": "shangchenzhou@gmail.com",
       "contact": "shangchenzhou@gmail.com",

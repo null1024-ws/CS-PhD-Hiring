@@ -1,0 +1,50 @@
+{
+  "pi_id": "tiantian-gong-南洋理工大学",
+  "name": "Tiantian Gong",
+  "name_en": null,
+  "school_claimed": "南洋理工大学",
+  "school_canonical": "南洋理工大学",
+  "school_country": "新加坡",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://www.ttiangong.com/openings",
+  "research_areas": [
+    "security",
+    "theory"
+  ],
+  "research_topics": [
+    "安全计算基础",
+    "面向智能体与区块链的安全计算"
+  ],
+  "updated_at": "2026-08-12",
+  "opportunities": [
+    {
+      "opportunity_id": "tiantian-gong-南洋理工大学-0",
+      "pi_id": "tiantian-gong-南洋理工大学",
+      "types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "安全计算基础 · 面向智能体与区块链的安全计算",
+      "research_topics": [
+        "安全计算基础",
+        "面向智能体与区块链的安全计算"
+      ],
+      "email": null,
+      "contact": "https://www.ttiangong.com/openings",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a7bfa06000000003303320d?xsec_token=ABypK_Nt6OVuPJI2yf0-s1djF7ZTNPTe9Uux6DDlhm1Ws%3D&xsec_source=pc_search",
+      "source_title": "[帮转] 南洋理工新AP招生",
+      "source_note_id": "6a7bfa06000000003303320d",
+      "posted_at": "2026-08-12",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}

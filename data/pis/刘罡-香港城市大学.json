@@ -1,0 +1,56 @@
+{
+  "pi_id": "刘罡-香港城市大学",
+  "name": "刘罡",
+  "name_en": null,
+  "school_claimed": "香港城市大学",
+  "school_canonical": "香港城市大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "nlp",
+    "ml"
+  ],
+  "research_topics": [
+    "Generative AI",
+    "Large Language Models",
+    "Multimodal LLMs",
+    "Foundation Models",
+    "AI for Science"
+  ],
+  "updated_at": "2026-08-16",
+  "opportunities": [
+    {
+      "opportunity_id": "刘罡-香港城市大学-0",
+      "pi_id": "刘罡-香港城市大学",
+      "types": [
+        "phd",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "Generative AI · Large Language Models · Multimodal LLMs · Foundation Models · AI for Science",
+      "research_topics": [
+        "Generative AI",
+        "Large Language Models",
+        "Multimodal LLMs",
+        "Foundation Models",
+        "AI for Science"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a81e851000000002c002d48?xsec_token=ABQZCZ_iv7Bj9HC9CnQjzVNfuHxYZOds09AdAzWnqDvHI%3D&xsec_source=pc_search",
+      "source_title": "香港城市大学新AP刘罡博士/博后/RA机会",
+      "source_note_id": "6a81e851000000002c002d48",
+      "posted_at": "2026-08-16",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

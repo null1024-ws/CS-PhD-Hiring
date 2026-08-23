@@ -12,14 +12,15 @@
 | `data/schema/` | 字段说明与 JSON Schema |
 | `data/raw/` | 本机原始抓取，gitignore |
 | `scripts/school_normalize.py` | 学校别名规范化 |
-| `scripts/extract.py` | 纯文本抽取。自报「我是」优先；不把合作者/导师/URL 里的学校当成招生方。即将加入窗口停在逗号/`担任`。主页 URL 遇中文句号即停 |
+| `scripts/extract.py` | 纯文本抽取。自报「我是」优先；不把合作者/导师/URL 里的学校当成招生方。即将加入窗口停在逗号/`担任`。主页 URL 遇中文句号即停。方向字段只是候选，以 LLM 审阅为准 |
+| `scripts/llm_review.py` | 用固定 prompt 审 `research_areas` / `research_topics`。申请材料不是方向。结果可缓存 `data/llm_reviews.json` |
 | `scripts/relevance.py` | `cs` / `review` / `notcs` |
 | `scripts/agency.py` | 联系方式分级与中介判定（只看正文+OCR） |
 | `scripts/verify_school.py` | 主页/OpenAlex 文本核对学校 |
 | `scripts/dedup.py` | 同名同校合并 |
 | `scripts/ocr_extract.py` | 图片 OCR |
 | `scripts/content_bundle.py` | 正文 + OCR + 有用评论 |
-| `scripts/xhs_collect.py` | 小红书采集（需本机登录） |
+| `scripts/xhs_collect.py` | 小红书采集。默认每条 query 最多 20 条新笔记；`--query` / `--force` 可重跑单个词 |
 | `scripts/onepoint_parse.py` | 一亩三分地招生版 HTML → note（离线解析） |
 | `scripts/onepoint_collect.py` | fid=173 采集：`--from-dir` 离线；线上先 httpx，被拦再可选 Crawl4AI（`--browser` / `--headed`）。Cloudflare 停跑。原始 HTML/note 写 `data/raw/1p3a/` |
 | `scripts/search_queries.py` | 招生搜索词 |

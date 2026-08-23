@@ -12,7 +12,10 @@
   "research_areas": [
     "robotics"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "数字建造",
+    "AI + 机器人"
+  ],
   "updated_at": "2026-08-19",
   "opportunities": [
     {
@@ -23,8 +26,11 @@
         "ra"
       ],
       "start_term": null,
-      "excerpt": "robotics",
-      "research_topics": [],
+      "excerpt": "数字建造 · AI + 机器人",
+      "research_topics": [
+        "数字建造",
+        "AI + 机器人"
+      ],
       "email": null,
       "contact": null,
       "contact_class": "none",

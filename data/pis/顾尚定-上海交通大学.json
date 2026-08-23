@@ -10,12 +10,17 @@
   "suggested_school": null,
   "homepage_url": "https://people.eecs.berkeley.edu/~shangding.gu/index.html",
   "research_areas": [
-    "computer vision",
-    "systems",
     "security",
-    "robotics"
+    "robotics",
+    "ml"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "Safe AI Agents",
+    "AI Safety Evaluation",
+    "Embodied AI & Robot Learning",
+    "Foundation Models",
+    "Multi-Agent Intelligence"
+  ],
   "updated_at": "2026-08-07",
   "opportunities": [
     {
@@ -27,8 +32,14 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "computer vision · systems · security · robotics",
-      "research_topics": [],
+      "excerpt": "Safe AI Agents · AI Safety Evaluation · Embodied AI & Robot Learning · Foundation Models · Multi-Agent Intelligence",
+      "research_topics": [
+        "Safe AI Agents",
+        "AI Safety Evaluation",
+        "Embodied AI & Robot Learning",
+        "Foundation Models",
+        "Multi-Agent Intelligence"
+      ],
       "email": "sail.lab.hr@gmail.com",
       "contact": "sail.lab.hr@gmail.com",
       "contact_class": "academic",

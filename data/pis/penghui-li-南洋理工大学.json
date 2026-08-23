@@ -10,11 +10,15 @@
   "suggested_school": null,
   "homepage_url": "https://peng-hui.github.io/openings.html",
   "research_areas": [
-    "nlp",
-    "systems",
-    "security"
+    "security",
+    "nlp"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "AI 系统安全",
+    "软件与 Web 安全",
+    "程序分析",
+    "LLM for Security"
+  ],
   "updated_at": "2026-06-26",
   "opportunities": [
     {
@@ -26,8 +30,13 @@
         "visiting"
       ],
       "start_term": "2027 Spring",
-      "excerpt": "nlp · systems · security",
-      "research_topics": [],
+      "excerpt": "AI 系统安全 · 软件与 Web 安全 · 程序分析 · LLM for Security",
+      "research_topics": [
+        "AI 系统安全",
+        "软件与 Web 安全",
+        "程序分析",
+        "LLM for Security"
+      ],
       "email": null,
       "contact": "https://peng-hui.github.io/openings.html",
       "contact_class": "academic",

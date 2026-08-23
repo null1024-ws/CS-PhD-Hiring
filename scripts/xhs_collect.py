@@ -150,9 +150,11 @@ def fetch_authenticated() -> dict | list | None:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Collect XHS CS hiring posts")
-    parser.add_argument("--max-notes", type=int, default=3)
+    parser.add_argument("--max-notes", type=int, default=20)
     parser.add_argument("--sleep", type=float, default=10.0)
     parser.add_argument("--note-sleep", type=float, default=3.0)
+    parser.add_argument("--query", action="append", dest="queries")
+    parser.add_argument("--force", action="store_true", help="re-run a query even if completed")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
 
@@ -175,8 +177,8 @@ def main(argv: list[str] | None = None) -> int:
 
     completed = index["checkpoint"].setdefault("completed_searches", [])
     total_new = 0
-    for query in all_queries():
-        if query in completed:
+    for query in args.queries or all_queries():
+        if query in completed and not args.force:
             print(f" skip (done): {query}", flush=True)
             continue
         print(f" search: {query}", flush=True)
@@ -223,7 +225,8 @@ def main(argv: list[str] | None = None) -> int:
             total_new += 1
             save_raw_index(index)
             time.sleep(args.note_sleep)
-        completed.append(query)
+        if query not in completed:
+            completed.append(query)
         index["searches"].append(
             {"query": query, "items_found": len(items), "new_notes": new_notes, "at": time.time()}
         )

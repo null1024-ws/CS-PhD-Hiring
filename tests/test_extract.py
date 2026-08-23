@@ -43,7 +43,10 @@ def test_title_fragments_are_not_listable() -> None:
     assert is_main_table_name("周尚辰")
     assert is_main_table_name("张伟楠")
     assert is_main_table_name("Ming Li")
+    assert is_main_table_name("王镇海龙")
     assert not is_main_table_name("World Explorer")
+    assert not is_main_table_name("能方向")
+    assert not is_main_table_name("程系")
 
 
 def test_laoshi_prefix_is_not_a_pi_name() -> None:

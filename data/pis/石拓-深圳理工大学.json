@@ -10,17 +10,15 @@
   "suggested_school": null,
   "homepage_url": "https://tshi92.github.io/",
   "research_areas": [
-    "nlp",
-    "systems"
+    "systems",
+    "nlp"
   ],
   "research_topics": [
     "Edge Computing",
-    "MLSys和LLM Infra等",
-    "主要探索如何构建资源高效的智能计算系统",
-    "使人工智能应用能够在不同硬件平台和系统规模下",
-    "以更低的计算",
-    "存储和通信开销实现高效",
-    "可靠且可持续的运转"
+    "MLSys",
+    "LLM Infra",
+    "Efficient Agentic AI Systems",
+    "Edge Intelligence"
   ],
   "updated_at": "2026-07-18",
   "opportunities": [
@@ -33,15 +31,13 @@
         "postdoc"
       ],
       "start_term": null,
-      "excerpt": "Edge Computing · MLSys和LLM Infra等 · 主要探索如何构建资源高效的智能计算系统 · 使人工智能应用能够在不同硬件平台和系统规模下 · 以更低的计算 · 存储和通信开销实现高效 · 可靠且可持续的运转",
+      "excerpt": "Edge Computing · MLSys · LLM Infra · Efficient Agentic AI Systems · Edge Intelligence",
       "research_topics": [
         "Edge Computing",
-        "MLSys和LLM Infra等",
-        "主要探索如何构建资源高效的智能计算系统",
-        "使人工智能应用能够在不同硬件平台和系统规模下",
-        "以更低的计算",
-        "存储和通信开销实现高效",
-        "可靠且可持续的运转"
+        "MLSys",
+        "LLM Infra",
+        "Efficient Agentic AI Systems",
+        "Edge Intelligence"
       ],
       "email": null,
       "contact": "https://tshi92.github.io/",

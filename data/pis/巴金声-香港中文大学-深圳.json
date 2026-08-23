@@ -1,0 +1,51 @@
+{
+  "pi_id": "巴金声-香港中文大学-深圳",
+  "name": "巴金声",
+  "name_en": null,
+  "school_claimed": "香港中文大学（深圳）",
+  "school_canonical": "香港中文大学（深圳）",
+  "school_country": "中国大陆",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "security",
+    "systems"
+  ],
+  "research_topics": [
+    "系统安全",
+    "AI4SE",
+    "SE4AI"
+  ],
+  "updated_at": "2026-04-15",
+  "opportunities": [
+    {
+      "opportunity_id": "巴金声-香港中文大学-深圳-0",
+      "pi_id": "巴金声-香港中文大学-深圳",
+      "types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "系统安全 · AI4SE · SE4AI",
+      "research_topics": [
+        "系统安全",
+        "AI4SE",
+        "SE4AI"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/69db496a000000001d018001?xsec_token=AB4oU7FP7G9qQhTvN7i48L8GBabTRvQcKz02amuTbMDQQ%3D&xsec_source=pc_search",
+      "source_title": "港中深 数据科学学院新晋AP招生-巴金声",
+      "source_note_id": "69db496a000000001d018001",
+      "posted_at": "2026-04-15",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

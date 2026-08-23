@@ -1,0 +1,48 @@
+{
+  "pi_id": "cheng-chu-乔治梅森大学",
+  "name": "Cheng Chu",
+  "name_en": null,
+  "school_claimed": "乔治梅森大学",
+  "school_canonical": "乔治梅森大学",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "security"
+  ],
+  "research_topics": [
+    "量子计算",
+    "量子机器学习"
+  ],
+  "updated_at": "2026-06-02",
+  "opportunities": [
+    {
+      "opportunity_id": "cheng-chu-乔治梅森大学-0",
+      "pi_id": "cheng-chu-乔治梅森大学",
+      "types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "量子计算 · 量子机器学习",
+      "research_topics": [
+        "量子计算",
+        "量子机器学习"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a1e90dc0000000038034355?xsec_token=ABvS600LFYaYDxfcGO_6WTA5upRWQlhQS6A2mlQc4dV5k%3D&xsec_source=pc_search",
+      "source_title": "乔治梅森大学新晋AP招生-Cheng Chu",
+      "source_note_id": "6a1e90dc0000000038034355",
+      "posted_at": "2026-06-02",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

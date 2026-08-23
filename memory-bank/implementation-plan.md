@@ -115,3 +115,9 @@ GitHub Actions：对 `site/dist` 发 Pages。首页/详情有免责声明。READ
 `run_pipeline` 能读 `source=1p3a` 的 note，与小红书记录一起抽取、过滤、去重。详情原帖标签能看出是一亩三分地。
 
 **验证**：fixture 流水线里出现 `source=1p3a` 的可列表老师；中介帖仍不进主表。
+
+## Step 19 — 研究方向由 LLM 审阅
+
+规则抽取继续负责姓名、学校、邮箱、机会类型。`research_areas` / `research_topics` 交给 LLM：只保留帖子里写明的科研方向，申请材料（CV、成绩单、论文列表）不得进方向。无密钥时读已审缓存；测试注入假模型。
+
+**验证**：吴冬夏类 fixture 经审阅后方向为可信大模型/多模态/科学智能体等，不得出现成绩单或把申请 CV 当成 computer vision。无网络、无密钥时 pytest 仍绿。

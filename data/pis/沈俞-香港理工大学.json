@@ -10,13 +10,14 @@
   "suggested_school": null,
   "homepage_url": "https://shenyu-official.icu",
   "research_areas": [
-    "security"
+    "security",
+    "theory"
   ],
   "research_topics": [
     "Blockchain security and privacy",
     "Distributed computing and consensus",
     "Secure multi-party computation",
-    "Cryptographic protocols and game theory",
+    "Cryptographic protocols",
     "Quantum cryptography"
   ],
   "updated_at": "2026-08-10",
@@ -28,12 +29,12 @@
         "phd"
       ],
       "start_term": null,
-      "excerpt": "Blockchain security and privacy · Distributed computing and consensus · Secure multi-party computation · Cryptographic protocols and game theory · Quantum cryptography",
+      "excerpt": "Blockchain security and privacy · Distributed computing and consensus · Secure multi-party computation · Cryptographic protocols · Quantum cryptography",
       "research_topics": [
         "Blockchain security and privacy",
         "Distributed computing and consensus",
         "Secure multi-party computation",
-        "Cryptographic protocols and game theory",
+        "Cryptographic protocols",
         "Quantum cryptography"
       ],
       "email": "shenyu.tcv@gmail.com",

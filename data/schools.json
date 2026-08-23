@@ -179,7 +179,14 @@
       "name_zh": "伊利诺伊大学香槟分校",
       "name_en": "University of Illinois Urbana-Champaign",
       "country": "美国",
-      "aliases": ["伊利诺伊大学香槟分校", "UIUC", "Illinois", "University of Illinois Urbana-Champaign", "University of Illinois at Urbana-Champaign"]
+      "aliases": [
+        "伊利诺伊大学香槟分校",
+        "伊利诺伊大学厄巴纳香槟",
+        "UIUC",
+        "Illinois",
+        "University of Illinois Urbana-Champaign",
+        "University of Illinois at Urbana-Champaign"
+      ]
     },
     {
       "id": "gatech",
@@ -302,6 +309,20 @@
       "name_en": "Columbia University",
       "country": "美国",
       "aliases": ["哥伦比亚大学", "Columbia University", "Columbia EE"]
+    },
+    {
+      "id": "gmu",
+      "name_zh": "乔治梅森大学",
+      "name_en": "George Mason University",
+      "country": "美国",
+      "aliases": ["乔治梅森大学", "George Mason University", "George Mason"]
+    },
+    {
+      "id": "westlake",
+      "name_zh": "西湖大学",
+      "name_en": "Westlake University",
+      "country": "中国大陆",
+      "aliases": ["西湖大学", "Westlake University", "Westlake"]
     }
   ]
 }

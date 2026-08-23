@@ -65,5 +65,5 @@
 ## Explicitly not chosen
 
 - Next.js / React / 数据库：对筛选表格过重。
-- 在线 LLM 抽取：增加密钥和费用，v1 用规则 + 别名表；准确率靠校验和 GitHub 纠错。
+- 全帖 LLM 抽取：姓名/学校/邮箱仍用规则。只对研究方向调用可选的 OpenAI 兼容接口（`LLM_REVIEW_KEY` / `OPENAI_API_KEY`），结果写入 `data/llm_reviews.json`。测试不打真实模型。
 - 全站 Discuz 爬虫 / Scrapy / 镜像 DuoOffer：过重，且一亩三分地只开招生版。

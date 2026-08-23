@@ -10,12 +10,14 @@
   "suggested_school": null,
   "homepage_url": null,
   "research_areas": [
-    "systems",
     "ml"
   ],
   "research_topics": [
-    "将人工智能作为科学研究对象",
-    "人工智能科学家伙伴"
+    "自主科研 Autoresearch",
+    "AI as Science",
+    "AI as Co-scientist",
+    "机器学习基础",
+    "AI for Medicine"
   ],
   "updated_at": "2026-08-07",
   "opportunities": [
@@ -29,10 +31,13 @@
         "visiting"
       ],
       "start_term": null,
-      "excerpt": "将人工智能作为科学研究对象 · 人工智能科学家伙伴",
+      "excerpt": "自主科研 Autoresearch · AI as Science · AI as Co-scientist · 机器学习基础 · AI for Medicine",
       "research_topics": [
-        "将人工智能作为科学研究对象",
-        "人工智能科学家伙伴"
+        "自主科研 Autoresearch",
+        "AI as Science",
+        "AI as Co-scientist",
+        "机器学习基础",
+        "AI for Medicine"
       ],
       "email": null,
       "contact": null,

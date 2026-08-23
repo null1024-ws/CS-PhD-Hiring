@@ -13,7 +13,11 @@
     "hci",
     "ml"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "HCI for mental health",
+    "immersive technology",
+    "LLM and social computing"
+  ],
   "updated_at": "2025-10-17",
   "opportunities": [
     {
@@ -23,8 +27,12 @@
         "phd"
       ],
       "start_term": null,
-      "excerpt": "hci · ml",
-      "research_topics": [],
+      "excerpt": "HCI for mental health · immersive technology · LLM and social computing",
+      "research_topics": [
+        "HCI for mental health",
+        "immersive technology",
+        "LLM and social computing"
+      ],
       "email": null,
       "contact": "https://annamfang.com",
       "contact_class": "academic",

@@ -10,10 +10,14 @@
   "suggested_school": null,
   "homepage_url": null,
   "research_areas": [
-    "computer vision",
     "ml"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "机器学习与金融决策",
+    "强化学习",
+    "因果机器学习",
+    "金融大模型"
+  ],
   "updated_at": "2026-08-14",
   "opportunities": [
     {
@@ -24,8 +28,13 @@
         "ra"
       ],
       "start_term": null,
-      "excerpt": "computer vision · ml",
-      "research_topics": [],
+      "excerpt": "机器学习与金融决策 · 强化学习 · 因果机器学习 · 金融大模型",
+      "research_topics": [
+        "机器学习与金融决策",
+        "强化学习",
+        "因果机器学习",
+        "金融大模型"
+      ],
       "email": "2024213165@stu.sufe.edu.cn",
       "contact": "2024213165@stu.sufe.edu.cn",
       "contact_class": "academic",

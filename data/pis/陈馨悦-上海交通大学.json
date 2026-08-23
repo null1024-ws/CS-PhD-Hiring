@@ -10,10 +10,16 @@
   "suggested_school": null,
   "homepage_url": "https://xinyuechen-flora.github.io/",
   "research_areas": [
-    "systems",
-    "hci"
+    "hci",
+    "ml"
   ],
-  "research_topics": [],
+  "research_topics": [
+    "Human-AI Interaction",
+    "Responsible and Trustworthy AI",
+    "Collaborative AI Agents",
+    "AI for Education",
+    "Human-AI alignment"
+  ],
   "updated_at": "2026-07-04",
   "opportunities": [
     {
@@ -24,8 +30,14 @@
         "intern"
       ],
       "start_term": "2027 Fall",
-      "excerpt": "systems · hci",
-      "research_topics": [],
+      "excerpt": "Human-AI Interaction · Responsible and Trustworthy AI · Collaborative AI Agents · AI for Education · Human-AI alignment",
+      "research_topics": [
+        "Human-AI Interaction",
+        "Responsible and Trustworthy AI",
+        "Collaborative AI Agents",
+        "AI for Education",
+        "Human-AI alignment"
+      ],
       "email": "xinyuechenhci@gmail.com",
       "contact": "xinyuechenhci@gmail.com",
       "contact_class": "academic",

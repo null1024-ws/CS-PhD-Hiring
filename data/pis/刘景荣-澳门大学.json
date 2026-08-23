@@ -1,0 +1,51 @@
+{
+  "pi_id": "刘景荣-澳门大学",
+  "name": "刘景荣",
+  "name_en": null,
+  "school_claimed": "澳门大学",
+  "school_canonical": "澳门大学",
+  "school_country": "中国澳门",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "security",
+    "ml"
+  ],
+  "research_topics": [
+    "系统可靠性与韧性",
+    "能源信息物理系统安全",
+    "能源物联网与分布式控制"
+  ],
+  "updated_at": "2026-08-17",
+  "opportunities": [
+    {
+      "opportunity_id": "刘景荣-澳门大学-0",
+      "pi_id": "刘景荣-澳门大学",
+      "types": [
+        "phd",
+        "visiting"
+      ],
+      "start_term": null,
+      "excerpt": "系统可靠性与韧性 · 能源信息物理系统安全 · 能源物联网与分布式控制",
+      "research_topics": [
+        "系统可靠性与韧性",
+        "能源信息物理系统安全",
+        "能源物联网与分布式控制"
+      ],
+      "email": "johnnylao@um.edu.mo",
+      "contact": "johnnylao@um.edu.mo",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a82cfeb0000000029032a45?xsec_token=ABmSZbfMulKTqzmfOTubxXuqBlkbt0XzhXRnWZXHoAjCw%3D&xsec_source=pc_search",
+      "source_title": "澳门大学电气博士招生，捞一捞优秀师弟师妹",
+      "source_note_id": "6a82cfeb0000000029032a45",
+      "posted_at": "2026-08-17",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

@@ -11,10 +11,14 @@
   "homepage_url": null,
   "research_areas": [
     "nlp",
-    "ml"
+    "ml",
+    "theory"
   ],
   "research_topics": [
-    "大语言模型与可信人工智能的理论基础"
+    "大语言模型的理论基础",
+    "LLM 与经济学社会科学交叉",
+    "LLM 微调与后训练理论",
+    "经典机器学习理论"
   ],
   "updated_at": "2026-08-22",
   "opportunities": [
@@ -27,9 +31,12 @@
         "visiting"
       ],
       "start_term": "2027 Fall",
-      "excerpt": "大语言模型与可信人工智能的理论基础",
+      "excerpt": "大语言模型的理论基础 · LLM 与经济学社会科学交叉 · LLM 微调与后训练理论 · 经典机器学习理论",
       "research_topics": [
-        "大语言模型与可信人工智能的理论基础"
+        "大语言模型的理论基础",
+        "LLM 与经济学社会科学交叉",
+        "LLM 微调与后训练理论",
+        "经典机器学习理论"
       ],
       "email": null,
       "contact": null,

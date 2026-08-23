@@ -10,14 +10,15 @@
   "suggested_school": null,
   "homepage_url": null,
   "research_areas": [
-    "computer vision",
-    "security",
-    "ml"
+    "ml",
+    "nlp"
   ],
   "research_topics": [
-    "CV",
-    "成绩单",
-    "代表性论文及简短研究兴趣介绍"
+    "可信大模型/生成模型",
+    "多模态模型",
+    "科学智能体",
+    "概率机器学习",
+    "AI for Science"
   ],
   "updated_at": "2026-06-19",
   "opportunities": [
@@ -31,11 +32,13 @@
         "visiting"
       ],
       "start_term": null,
-      "excerpt": "CV · 成绩单 · 代表性论文及简短研究兴趣介绍",
+      "excerpt": "可信大模型/生成模型 · 多模态模型 · 科学智能体 · 概率机器学习 · AI for Science",
       "research_topics": [
-        "CV",
-        "成绩单",
-        "代表性论文及简短研究兴趣介绍"
+        "可信大模型/生成模型",
+        "多模态模型",
+        "科学智能体",
+        "概率机器学习",
+        "AI for Science"
       ],
       "email": "Dongxia.Wu@mbzuai.ac.ae",
       "contact": "Dongxia.Wu@mbzuai.ac.ae",

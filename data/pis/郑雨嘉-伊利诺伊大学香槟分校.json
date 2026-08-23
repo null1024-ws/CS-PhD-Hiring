@@ -1,0 +1,47 @@
+{
+  "pi_id": "郑雨嘉-伊利诺伊大学香槟分校",
+  "name": "郑雨嘉",
+  "name_en": null,
+  "school_claimed": "伊利诺伊大学厄巴纳香槟",
+  "school_canonical": "伊利诺伊大学香槟分校",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "ml"
+  ],
+  "research_topics": [
+    "可信机器学习",
+    "因果表示学习"
+  ],
+  "updated_at": "2026-06-03",
+  "opportunities": [
+    {
+      "opportunity_id": "郑雨嘉-伊利诺伊大学香槟分校-0",
+      "pi_id": "郑雨嘉-伊利诺伊大学香槟分校",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "可信机器学习 · 因果表示学习",
+      "research_topics": [
+        "可信机器学习",
+        "因果表示学习"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a1e923a00000000210152a4?xsec_token=ABvS600LFYaYDxfcGO_6WTAzOURzaoLGVrBuCEVaZWxuw%3D&xsec_source=pc_search",
+      "source_title": "伊利诺伊大学厄巴纳香槟新晋AP招生-郑雨嘉",
+      "source_note_id": "6a1e923a00000000210152a4",
+      "posted_at": "2026-06-03",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

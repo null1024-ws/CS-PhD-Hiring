@@ -10,7 +10,8 @@
   "suggested_school": null,
   "homepage_url": "https://lema-nus.github.io",
   "research_areas": [
-    "robotics"
+    "robotics",
+    "ml"
   ],
   "research_topics": [
     "Adaptive Robot Policies",

@@ -3,6 +3,10 @@
 GLOBAL_QUERIES = [
     "CS PhD 招生",
     "新ap招生",
+    "新晋AP招生",
+    "incoming AP 招生",
+    "新博导招生",
+    "新AP 招博士",
     "计算机 博士 招生 2026",
     "计算机 博士 招生 2027",
     "招收 PhD intern",

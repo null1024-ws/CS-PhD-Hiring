@@ -1,0 +1,100 @@
+{
+  "pi_id": "xinfeng-li-香港理工大学",
+  "name": "Xinfeng Li",
+  "name_en": null,
+  "school_claimed": "香港理工大学",
+  "school_canonical": "香港理工大学",
+  "school_country": "中国香港",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "security",
+    "nlp"
+  ],
+  "research_topics": [
+    "人工智能安全与隐私"
+  ],
+  "updated_at": "2026-07-06",
+  "opportunities": [
+    {
+      "opportunity_id": "xinfeng-li-香港理工大学-0",
+      "pi_id": "xinfeng-li-香港理工大学",
+      "types": [
+        "phd",
+        "intern",
+        "ra",
+        "postdoc"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "Agentic AI 系统安全与隐私 · Responsible AI in Social Context · 多模态 AI 安全 · Trustworthy AI for X",
+      "research_topics": [
+        "Agentic AI 系统安全与隐私",
+        "Responsible AI in Social Context",
+        "多模态 AI 安全",
+        "Trustworthy AI for X"
+      ],
+      "email": "lxfmakeit@gmail.com",
+      "contact": "lxfmakeit@gmail.com",
+      "contact_class": "consumer_email",
+      "source": "xhs",
+      "source_kind": "unknown",
+      "source_url": "https://www.xiaohongshu.com/explore/6a2c6107000000001700887b?xsec_token=ABVZd3R4di3Or9RgWHgl0u8KGVjOHbBgTVEMDGqfYjzQo%3D&xsec_source=pc_search",
+      "source_title": "本人招生 | PolyU 新AP ｜ AI系统安全",
+      "source_note_id": "6a2c6107000000001700887b",
+      "posted_at": "2026-06-12",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    },
+    {
+      "opportunity_id": "xinfeng-li-香港理工大学-1",
+      "pi_id": "xinfeng-li-香港理工大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "人工智能安全与隐私",
+      "research_topics": [
+        "人工智能安全与隐私"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a4368e2000000000802649e?xsec_token=ABAJvFvPBnSrxwBV2KCErHLayhSVkLwtvGZQDwVDxP3wU%3D&xsec_source=pc_search",
+      "source_title": "香港理工大学新晋AP招生-Xinfeng Li",
+      "source_note_id": "6a4368e2000000000802649e",
+      "posted_at": "2026-07-06",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    },
+    {
+      "opportunity_id": "xinfeng-li-香港理工大学-2",
+      "pi_id": "xinfeng-li-香港理工大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "人工智能安全与隐私",
+      "research_topics": [
+        "人工智能安全与隐私"
+      ],
+      "email": null,
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a7c216c0000000029031b3c?xsec_token=ABWsXsK4AbeiDCbdlthYpXK4P-kliTwe1vhjVDOREjxY0%3D&xsec_source=pc_search",
+      "source_title": "香港理工大学新晋AP招生-Xinfeng Li",
+      "source_note_id": "6a7c216c0000000029031b3c",
+      "posted_at": "2026-08-17",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

@@ -13,14 +13,10 @@
     "systems"
   ],
   "research_topics": [
-    "UCSD 计算机博士，导师为Yufei Ding",
-    "中国科学技术大学",
-    "个人主页",
-    "Google Scholar",
-    "研究方向包括量子计算编译与体系结构",
-    "具体包括多种量子计算平台",
-    "研究成果已发表在顶级计算机体系结构会议上",
-    "在UW-Madison读PhD将获得充足的资助"
+    "量子计算编译与体系结构",
+    "分布式量子计算",
+    "容错量子计算",
+    "量子计算与 AI/ML"
   ],
   "updated_at": "2026-06-26",
   "opportunities": [
@@ -32,16 +28,12 @@
         "intern"
       ],
       "start_term": null,
-      "excerpt": "UCSD 计算机博士，导师为Yufei Ding · 中国科学技术大学 · 个人主页 · Google Scholar · 研究方向包括量子计算编译与体系结构 · 具体包括多种量子计算平台 · 研究成果已发表在顶级计算机体系结构会议上 · 在UW-Madison读PhD将获得充足的资助",
+      "excerpt": "量子计算编译与体系结构 · 分布式量子计算 · 容错量子计算 · 量子计算与 AI/ML",
       "research_topics": [
-        "UCSD 计算机博士，导师为Yufei Ding",
-        "中国科学技术大学",
-        "个人主页",
-        "Google Scholar",
-        "研究方向包括量子计算编译与体系结构",
-        "具体包括多种量子计算平台",
-        "研究成果已发表在顶级计算机体系结构会议上",
-        "在UW-Madison读PhD将获得充足的资助"
+        "量子计算编译与体系结构",
+        "分布式量子计算",
+        "容错量子计算",
+        "量子计算与 AI/ML"
       ],
       "email": "hzhang2587@wisc.edu",
       "contact": "hzhang2587@wisc.edu",
