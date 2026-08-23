@@ -2,6 +2,26 @@
   "generated_at": "2026-08-23",
   "listings": [
     {
+      "pi_id": "anna-fang-卡内基梅隆大学",
+      "name": "Anna Fang",
+      "name_en": null,
+      "school_canonical": "卡内基梅隆大学",
+      "school_country": "美国",
+      "school_status": "unverified",
+      "research_areas": [
+        "hci",
+        "ml"
+      ],
+      "opportunity_types": [
+        "phd"
+      ],
+      "start_term": null,
+      "source_count": 1,
+      "updated_at": "2025-10-17",
+      "detail_path": "pis/anna-fang-卡内基梅隆大学.html",
+      "suggested_school": null
+    },
+    {
       "pi_id": "马晓娟-香港科技大学",
       "name": "马晓娟",
       "name_en": null,
@@ -23,32 +43,33 @@
       "suggested_school": null
     },
     {
-      "pi_id": "chelsea-finn-斯坦福大学",
-      "name": "Chelsea Finn",
+      "pi_id": "jiahao-yu-纽约大学阿布扎比分校",
+      "name": "Jiahao Yu",
       "name_en": null,
-      "school_canonical": "斯坦福大学",
-      "school_country": "美国",
+      "school_canonical": "纽约大学阿布扎比分校",
+      "school_country": "阿联酋",
       "school_status": "unverified",
       "research_areas": [
-        "robotics"
+        "nlp",
+        "systems",
+        "security"
       ],
       "opportunity_types": [
         "phd",
-        "intern",
         "postdoc"
       ],
-      "start_term": "2027 Spring",
+      "start_term": null,
       "source_count": 1,
-      "updated_at": "2026-06-06",
-      "detail_path": "pis/chelsea-finn-斯坦福大学.html",
+      "updated_at": "2026-06-04",
+      "detail_path": "pis/jiahao-yu-纽约大学阿布扎比分校.html",
       "suggested_school": null
     },
     {
-      "pi_id": "yilun-du-斯坦福大学",
-      "name": "Yilun Du",
+      "pi_id": "yuejiang-liu-新加坡国立大学",
+      "name": "Yuejiang Liu",
       "name_en": null,
-      "school_canonical": "斯坦福大学",
-      "school_country": "美国",
+      "school_canonical": "新加坡国立大学",
+      "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
         "robotics"
@@ -61,70 +82,30 @@
       "start_term": "2027 Spring",
       "source_count": 1,
       "updated_at": "2026-06-06",
-      "detail_path": "pis/yilun-du-斯坦福大学.html",
+      "detail_path": "pis/yuejiang-liu-新加坡国立大学.html",
       "suggested_school": null
     },
     {
-      "pi_id": "alexandre-alahi-斯坦福大学",
-      "name": "Alexandre Alahi",
+      "pi_id": "penghui-li-南洋理工大学",
+      "name": "Penghui Li",
       "name_en": null,
-      "school_canonical": "斯坦福大学",
-      "school_country": "美国",
+      "school_canonical": "南洋理工大学",
+      "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "robotics"
+        "nlp",
+        "systems",
+        "security"
       ],
       "opportunity_types": [
         "phd",
-        "intern",
-        "postdoc"
+        "postdoc",
+        "visiting"
       ],
       "start_term": "2027 Spring",
       "source_count": 1,
-      "updated_at": "2026-06-06",
-      "detail_path": "pis/alexandre-alahi-斯坦福大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "bernhard-sch-斯坦福大学",
-      "name": "Bernhard Sch",
-      "name_en": null,
-      "school_canonical": "斯坦福大学",
-      "school_country": "美国",
-      "school_status": "unverified",
-      "research_areas": [
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern",
-        "postdoc"
-      ],
-      "start_term": "2027 Spring",
-      "source_count": 1,
-      "updated_at": "2026-06-06",
-      "detail_path": "pis/bernhard-sch-斯坦福大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "chris-russell-斯坦福大学",
-      "name": "Chris Russell",
-      "name_en": null,
-      "school_canonical": "斯坦福大学",
-      "school_country": "美国",
-      "school_status": "unverified",
-      "research_areas": [
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd",
-        "intern",
-        "postdoc"
-      ],
-      "start_term": "2027 Spring",
-      "source_count": 1,
-      "updated_at": "2026-06-06",
-      "detail_path": "pis/chris-russell-斯坦福大学.html",
+      "updated_at": "2026-06-26",
+      "detail_path": "pis/penghui-li-南洋理工大学.html",
       "suggested_school": null
     },
     {
@@ -172,15 +153,14 @@
       "suggested_school": null
     },
     {
-      "pi_id": "lin-william-cong-南洋理工大学",
-      "name": "Lin William Cong",
+      "pi_id": "吕伟生-香港大学",
+      "name": "吕伟生",
       "name_en": null,
-      "school_canonical": "南洋理工大学",
-      "school_country": "新加坡",
+      "school_canonical": "香港大学",
+      "school_country": "中国香港",
       "school_status": "unverified",
       "research_areas": [
-        "computer vision",
-        "ml"
+        "robotics"
       ],
       "opportunity_types": [
         "phd",
@@ -188,8 +168,8 @@
       ],
       "start_term": null,
       "source_count": 1,
-      "updated_at": "2026-08-14",
-      "detail_path": "pis/lin-william-cong-南洋理工大学.html",
+      "updated_at": "2026-08-19",
+      "detail_path": "pis/吕伟生-香港大学.html",
       "suggested_school": null
     },
     {
@@ -213,43 +193,25 @@
       "suggested_school": null
     },
     {
-      "pi_id": "wilson-lu-香港大学",
-      "name": "Wilson Lu",
+      "pi_id": "萧建聪-新加坡国立大学",
+      "name": "萧建聪",
       "name_en": null,
-      "school_canonical": "香港大学",
-      "school_country": "中国香港",
+      "school_canonical": "新加坡国立大学",
+      "school_country": "新加坡",
       "school_status": "unverified",
       "research_areas": [
-        "robotics"
+        "nlp",
+        "ml"
       ],
       "opportunity_types": [
         "phd",
-        "ra"
+        "postdoc",
+        "visiting"
       ],
-      "start_term": null,
+      "start_term": "2027 Fall",
       "source_count": 1,
-      "updated_at": "2026-08-19",
-      "detail_path": "pis/wilson-lu-香港大学.html",
-      "suggested_school": null
-    },
-    {
-      "pi_id": "junjie-chen-香港大学",
-      "name": "Junjie Chen",
-      "name_en": null,
-      "school_canonical": "香港大学",
-      "school_country": "中国香港",
-      "school_status": "unverified",
-      "research_areas": [
-        "robotics"
-      ],
-      "opportunity_types": [
-        "phd",
-        "ra"
-      ],
-      "start_term": null,
-      "source_count": 1,
-      "updated_at": "2026-08-19",
-      "detail_path": "pis/junjie-chen-香港大学.html",
+      "updated_at": "2026-08-22",
+      "detail_path": "pis/萧建聪-新加坡国立大学.html",
       "suggested_school": null
     }
   ]

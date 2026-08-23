@@ -1,6 +1,6 @@
 {
-  "pi_id": "junjie-chen-香港大学",
-  "name": "Junjie Chen",
+  "pi_id": "吕伟生-香港大学",
+  "name": "吕伟生",
   "name_en": null,
   "school_claimed": "香港大学",
   "school_canonical": "香港大学",
@@ -15,8 +15,8 @@
   "updated_at": "2026-08-19",
   "opportunities": [
     {
-      "opportunity_id": "junjie-chen-香港大学-0",
-      "pi_id": "junjie-chen-香港大学",
+      "opportunity_id": "吕伟生-香港大学-0",
+      "pi_id": "吕伟生-香港大学",
       "types": [
         "phd",
         "ra"

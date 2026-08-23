@@ -39,11 +39,33 @@ CN_NAMED_RE = re.compile(
     r"([\u4e00-\u9fff]{1,4})(?:助理教授|副教授|教授|老师)"
 )
 EN_TITLED_RE = re.compile(
-    r"(?:Prof\.?|Dr\.?|Professor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})"
+    r"(?:Prof\.?|Dr\.?|Professor)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){1,2})"
 )
+SELF_EN_RE = re.compile(
+    r"(?:我是|我叫)\s*([A-Z][A-Za-z]+(?:[\s\-]+[A-Z][A-Za-z]+){1,3})"
+)
+SELF_CN_RE = re.compile(
+    r"(?:我是|我叫)\s*([\u4e00-\u9fff]{2,4})(?=[，。！!,\s]|目前|即将|老师|教授|$)"
+)
+I_AM_RE = re.compile(
+    r"\bI(?:'m| am)\s+([A-Z][A-Za-z]+(?:[\s\-]+[A-Z][A-Za-z]+){1,3})"
+)
+CN_EN_PAIR_RE = re.compile(
+    r"(?:^|[^\u4e00-\u9fff]|[和与及、，]|教授|老师|副教授|助理教授)"
+    r"([\u4e00-\u9fff]{2,3})"
+    r"(?:助理教授|副教授|教授|老师)?"
+    r"\s*[（(]\s*(?:Prof\.?|Dr\.?|Professor)?\s*"
+    r"([A-Z][A-Za-z.\-]+(?:\s+[A-Z][A-Za-z.\-]+)+)\s*[)）]"
+)
+ADVISOR_BEFORE_RE = re.compile(r"(师从|指导下|毕业于|此前|曾在)")
+HIRE_SCHOOL_RE = re.compile(
+    r"(?:即将加入|将加入|会加入|现已加入|入职|现任)\s*([^。\n]{2,80})"
+)
+PAST_AFFILIATION_RE = re.compile(r"(?:目前在|师从|毕业于|此前|曾在)[^。\n]*")
+SELF_SKIP = {"学生", "楼主", "本人", "老师", "作者", "招生"}
 WEAK_NAME_RE = re.compile(r"^(?:未知|老师|教授|[\u4e00-\u9fff]老师)$")
 NAME_NOISE_RE = re.compile(
-    r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨"
+    r"教授|老师|助理|讲席|担任|研究所|听过|科学系|特聘|校长|教研|接发|荐麻|等教授|美轨|美籍|华裔|课题|实验室"
 )
 
 TERM_PATTERNS: list[re.Pattern[str]] = [
@@ -101,6 +123,23 @@ def find_claimed_school(text: str, *, schools_path: Path | None = None) -> str |
         elif alias in text or alias.lower() in text.lower():
             return alias
     return None
+
+
+def find_hiring_school(text: str, *, schools_path: Path | None = None) -> str | None:
+    """Prefer the school the PI is joining or now at, not a past advisor's lab."""
+    path = schools_path
+    for match in HIRE_SCHOOL_RE.finditer(text):
+        school = find_claimed_school(match.group(1), schools_path=path)
+        if school:
+            return school
+    head = text.split("\n", 1)[0]
+    school = find_claimed_school(head, schools_path=path)
+    if school:
+        return school
+    stripped = PAST_AFFILIATION_RE.sub(" ", text)
+    return find_claimed_school(stripped, schools_path=path) or find_claimed_school(
+        text, schools_path=path
+    )
 
 
 def _emails(text: str) -> list[str]:
@@ -161,16 +200,53 @@ def _start_term(text: str) -> str | None:
     return None
 
 
-def _names(text: str) -> list[str]:
+def _norm_en(name: str) -> str:
+    return re.sub(r"\s+", " ", name).strip().lower()
+
+
+def _self_names(text: str) -> list[str]:
     names: list[str] = []
     seen: set[str] = set()
 
     def add(name: str) -> None:
-        name = name.strip()
-        if not name or name in seen:
+        name = re.sub(r"\s+", " ", name).strip()
+        if not name or name in SELF_SKIP or name in seen:
+            return
+        if NAME_NOISE_RE.search(name):
             return
         seen.add(name)
         names.append(name)
+
+    for match in SELF_EN_RE.finditer(text):
+        add(match.group(1))
+    for match in SELF_CN_RE.finditer(text):
+        add(match.group(1))
+    for match in I_AM_RE.finditer(text):
+        add(match.group(1))
+    return names
+
+
+def _names(text: str) -> list[str]:
+    self_names = _self_names(text)
+    if self_names:
+        return self_names
+
+    names: list[str] = []
+    seen: set[str] = set()
+    paired_en: set[str] = set()
+
+    def add(name: str) -> None:
+        name = re.sub(r"\s+", " ", name).strip()
+        if not name or name in seen:
+            return
+        if not is_weak_pi_name(name) and not is_main_table_name(name):
+            return
+        seen.add(name)
+        names.append(name)
+
+    for match in CN_EN_PAIR_RE.finditer(text):
+        add(match.group(1).lstrip("与和及、， "))
+        paired_en.add(_norm_en(match.group(2)))
 
     for match in CN_NAMED_RE.finditer(text):
         person = match.group(1).lstrip("与和及、， ")
@@ -178,8 +254,15 @@ def _names(text: str) -> list[str]:
             continue
         raw = match.group(0)
         add(raw if is_weak_pi_name(f"{person}老师") or len(person) == 1 else person)
+
     for match in EN_TITLED_RE.finditer(text):
-        add(match.group(1))
+        english = match.group(1)
+        if _norm_en(english) in paired_en:
+            continue
+        prefix = text[max(0, match.start() - 24) : match.start()]
+        if ADVISOR_BEFORE_RE.search(prefix):
+            continue
+        add(english)
     return names
 
 
@@ -205,7 +288,7 @@ def extract_opportunities(
     schools_path: Path | None = None,
 ) -> list[ExtractedOpportunity]:
     names = _names(text) or ["未知"]
-    school = find_claimed_school(text, schools_path=schools_path)
+    school = find_hiring_school(text, schools_path=schools_path)
     emails = _emails(text)
     email = emails[0] if emails else None
     homepage = _homepage(text)

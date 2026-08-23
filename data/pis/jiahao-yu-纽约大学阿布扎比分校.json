@@ -1,0 +1,40 @@
+{
+  "pi_id": "jiahao-yu-纽约大学阿布扎比分校",
+  "name": "Jiahao Yu",
+  "name_en": null,
+  "school_claimed": "NYU Abu Dhabi",
+  "school_canonical": "纽约大学阿布扎比分校",
+  "school_country": "阿联酋",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://sherdencooper.github.io/publications/",
+  "research_areas": [
+    "nlp",
+    "systems",
+    "security"
+  ],
+  "updated_at": "2026-06-04",
+  "opportunities": [
+    {
+      "opportunity_id": "jiahao-yu-纽约大学阿布扎比分校-0",
+      "pi_id": "jiahao-yu-纽约大学阿布扎比分校",
+      "types": [
+        "phd",
+        "postdoc"
+      ],
+      "start_term": null,
+      "excerpt": "NYUAD 新ap招Phd和Postdoc 大家好，我是 Jiahao Yu，目前是 Northwestern PhD，之后会加入 NYU Abu Dhabi担任TTAP。 我的研究主要在 AI + Security 交叉方向，过去做过 LLM security、fuzzing、program repair、AI-as",
+      "contact": "jy5951@nyu.edu",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a21e6580000000010001c00",
+      "source_note_id": "6a21e6580000000010001c00",
+      "posted_at": "2026-06-04",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

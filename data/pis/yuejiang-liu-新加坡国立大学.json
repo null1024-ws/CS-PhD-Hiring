@@ -1,10 +1,10 @@
 {
-  "pi_id": "bernhard-sch-斯坦福大学",
-  "name": "Bernhard Sch",
+  "pi_id": "yuejiang-liu-新加坡国立大学",
+  "name": "Yuejiang Liu",
   "name_en": null,
-  "school_claimed": "Stanford",
-  "school_canonical": "斯坦福大学",
-  "school_country": "美国",
+  "school_claimed": "新加坡国立大学",
+  "school_canonical": "新加坡国立大学",
+  "school_country": "新加坡",
   "school_status": "unverified",
   "school_evidence": [],
   "suggested_school": null,
@@ -15,8 +15,8 @@
   "updated_at": "2026-06-06",
   "opportunities": [
     {
-      "opportunity_id": "bernhard-sch-斯坦福大学-0",
-      "pi_id": "bernhard-sch-斯坦福大学",
+      "opportunity_id": "yuejiang-liu-新加坡国立大学-0",
+      "pi_id": "yuejiang-liu-新加坡国立大学",
       "types": [
         "phd",
         "intern",

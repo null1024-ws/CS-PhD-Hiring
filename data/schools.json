@@ -250,6 +250,13 @@
       "name_en": "King Abdullah University of Science and Technology",
       "country": "沙特阿拉伯",
       "aliases": ["阿卜杜拉国王科技大学", "KAUST", "King Abdullah University of Science and Technology"]
+    },
+    {
+      "id": "nyuad",
+      "name_zh": "纽约大学阿布扎比分校",
+      "name_en": "New York University Abu Dhabi",
+      "country": "阿联酋",
+      "aliases": ["纽约大学阿布扎比分校", "NYUAD", "NYU Abu Dhabi", "New York University Abu Dhabi"]
     }
   ]
 }

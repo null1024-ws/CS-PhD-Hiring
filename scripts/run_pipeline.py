@@ -104,6 +104,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
     ensure_dirs()
     pis_dir.mkdir(parents=True, exist_ok=True)
     listings = []
+    keep_pis: set[str] = set()
     for item in merged:
         rec = item.records[0]
         if not rec.get("listable"):
@@ -146,6 +147,7 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
         (pis_dir / f"{pi_id}.json").write_text(
             json.dumps(detail, indent=2, ensure_ascii=False), encoding="utf-8"
         )
+        keep_pis.add(f"{pi_id}.json")
         listings.append(
             {
                 "pi_id": pi_id,
@@ -168,6 +170,9 @@ def write_outputs(merged, listings_path: Path, pis_dir: Path) -> dict:
         "listings": listings,
     }
     listings_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    for path in pis_dir.glob("*.json"):
+        if path.name not in keep_pis:
+            path.unlink()
     return payload
 
 

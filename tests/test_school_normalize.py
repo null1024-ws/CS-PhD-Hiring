@@ -34,6 +34,12 @@ def test_hkust_full_english_matches_abbreviation() -> None:
     )
 
 
+def test_nyuad_aliases_unify() -> None:
+    assert normalize_school("NYUAD") == normalize_school("NYU Abu Dhabi")
+    assert normalize_school("NYUAD") is not None
+    assert normalize_school("NYUAD").id == "nyuad"
+
+
 def test_hkust_gz_is_not_hkust() -> None:
     got = normalize_school("港科广")
     assert got is not None

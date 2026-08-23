@@ -1,0 +1,40 @@
+{
+  "pi_id": "萧建聪-新加坡国立大学",
+  "name": "萧建聪",
+  "name_en": null,
+  "school_claimed": "NUS",
+  "school_canonical": "新加坡国立大学",
+  "school_country": "新加坡",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": null,
+  "research_areas": [
+    "nlp",
+    "ml"
+  ],
+  "updated_at": "2026-08-22",
+  "opportunities": [
+    {
+      "opportunity_id": "萧建聪-新加坡国立大学-0",
+      "pi_id": "萧建聪-新加坡国立大学",
+      "types": [
+        "phd",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": "2027 Fall",
+      "excerpt": "【本人招生】NUS CS｜27 Fall 博士生、博后 大家好，我是萧建聪，今年 7 月刚加入新加坡国立大学担任助理教授。 我的研究主要围绕机器学习理论、统计与优化，重点关注大语言模型与可信人工智能的理论基础。目前主要研究方向包括： 🔹 大语言模型的理论基础 研究大模型的对齐、模型校准（calibration）、幻觉等",
+      "contact": null,
+      "contact_class": "none",
+      "source": "xhs",
+      "source_kind": "repost",
+      "source_url": "https://www.xiaohongshu.com/explore/6a89b26500000000280270d2",
+      "source_note_id": "6a89b26500000000280270d2",
+      "posted_at": "2026-08-22",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

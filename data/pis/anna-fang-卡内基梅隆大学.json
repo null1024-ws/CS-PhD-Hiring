@@ -1,0 +1,38 @@
+{
+  "pi_id": "anna-fang-卡内基梅隆大学",
+  "name": "Anna Fang",
+  "name_en": null,
+  "school_claimed": "Carnegie Mellon University",
+  "school_canonical": "卡内基梅隆大学",
+  "school_country": "美国",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://annamfang.com",
+  "research_areas": [
+    "hci",
+    "ml"
+  ],
+  "updated_at": "2025-10-17",
+  "opportunities": [
+    {
+      "opportunity_id": "anna-fang-卡内基梅隆大学-0",
+      "pi_id": "anna-fang-卡内基梅隆大学",
+      "types": [
+        "phd"
+      ],
+      "start_term": null,
+      "excerpt": "🔎招 CS / HCI 博士生 🔎 PhD in CS 👋🏼 Hi! 我叫 Anna Fang，目前就读于卡内基梅隆大学（Carnegie Mellon University）计算机科学学院，是人机交互（HCI）方向的六年级博士生。在加入 CMU 之前，我本科毕业于康奈尔大学（Cornell University）。我",
+      "contact": "https://annamfang.com",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/68f2c843000000000503abae",
+      "source_note_id": "68f2c843000000000503abae",
+      "posted_at": "2025-10-17",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "pi_id": "penghui-li-南洋理工大学",
+  "name": "Penghui Li",
+  "name_en": null,
+  "school_claimed": "南洋理工",
+  "school_canonical": "南洋理工大学",
+  "school_country": "新加坡",
+  "school_status": "unverified",
+  "school_evidence": [],
+  "suggested_school": null,
+  "homepage_url": "https://peng-hui.github.io/openings.html",
+  "research_areas": [
+    "nlp",
+    "systems",
+    "security"
+  ],
+  "updated_at": "2026-06-26",
+  "opportunities": [
+    {
+      "opportunity_id": "penghui-li-南洋理工大学-0",
+      "pi_id": "penghui-li-南洋理工大学",
+      "types": [
+        "phd",
+        "postdoc",
+        "visiting"
+      ],
+      "start_term": "2027 Spring",
+      "excerpt": "[本人招生] 计算机安全@新加坡南洋理工 大家好，我是 Penghui Li。我将于 2026 年秋季加入新加坡南洋理工大学计算与数据科学学院（NTU CCDS）担任 Tenure-track Assistant Professor，目前在招收博士生 (2027 春/秋季)、博士后及访问学生。我在中国科学大学和香港中文",
+      "contact": "https://peng-hui.github.io/openings.html",
+      "contact_class": "academic",
+      "source": "xhs",
+      "source_kind": "pi",
+      "source_url": "https://www.xiaohongshu.com/explore/6a3e77ee000000001102fc80",
+      "source_note_id": "6a3e77ee000000001102fc80",
+      "posted_at": "2026-06-26",
+      "collected_at": "2026-08-23",
+      "relevance": "cs",
+      "extract_confidence": "high"
+    }
+  ]
+}
